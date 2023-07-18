@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/private-limited-company-registration"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"> 
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Private Limited Company Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted Consultant in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek advice from industry experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+<form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+        
+   
+   
+</div></div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar sidebar-left">
+          <div class="widget"> 
+            <ul class="nav service-menu">
+             
+             <li class="active"><h4>Popular Options</h4></li>
+<li class="active"><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+<li><h4 style="margin: 14px 0px;">Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>   
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Private Limited Company Registration</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+             <h4>1. Introduction</h4>
+<p>Private Limited Company is incorporated under the Companies Act, 2013 and governed by the Ministry of Corporate Affairs in India.</p>
+<p>A person can be both a director and shareholder in a Private Limited Company. It can be registered with minimum of two directors and subscribers/shareholders.</p>
+
+<p><strong>Section 2(68) </strong> of the Companies Act 2013 describes private company as a company having a minimum paid-up share capital  as may be prescribed, and which by its articles,—</p>          
+             
+<p>(i) restricts the right to transfer its shares;</p>           
+<p>(ii) except in case of One Person Company, limits the number of its members to two hundred:
+Provided that where two or more persons hold one or more shares in a company jointly, they shall, for the purposes of this clause, be treated as a single member:</p>     
+				
+<h4>Provided further that—</h4>         
+<p>(A) persons who are in the employment of the company; and</p> 
+<p>(B) persons who, having been formerly in the employment of the company, were members of the company while in that employment and have continued to be members after the employment ceased, shall not be included in the number of members; and</p>   
+<p>(iii) prohibits any invitation to the public to subscribe for any securities of the company</p>   
+        
+              
+<h4>2. Benefits</h4>
+<p><strong>Limited Liability:</strong> In the case of companies that have been incorporated, none of its members is legally bound to contribute to anything more than the nominal value of shares held by the member which still remain unpaid. The advantage of having limited liability for its members is one of the major reasons for setting up an incorporated company.</p>
+
+<p><strong>Perpetual Succession:</strong> An incorporated company has the characteristic of perpetual succession. As the Companies Act states, ‘Members may come and members may go, but the company can go on forever.’</p>
+
+<p><strong>Capacity to Sue:</strong> As a separate legal entity, an incorporated company has the right to sue other people in addition to companies. Also, it can be sued by other companies and people.</p>
+
+<p><strong>Flexibility:</strong> The Private Company incorporated has an autonomy and independence to form its own policies and further, implement them.</p>
+
+<p><strong>Shares Transferability:</strong> The shares or other interest of any member in a company shall be movable property, transferable in the manner provided by the articles of the company. It serves the purpose of providing liquidity to the investors, it can be sold easily in the market or stock exchange.</p>
+
+<p><strong>Corporate Personality:</strong> An incorporated company is a legally recognised entity that exists separately from its owners and shareholders, has all the functions of an incorporated company and having perpetual succession and a common seal.</p>
+            
+            
+<h4>3. Process</h4>      
+<p><strong>Step 1: Reservation of Company’s Name under Spice+ PART A </strong><br>
+The first and foremost step in the company registration process is reserving the name of the company. The applicants must provide two names in preferential order and must fill all the needed details. Once a name is approved after paying a fees of Rs. 1000, it’s reserved for 20 days within which the applicant must complete all the remaining steps required for company registration.</p>
+
+<p><strong>Step 2: Procuring Digital Signature Certificate</strong> <br>
+Once the company name has been approved by MCA and registered, the next step is procuring a Digital Signature Certificate for your private limited company. For e-Filing, Digital Signature Certificate is a mandatory requirement.</p>
+
+<p><strong>Step 3:Applying for Director Identification Number or DIN</strong><br>
+A maximum of 3 DINs can be applied while incorporating a new private limited company. Director Identification Number or DIN is the unique identification number for Directors of a registered company.</p>
+
+<p><strong>Step 4:Filling of Form Spice+ Part B</strong><br>
+Once the name is approved mini dashboard enables the option of applying for Spice + Part B which needs details of all the directors of the company and its authorised signatories, their address, mobile number, email id etc.</p>
+
+<p><strong>Step 5: Filling of Form AGILE PRO</strong><br>
+The time correct Part B is submitted successfully on the portal, it enables all the other incorporation forms. AGILE PRO being one of them. </p>
+
+<p><strong>Step 6: Filling of Form INC-34 – e-AOA</strong><br>
+This form is filled with alterations in some articles being 1, 26, 48, 60 and 76. The rest form being filled with details of all the directors and the professional being a company secretary or chartered accountant or cost accountant.</p>
+
+<p><strong>Step 7: Filling of Form INC-33 – e-MOA</strong><br>
+The form is filled by adding the main objects and the ancilliary objects, all the necessary information, details of the directors as well as the details of the authorised signatories /professionals.</p>
+
+<p><strong>Step 8: Filling of Form INC-9</strong><br>
+This is prefilled form after all the above forms are made with all the details, then this form is just needs to be downloaded.</p>
+
+<p>Once all the forms are made the forms needs to be uploaded after affixing the Digital Signature Certificate and the procedure is completed by paying the fees.</p>
+       
+
+            </div> 
+            
+            
+            
+            <div class="col-lg-12">
+             <h4>4. Checklist </h4>	
+            <p>List of documents required for Incorporation of a Private Limited Company:</p>
+            </div>
+            <div class="col-lg-12">
+            <table class="table table-bordered">
+  <tr>
+    <th colspan="2">Digital Signature Certificate (DSC)</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>List of documents required for    application of DSC:</td>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>Copy of Aadhar Card of the applicants    for address proof</td>
+  </tr>
+  <tr>
+    <td>b</td>
+    <td>Copy of the PAN Card of the    applicants for identity proof</td>
+  </tr>
+  <tr>
+    <td>c</td>
+    <td>Scanned passport size photograph of    the applicants</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>E-mail ID of the applicants</td>
+  </tr>
+  <tr>
+    <td>e</td>
+    <td>Personal mobile number of the    applicants</td>
+  </tr>
+</table>
+             </div>
+          
+            
+            <div class="col-lg-12">
+            <table class="table table-bordered">
+  <tr>
+    <th colspan="2">SPICe+ Part-A (Informations Required) </th>
+  </tr>
+  <tr>
+    <td>2.1 </td>
+    <td>Class of Company </td>
+  </tr>
+  <tr>
+    <td>2.2 </td>
+    <td>Category of Company </td>
+  </tr>
+  <tr>
+    <td>2.3</td>
+    <td>Sub-category of the company</td>
+  </tr>
+  <tr>
+    <td>2.4</td>
+    <td>Two proposed names of the Company</td>
+  </tr>
+  <tr>
+    <td>2.5</td>
+    <td>Main business Objects of the Company</td>
+  </tr>
+  <tr>
+    <td>2.6</td>
+    <td>Ancilliary Objects of the Company</td>
+  </tr>
+  <tr>
+    <td>2.7</td>
+    <td>In case the proposed Company is a subsidiary    of any Company, Board Resolution for incorporation of the subsidiary company    along with KYC of the director/authorized person signing the Board Resolution</td>
+  </tr>
+  <tr>
+    <td>2.8 </td>
+    <td >In case the proposed name is    registered trademark, No-objection certificate from trademark owner for using    the trademark in the proposed name</td>
+  </tr>
+</table>
+            
+          </div> 
+            
+            
+            <div class="col-lg-12">
+            	<table class="table table-bordered">
+  <tr>
+    <th colspan="2">SPICe+ Part-B Directors (Informations Required) </th>
+  </tr>
+  <tr>
+    <td>3.1 </td>
+    <td>Copy of identity proof of the first    Directors (any one) </td>
+  </tr>
+  <tr>
+    <td>a.</td>
+    <td>PAN Card (Mandatory)</td>
+  </tr>
+  <tr>
+    <td>b.</td>
+    <td>Driving License</td>
+  </tr>
+  <tr>
+    <td>c.</td>
+    <td>Voters ID Card</td>
+  </tr>
+  <tr>
+    <td>d.</td>
+    <td>Passport </td>
+  </tr>
+  <tr>
+    <td>3.2</td>
+    <td>Copy of residence proof of the first    Directors (anyone)</td>
+  </tr>
+  <tr>
+    <td>a.</td>
+    <td>Electricity Bill, not older than 2    months</td>
+  </tr>
+  <tr>
+    <td>b.</td>
+    <td>Mobile Bill/Telephone Bill, not    older than 2 months</td>
+  </tr>
+  <tr>
+    <td>c.</td>
+    <td>Bank Statement, not older than 2    months</td>
+  </tr>
+  <tr>
+    <td>3.3</td>
+    <td>Director Identification Number (DIN)    for the first directors of the proposed company, if obtained</td>
+  </tr>
+  <tr>
+    <td>3.4</td>
+    <td>Place of birth of the directors</td>
+  </tr>
+  <tr>
+    <td>3.5</td>
+    <td>Occupation of the directors</td>
+  </tr>
+  <tr>
+    <td>3.6</td>
+    <td>Educational qualification of the directors</td>
+  </tr>
+  <tr>
+    <td>3.7</td>
+    <td>Permanent address of the directors </td>
+  </tr>
+  <tr>
+    <td>3.8</td>
+    <td>Present address of the directors</td>
+  </tr>
+  <tr>
+    <td>3.9</td>
+    <td>For how many years the director is staying at the present address</td>
+  </tr>
+  <tr>
+    <td>3.10</td>
+    <td>Whether the proposed directors will be appointed as executive director or non-executive director</td>
+  </tr>
+  <tr>
+    <td>3.11</td>
+    <td>Contact details of the proposed directors (Mobile No. &amp; E-mail ID)</td>
+  </tr>
+  <tr>
+    <td>3.12 </td>
+    <td>Authorised Share Capital and its Bifurcation </td>
+  </tr>
+  <tr>
+    <td>3.13</td>
+    <td>Paid-Up Share Capital and its Bifurcation</td>
+  </tr>
+  <tr>
+    <td>3.14</td>
+    <td>E-mail ID of the Company</td>
+  </tr>
+  <tr>
+    <td>3.15</td>
+    <td>Copy of documents with regard to the correspondence address / registered office address of the proposed company</td>
+  </tr>
+  <tr>
+    <td>3.16</td>
+    <td>Copy of utility bill of the address proposed to be the registered office of the Company. (Should not be older    than two months)</td>
+  </tr>
+  <tr>
+    <td>3.17</td>
+    <td>The bank in which Company would like to open its current account</td>
+  </tr>
+  <tr>
+    <td>3.18</td>
+    <td>Passport size photographs of the first directors</td>
+  </tr>
+  <tr>
+    <td>3.19</td>
+    <td>Contact No. of the Company for any correspondence</td>
+  </tr>
+ 
+</table>
+            </div>
+
+           
+           <div class="col-lg-12">
+           	<h4>5. Compliances</h4>
+           	<p>Subsequent to the company being incorporated successfully by way of the aforesaid procedure, a set of other compliances are also required to be fulfilled by the company.</p>
+           </div>
+           
+  <div class="col-lg-12">
+ <table class="table table-bordered">
+  <tr>
+    <th>TIMELINE</th>
+    <th>COMPLIANCE</th>
+  </tr>
+  <tr>
+    <td>Within 30 days from date of incorporation</td>
+    <td>1st Board Meeting (that must entail the disclosure of interests by every director) </td>
+  </tr>
+  <tr>
+    <td>Post meeting, file MGT-14 </td>
+  </tr>
+  <tr>
+    <td>At the First Board Meeting in which the person participates as a Director </td>
+    <td>Disclose his concern or interest in any company by filing Form MBP-1, to give notice to the Company </td>
+  </tr>
+  <tr>
+    <td>Within 30 days</td>
+    <td>Appoint the 1st Auditor till the    conclusion of first AGM</td>
+  </tr>
+  <tr>
+    <td>Within 15    days of appointment of every auditor</td>
+    <td>Fill    ADT-1</td>
+  </tr>
+  <tr>
+    <td>Within 30    days of incorporation</td>
+    <td>File the    form INC 22 with the MCA to establish a registered office</td>
+  </tr>
+  <tr>
+    <td>As    provided under applicable Shops &amp; Establishment Act</td>
+    <td>File Form    as per applicable Shops &amp; Establishment Act</td>
+  </tr>
+  <tr>
+    <td>Within 2 months from date of receipt of application money</td>
+    <td>Allotment    of shares </td>
+  </tr>
+  <tr>
+    <td>Within 2 months from date of incorporation </td>
+    <td>Issuance    of share certificates as per Form SH-1. </td>
+  </tr>
+  <tr>
+    <td>Within 30 days from date of allotment</td>
+    <td>Form    PAS-3 required to be filed (return of allotment) including list of allottees</td>
+  </tr>
+  <tr>
+    <td>Within 180 days, post depositing share    capital money in bank account.</td>
+    <td>Form    20A: Declaration of Commencement of Business</td>
+  </tr>
+  <tr>
+    <td>Within one financial year</td>
+    <td>Minimum    of 4 board meetings (with maximum gap of 120 days between 2 such board    meetings)</td>
+  </tr>
+  <tr>
+    <td>At any time, post obtaining a Digital    Signature Certificate</td>
+    <td>Form    DIR-3 to be filed for the allotment of DIN number along with DIR-4</td>
+  </tr>
+  <tr>
+    <td>Within 1 month of receiving DIN</td>
+    <td>Intimate    DIN to the Company</td>
+  </tr>
+  <tr>
+    <td>Within 15 days of receipt of information by    the Director regarding allotment of DIN</td>
+    <td>Inform    Registrar under Form DIR-3C</td>
+  </tr>
+  <tr>
+    <td>Within 30 days of creation of charge on any    property, asset or any of its undertakings, tangible or otherwise, situated    in or outside India</td>
+    <td>Inform    Registrar under Form CHG-1 (For other than Debentures)
+      <p>Form    CHG-9 (For Debentures)</td>
+  </tr>
+  <tr>
+    <td>N/A</td>
+    <td>Every    Company must affix a board outside the office stating its name and registered    office address.</td>
+  </tr>
+  <tr>
+    <td>N/A</td>
+    <td>Letterheads    of the company with registered office name &amp; address, Corporate    Identification Number (CIN), telephone number, fax number, if any, e-mail and    website addresses, if any, are required to be printed.</td>
+  </tr>
+</table>
+          
+          <p>Additionally, a Private Limited Company is also required to maintain various registers in the Forms provided on MCA.</p>
+           </div>
+           
+           
+<div class="col-lg-12">
+ <h4>6. Frequently Asked Questions(FAQs)</h4>
+<p><strong>Q.What is the meaning of a Private Limited Company?</strong><br>
+Ans.A Private Limited Company is a small company that is handled by a group of people privately. The liability of the members of a Private Limited Company is limited to the number of shares respectively held by them. Shares of Private Limited Company cannot be publicly traded.</p>
+
+
+<p><strong>Q.Is it possible for a small firm to register as a private limited company?</strong><br>
+Ans.Yes, a small firm can register with the Indian government as a private limited company.It gives them credibility and a positive image of their company in the eyes of suppliers, future customers, and financial institutions.</p>
+
+<p><strong>Q.When should I file the Annual returns of my Private Limited Company?</strong><br>
+Ans.Private Limited Companies are required to file their Annual Accounts and Returns disclosing details of its shareholders, directors etc to the Registrar of Companies. Such compliances are required to be made once a year.</p>
+
+<p><strong>Q.What is the minimum turnover and capital required for Private Limited Company in India?</strong><br>
+Ans.There exists no bar on turnover or capital in a private Limited Company, unlike One person Company.</p>
+
+<p><strong>Q.How can I close my Private Limited Company?</strong><br>
+Ans.Closing a private limited company can be a painful procedure as the incorporation of this company structure.Here are some of the ways by which you can close down your Private Limited Company legally i.e; Selling the Company, Strike off the Company, Voluntary Winding Up.</p>
+
+<p><strong>Q.Is registration necessary for Private Limited Companies in India?</strong><br>
+Ans.Yes, Registration for a Private Limited Company is necessary as, without registration, there can be no existence of a company.</p>
+
+<p><strong>Q. How many maximum directors can a Private Limited Company have?</strong><br>
+Ans.The Indian companies Act, 2013 states that A Private Limited Company in India can have a minimum of 2 directors and a maximum of 15 directors.</p>
+
+<p><strong>Q.Is it mandatory to add a Private Limited after the company’s name ex. XYZ Private Limited?</strong><br>
+Ans.Yes, If your company is incorporated as a Private Limited Company, it is mandatory to add a Private Limited Company after the company’s name.</p>
+
+	
+	
+	
+</div> 
+<div class="col-lg-12">
+<p><strong>For any consultancy in the Formation of Private Limited Company || </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div> 
+           
+           
+           
+            
+            
+            </div> 
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Private Limited Company Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Private Limited Company Registration in Haryana</a></li> 
+<li><a href="">Private Limited Company Registration in Assam</a></li> 
+<li><a href="">Private Limited Company Registration in Gujarat</a></li> 
+<li><a href="">Private Limited Company Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Private Limited Company Registration in Karnataka</a></li> 
+<li><a href="">Private Limited Company Registration in Bihar</a></li> 
+<li><a href="">Private Limited Company Registration in Rajasthan</a></li> 
+<li><a href="">Private Limited Company Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Private Limited Company Registration in Sikkim</a></li> 
+<li><a href="">Private Limited Company Registration in West Bengal</a></li> 
+<li><a href="">Private Limited Company Registration in Mizoram</a></li> 
+<li><a href="">Private Limited Company Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Private Limited Company Registration in Punjab</a></li> 
+<li><a href="">Private Limited Company Registration in Meghalaya</a></li> 
+<li><a href="">Private Limited Company Registration in Manipur</a></li> 
+<li><a href="">Private Limited Company Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Private Limited Company Registration in Nagaland</a></li> 
+<li><a href="">Private Limited Company Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Private Limited Company Registration in Goa</a></li> 
+<li><a href="">Private Limited Company Registration in Tamil Nadu</a></li> 
+<li><a href="">Private Limited Company Registration in Telangana</a></li> 
+<li><a href="">Private Limited Company Registration in Maharashtra</a></li> 
+<li><a href="">Private Limited Company Registration in Andhra Pradesh</a></li> 
+<li><a href="">Private Limited Company Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Private Limited Company Registration in Uttarakhand</a></li>   
+<li><a href="">Private Limited Company Registration in Odisha</a></li> 
+<li><a href="">Private Limited Company Registration in Jharkhand</a></li> 
+<li><a href="">Private Limited Company Registration in Chandigarh</a></li> 
+<li><a href="">Private Limited Company Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Private Limited Company Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Private Limited Company Registration in Mumbai</a></li> 
+<li><a href="">Private Limited Company Registration in Hyderabad</a></li> 
+<li><a href="">Private Limited Company Registration in Chennai</a></li> 
+<li><a href="">Private Limited Company Registration in Pune</a></li> 
+<li><a href="">Private Limited Company Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Private Limited Company Registration in Kolkata</a></li> 
+<li><a href="">Private Limited Company Registration in Ahmedabad</a></li> 
+<li><a href="">Private Limited Company Registration in Delhi</a></li> 
+<li><a href="">Private Limited Company Registration in Agra</a></li> 
+<li><a href="">Private Limited Company Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Private Limited Company Registration in Kochi</a></li> 
+<li><a href="">Private Limited Company Registration in Lucknow</a></li> 
+<li><a href="">Private Limited Company Registration in Surat</a></li> 
+<li><a href="">Private Limited Company Registration in Patna</a></li> 
+<li><a href="">Private Limited Company Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Private Limited Company Registration in Bhopal</a></li> 
+<li><a href="">Private Limited Company Registration in Kanpur</a></li> 
+<li><a href="">Private Limited Company Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Private Limited Company Registration in Prayagraj</a></li> 
+<li><a href="">Private Limited Company Registration in Coimbatore</a></li> 
+<li><a href="">Private Limited Company Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Private Limited Company Registration in Vadodara</a></li> 
+<li><a href="">Private Limited Company Registration in Nagpur</a></li> 
+<li><a href="">Private Limited Company Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+ 
+
+
+
+
+
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+   
+   
+    </div>
+<!--End whatsapp button-->
+ 
+ 
+ 
+  <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+  <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+  <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+  
+  <script src="{% static 'plugins/google-map/map.js' %}"></script>
+  <script src="{% static 'js/script.js'%}"></script>
+
+  </div> 
+  
+  <script>
+$(document).ready(function(){
+  $(".contentdd").slice(0, 1).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".contentdd:hidden").slice(0, 1).slideDown();
+    if($(".contentdd:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+  
+})
+    </script>
+  </body>
+
+  </html>

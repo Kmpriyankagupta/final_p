@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/copyright-registration"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon"/>
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="{% url 'ssi-msme-registration' %}">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+ 
+ 
+ 
+ 
+ 
+
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Copyright Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+    <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+<div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  <input class="btn btn-primary" type="submit", value="submit">
+</form>
+</div></div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar sidebar-left">
+          <div class="widget"> 
+            <ul class="nav service-menu">
+             
+  <li class="active"><h4>Trademark</h4></li>
+ 
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>  
+
+<li><h4 style="margin: 14px 0px;">Patent</h4></li> 
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li> 
+            
+<li><h4 style="margin: 14px 0px;">Copyright</h4></li>
+<li class="active"><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Copyright Registration</h2>
+
+ <div class="row">
+  <div class="col-md-12">
+  <p>In today's digital age, where information flows freely and creativity abounds, protecting original works has become more critical than ever. Copyright serves as a cornerstone of intellectual property law, safeguarding the rights of creators and encouraging innovation. This article aims to provide a comprehensive overview of copyright, including its definition, scope, benefits, types, procedure and significance in various fields.</p>
+              
+              
+<h4>WHAT IS COPY RIGHT?</h4> 
+              
+<ul>
+<li>Copyright is a legal concept that grants exclusive rights to authors and creators over their original works.</li> 
+<li>It encompasses a wide range of creative expressions, including literary, artistic, musical, and dramatic works, as well as computer programs, architectural designs, and sound recordings. </li>
+<li>The moment an idea is transformed into a tangible form, such as a written manuscript or a recorded song, copyright protection automatically applies, without the need for registration or any formalities.</li>
+ </ul>
+           
+<h4>IMPORTANCE OF COPYRIGHT</h4>
+<ul>
+<li>Copyright protection is vital for fostering creativity and rewarding innovation. </li>
+<li>By granting creators exclusive rights, copyright provides them with an incentive to invest time, effort, and resources into the development of original works. </li>
+<li>It enables creators to control the commercial exploitation of their creations, ensuring they receive fair compensation for their efforts. </li>
+<li>Moreover, copyright protection contributes to the cultural and economic development of societies by encouraging the dissemination of knowledge and the creation of new works.</li>
+</ul>      
+        
+<h4>COPYRIGHT INFRINGMENT</h4>       
+<p>Copyright infringement occurs when someone violates any of the exclusive rights granted to the copyright holder without obtaining proper authorization. This can involve unauthorized reproduction, distribution, public performance, or creation of derivative works. Infringement can result in legal consequences, such as injunctions, damages, or even criminal penalties, depending on the jurisdiction and severity of the violation.</p>          
+
+<h4>RIGHTS GRANTED BY COPYRIGHTS</h4>	  
+<p>Copyright provides creators with a bundle of exclusive rights, enabling them to control the usage and distribution of their works. These rights include:</p> 
+           
+                
+<img src="{% static 'images/copyright.jpg' %}" alt="copyright" title="copyright">                
+<h4>TYPES OF COPYRIGHTS</h4>                      
+<ul>
+	<li>In India, the Copyright Act, 1957 provides protection for various types of creative works. The types of works that are eligible for copyright protection in India include:</li>
+	<img src="{% static 'images/copyright1.jpg' %}" alt="copyright" title="copyright">  
+	
+ <li>It's important to note that these categories may overlap or be interconnected. For example, a musical work can also be part of a cinematograph film or a sound recording. Additionally, derivative works based on the original copyright-protected works may also be eligible for separate copyright protection.</li>
+
+<li>It's important to note that the specific requirements may vary based on the nature of the work and the Copyright Office's guidelines. It's advisable to consult the Copyright Office's website or seek professional legal advice to ensure compliance with the latest requirements and procedures for copyright registration in India.</li>
+ </ul> 
+
+	  <h4>DURATION OF COPYRIGHT PROTECTION</h4>
+      <p>1.	Category of work: Literary, dramatic, musical or artistic works</p>                          
+<ul>
+<li>Copyright expires 60 years from the end of the calendar year in which the author dies.</li>
+<li>Where a work has a joint author/co-author, it expires 60 years from the end of the calendar year in which the last known author dies.</li>
+<li>Where the author’s identity is unknown, copyright expires 60 years from the end of the calendar year in which the work was first published. </li>
+<li>In a case where there are joint authors/co-authors, and the identity of one author is known and the identity of the other is unknown, the copyright expires 60 years from the end of the calendar year in which the known author dies.</li>
+
+	
+</ul>
+<p>2.	Category of work: Cinematograph films</p>  
+<ul>
+	<li>Copyright shall subsist until 60 years from the beginning of the calendar year following the year in which the film is published.</li>
+	
+</ul>  
+           
+<p>3.	Category of work: Sound recordings</p>  
+<ul>
+	<li>Copyright shall subsist until 60 years from the beginning of the calendar year following the year in which the sound recording is published.</li>
+	
+</ul>       
+              
+<h4>COPYRIGHT PROCEDURE</h4>                
+<ul>
+<li>In India, copyright protection is governed by the Copyright Act, 1957, and administered by the Copyright Office, a part of the Department for Promotion of Industry and Internal Trade (DPIIT) under the Ministry of Commerce and Industry.</li>
+<li>It is important to note that copyright protection exists from the moment the work is created, even without registration. However, obtaining copyright registration provides additional benefits, such as prima facie evidence of ownership and the ability to pursue legal action against infringement.While copyright registration is not mandatory, it is advisable to seek registration to strengthen the evidentiary value of copyright ownership and facilitate legal enforcement, if needed.</li>
+<li>The copyright registration procedure in India involves the following steps:</li>
+
+	
+</ul>
+	  
+<p><strong>1. Creation of Original Work:</strong><br>
+The copyright process begins with the creation of an original work by an author or creator. The work should be in a fixed form, such as a written manuscript, recorded audio, or saved digital file.</p> 
+
+<p><strong>2. Application for Copyright Registration</strong><br>
+The first step is to file an application for copyright registration. The application can be made online through the Copyright Office's e-filing portal or submitted physically to the Copyright Office in New Delhi. The application should include the completed Form XIV (Application for Copyright Registration) along with the prescribed fee.</p> 
+
+<p><strong>3. Form and Fee:</strong><br>
+The application should be made on the prescribed Form XIV (Application for Copyright Registration) and should be accompanied by the appropriate fee. The fee depends on the type of work being registered and can be found on the Copyright Office's website or in the Schedule of Fees under the Copyright Rules, 2013.</p> 
+
+<p><strong>4. Submission of Documents:</strong><br>
+The application should be accompanied by the following documents:<br>
+   a. Power of Attorney, if applicable (in case the application is filed through an agent or attorney).<br>
+   b. Three copies of the work (if it is unpublished). If the work is published, only one copy is required.<br>
+   c. No-Objection Certificate (NOC) from the author, if the work is being published on behalf of the author.<br>
+   d. Details of the work, including title, description, language, and year of creation.</p> 
+
+<p><strong>5. Acknowledgment and Diary Number:</strong><br>
+Upon submission of the application, the Copyright Office issues an acknowledgment receipt with a diary number. This serves as proof of submission and allows the applicant to track the status of their application.</p> 
+
+<p><strong>6. Examination and Objections:</strong><br>
+The Copyright Office examines the application and may raise objections or request additional information if necessary. The applicant is notified of any objections, and they are given an opportunity to respond and rectify the deficiencies within the stipulated time frame.</p> 
+
+<p><strong>7. Registration and Certificate:</strong><br>
+If the Copyright Office is satisfied with the application and all requirements are met, the copyright registration is granted. The Copyright Office then issues a registration certificate, affirming the copyright protection for the specific work.</p> 
+     
+<p><strong>It is to be noted that the time taken for the entire copyright registration process can vary, ranging from several months to over a year, depending on the workload and backlog at the Copyright Office.</strong></p> 
+
+<h4>WE NG & ASSOCIATES ARE HERE TO HELP YOU</h4> 
+<p>Copyright plays a crucial role in protecting the rights of creators and fostering a thriving creative ecosystem. It grants creators exclusive rights over their works, allowing them to control their distribution, usage, and commercial exploitation. By understanding copyright basics, both creators and users of creative works can navigate the digital landscape while respecting intellectual property rights. Ultimately, a balanced and well-enforced.</p>   
+
+<p>NG & Associates adopts a results-oriented approach to provide you an endeavour. A simple and guidance methodology throughout the process is adopted by us to provide you one stop solution to the end.NG & Associates support 100% in advisory, and Guidance with respect to the process</p>
+      
+<p><strong>Here are some frequently asked questions (FAQs) about copyright:</strong></p>
+<p><strong>1.	What is copyright?</strong><br>
+Copyright is a legal concept that grants the creator of an original work exclusive rights to control the use and distribution of that work.</p> 
+
+<p><strong>2.	What types of works are protected by copyright?</strong><br>
+Copyright protects various types of creative works, including literary works, artistic works, musical compositions, films, software, architectural designs, and more.</p> 
+
+<p><strong>3.	Can I use copyrighted works without permission?</strong><br>
+Using copyrighted works without permission may infringe on the creator's rights. However, certain uses may be allowed under the principles of fair use (or fair dealing in some jurisdictions), which consider factors like the purpose of use, the nature of the work, the amount used, and the effect on the market.</p> 
+
+<p><strong>4.	How can I protect my own copyright?</strong><br>
+To establish evidence of copyright ownership, it is advisable to mark your work with the copyright symbol (©), the year of first publication, and the name of the copyright owner. You may also consider registering your copyright with the appropriate copyright office in your country.</p> 
+
+<p><strong>5.	Can I copyright my ideas?</strong><br>
+Copyright protects the expression of ideas but not the ideas themselves. In other words, the specific way you express an idea through a tangible form (e.g., writing a story, etc) is protected, but the underlying idea itself is not.</p> 
+
+<p><strong>6.	What is the difference between copyright and a patent?</strong><br>
+Copyright protects original works of authorship, while patents protect inventions or discoveries. Copyright focuses on creative expression, while patents focus on functional and technological innovations.</p> 
+
+<p><strong>7.	What should I do if I believe my copyright has been infringed?</strong><br>
+If you believe your copyright has been infringed, you should consider contacting an intellectual property attorney to discuss your options. They can guide you through the process of enforcing your rights, which may involve sending a cease-and-desist letter or filing a lawsuit. And here NG & Associates serves the purpose. We NG & Associates are here to guide you through the process.</p> 
+
+<p><strong>8.	Can I copyright my website or blog?</strong><br>
+Yes, original content on your website or blog, such as text, images, videos, and other creative elements, is eligible for copyright protection. Keep in mind that copyright protects the specific expression of ideas, not the underlying functionality or structure of the website itself.</p> 
+
+<p><strong>9.	Can I copyright a name, title, or slogan?</strong><br>
+In most cases, names, titles, and slogans are not eligible for copyright protection. They may be protected by other forms of intellectual property, such as trademarks. Trademarks are used to identify and distinguish goods or services in commerce.</p> 
+
+<p><strong>10.	Can I copyright a domain name?</strong><br>
+Copyright law does not directly cover domain names. Domain names may be protected under trademark law if they function as a brand identifier or distinctive business identifier.</p> 
+
+<p><strong>11.	Can I use copyrighted material if I give credit to the original creator?</strong><br>
+Giving credit to the original creator does not automatically grant you permission to use copyrighted material. While acknowledging the source is a good practice, it does not excuse infringement. Permission or a license from the copyright holder is generally required.</p> 
+
+<p><strong>12.	Can I copyright a work created by someone else?</strong><br>
+Copyright is initially held by the creator of a work, so you cannot copyright a work created by someone else. However, if the creator transfers their copyright to you through a written agreement, you can become the copyright owner.</p> 
+
+<p><strong>13.	Can I copyright a book title?</strong><br>
+Book titles are generally not eligible for copyright protection. However, they may be protected under trademark law if they function as a source identifier for a series or brand of books.</p> 
+
+<p><strong>14.	Can I use copyrighted material if it is for nonprofit or personal use only?</strong><br>
+Nonprofit or personal use does not automatically exempt you from copyright infringement. While some jurisdictions may have limited exceptions for personal or nonprofit use, the specific allowances can vary. It is important to familiarize yourself with the copyright laws of your country to determine the scope of these exceptions.</p> 
+
+<p><strong>15.	Can I copyright an idea for a movie or TV show?</strong><br>
+Copyright protects the expression of an idea, not the idea itself. So, the specific script, screenplay, or audiovisual elements that embody the idea can be protected. However, a mere idea or concept cannot be copyrighted.</p> 
+
+<p><strong>16.	Can I use copyrighted material in my own work if it is transformative or a parody?</strong><br>
+Transformative uses and parodies may be considered fair use under certain circumstances. The determination of fair use involves a case-by-case analysis, considering factors such as the purpose, nature, amount, and effect of the use. It is advised to consult the copyright laws of your country and seek legal advice for specific cases.</p> 
+
+	 </div> 
+<div class="col-lg-12">
+<p><strong>For any consultancy in the Copyright Registration Process || </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div>
+         
+         
+         
+         
+          </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+	  
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Copyright Registration Company in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Copyright Registration Company in Haryana</a></li> 
+<li><a href="">Copyright Registration Company in Assam</a></li> 
+<li><a href="">Copyright Registration Company in Gujarat</a></li> 
+<li><a href="">Copyright Registration Company in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Copyright Registration Company in Karnataka</a></li> 
+<li><a href="">Copyright Registration Company in Bihar</a></li> 
+<li><a href="">Copyright Registration Company in Rajasthan</a></li> 
+<li><a href="">Copyright Registration Company in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Copyright Registration Company in Sikkim</a></li> 
+<li><a href="">Copyright Registration Company in West Bengal</a></li> 
+<li><a href="">Copyright Registration Company in Mizoram</a></li> 
+<li><a href="">Copyright Registration Company in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Copyright Registration Company in Punjab</a></li> 
+<li><a href="">Copyright Registration Company in Meghalaya</a></li> 
+<li><a href="">Copyright Registration Company in Manipur</a></li> 
+<li><a href="">Copyright Registration Company in Arunachal Pradesh</a></li> 
+<li><a href="">Copyright Registration Company in Nagaland</a></li> 
+<li><a href="">Copyright Registration Company in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Copyright Registration Company in Goa</a></li> 
+<li><a href="">Copyright Registration Company in Tamil Nadu</a></li> 
+<li><a href="">Copyright Registration Company in Telangana</a></li> 
+<li><a href="">Copyright Registration Company in Maharashtra</a></li> 
+<li><a href="">Copyright Registration Company in Andhra Pradesh</a></li> 
+<li><a href="">Copyright Registration Company in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Copyright Registration Company in Uttarakhand</a></li>   
+<li><a href="">Copyright Registration Company in Odisha</a></li> 
+<li><a href="">Copyright Registration Company in Jharkhand</a></li> 
+<li><a href="">Copyright Registration Company in Chandigarh</a></li> 
+<li><a href="">Copyright Registration Company in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Copyright Registration Company in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Copyright Registration Company in Mumbai</a></li> 
+<li><a href="">Copyright Registration Company in Hyderabad</a></li> 
+<li><a href="">Copyright Registration Company in Chennai</a></li> 
+<li><a href="">Copyright Registration Company in Pune</a></li> 
+<li><a href="">Copyright Registration Company in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Copyright Registration Company in Kolkata</a></li> 
+<li><a href="">Copyright Registration Company in Ahmedabad</a></li> 
+<li><a href="">Copyright Registration Company in Delhi</a></li> 
+<li><a href="">Copyright Registration Company in Agra</a></li> 
+<li><a href="">Copyright Registration Company in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Copyright Registration Company in Kochi</a></li> 
+<li><a href="">Copyright Registration Company in Lucknow</a></li> 
+<li><a href="">Copyright Registration Company in Surat</a></li> 
+<li><a href="">Copyright Registration Company in Patna</a></li> 
+<li><a href="">Copyright Registration Company in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Copyright Registration Company in Bhopal</a></li> 
+<li><a href="">Copyright Registration Company in Kanpur</a></li> 
+<li><a href="">Copyright Registration Company in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Copyright Registration Company in Prayagraj</a></li> 
+<li><a href="">Copyright Registration Company in Coimbatore</a></li> 
+<li><a href="">Copyright Registration Company in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Copyright Registration Company in Vadodara</a></li> 
+<li><a href="">Copyright Registration Company in Nagpur</a></li> 
+<li><a href="">Copyright Registration Company in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+  .whatsapp_float a img {
+         width: 60px;
+         height: 60px;
+         border-radius: 50px
+ }
+ .whatsapp_float {
+         position: fixed;
+         bottom: 50px;
+         right: 20px;
+         z-index: 9;
+ }
+ </style>
+     <div class="whatsapp_float">
+         <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+   
+   
+     </div>
+ <!--End whatsapp button-->
+  
+  
+  
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+   <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+   <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+   <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+ 
+ 
+   
+   <script src="{% static 'plugins/google-map/map.js' %}"></script>
+   <script src="{% static 'js/script.js'%}"></script>
+ 
+   </div> 
+   
+   <script>
+ $(document).ready(function(){
+   $(".contentdd").slice(0, 1).show();
+   $("#loadMore").on("click", function(e){
+     e.preventDefault();
+     $(".contentdd:hidden").slice(0, 1).slideDown();
+     if($(".contentdd:hidden").length == 0) {
+       $("#loadMore").text("No Content").addClass("noContent");
+     }
+   });
+   
+ })
+     </script>
+   </body>
+ 
+   </html>

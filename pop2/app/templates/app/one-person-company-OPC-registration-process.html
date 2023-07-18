@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/one-person-company-opc-registration-process"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/banner/banner1.jpg' %})">
+
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">One Person Company (OPC) Registration Process</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li> 
+                      <li class="breadcrumb-item active" aria-current="page">One Person Company (OPC) Registration Process</li>
+                    </ol>
+                </nav>
+              </div>
+          </div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+     
+
+          <h2 class="column-title mrt-0">One Person Company (OPC) Registration Process</h2>
+
+         <div class="row">
+     <div class="col-md-12">
+ 
+ 
+<p>One Person Company is a new concept which is introduced by the Companies Act, 2013. As the name itself says that One Person Company is a company in which only one person is there as a member or shareholder. This form of company is good for small business people or entrepreneur who wants to start their business on a small scale but as a company than this option is best for them as One Person Company is registered as a private company. Earlier it wasn’t possible for an individual to open a new company because for opening or to start a new company you required at least 2 person that too for a private company but now this restriction have been removed by the virtue of new addition of the concept of One Person Company in the Companies Act, 2013 . And this form of company provides various relaxations in term of legal compliance as compared to other form of companies. This company is defined under sub-section 62 of section 2 of the Companies Act, 2013. Itdefines One Person Company as “a company which has only one person as a member”. This type of company can be formed by the person who is a naturally born Indian and resident of India (resident of India means a person who have stayed in India for more than 182 day in the immediate preceding financial year).</p>
+
+<p>Further it is mentioned in the act that the memorandum of One Person Company shall indicate the name of the other person (i.e. nominee), with his prior written consent in the prescribed form, who shall in the event of the members or subscriber death or in his incapacity to contract become the member of the company. It is also provided further that nominee can withdraw the consent in such manner as may be prescribed and the member of the company can also change the name of the nominee at any time by giving notice in such manner as may be prescribed.</p>
+ 
+	
+	<h3>Following are the some basic features of the OPC</h3>
+	
+<ol>
+<li> The one person company is incorporated as a private company.</li>
+<li> The one person company cannot incorporate more than one OPC or become nominee in more than one OPC.</li>
+<li> OPC will lose its status if paid up capital exceeds Rs. 50 lakhs or average annual turnover is more than 2 cores in 3 immediate preceding consecutive years.</li>
+<li> OPC cannot carry out non-banking financial investment activities including investment in securities of any body corporate.</li>
+<li> No minor shall become the member or nominee of the one person company or hold share with beneficial interest.</li>
+<li> The OPC cannot be incorporated or converted into a section 8 company under the Companies Act, 2013.</li>
+<li> The OPC cannot voluntarily convert into any kind of company unless two years is expired from the date of incorporation, except in the cases where the capital or turnover threshold limits have exceeded.</li>
+<li> The letters ‘OPC’ has to be suffixed with the name of OPCs to differentiate it from other companies.</li> 
+
+
+</ol>
+		 
+<h3>Merits / Benefits of Having OPC</h3>	 
+		 
+ 
+  <ol>
+<li>Legal status: OPC being registered as company under the act enjoy the benefit of separate legal status.
+Hence, we can say that in simple words that company is having its own identity which is distinct from its member which also implies that company can own or sell any property or any goods on their own name and even can sue or be sued under their name.</li> 
+	  
+<li>Limited liability: Under One Person Company the limited liability means that the liability of one Person Company is limited to the extent of the value of the share than the member or the subscriber can access to higher risk without affecting the personal property or assets.</li> 
+		 
+<li>Less Investment: This type of company doesn’t require huge amount of capital as this is a One Person Company so There is less investment of capital as compared to other companies.</li> 
+		 
+<li>Complete control over the company: The one person company will be wholly controlled by the single owner which is favorable for the company as it will lead to quick decision, less confusion, easy management etc.</li> 
+	  
+<li><strong>Other benefits are as follow:</strong><br>
+<strong>A.	</strong>Unlike a private limited or public limited company, OPC need not bother too much about the compliance.<br>
+	 
+	  
+<strong>B.	</strong>Easy to raise loan or to take loan. Being a recognized corporate, can raise capital from others like venture capital financial institution etc.<br>
+	
+<strong>C.	</strong>OPC would help the young minds or the start-up entrepreneurs with innovative business ideas etc.<br>
+<strong>D.	</strong>OPC is also provided with benefits under income tax law. Under the income tax act the tax burden is moderate as it is taxed as a domestic company.<br>
+<strong>E.	</strong>The newly registered OPC is a micro, small, or medium enterprise which enjoy all the benefits provided under the enterprises development act, 2006.</li> 
+
+
+  </ol>
+  
+ 
+ <h3>Process for registration of the one-person company OPC<br>
+Registration
+</h3>
+ 
+		 
+		 
+		 
+		 
+
+      </div> 
+
+		
+	<div class="col-lg-12">
+		
+ <ul>
+  <li>Obtain Digital Signature Certificate for the Proposed Director by filling  the prescribed Form.</li>
+  <li>Select Suitable Company Name, and make an application to the Ministry of Affairs for availability of name</li>
+  <li>Draft Memorandum of Association and Articles of Association {MOA & AOA}</li>
+  <li>Sign and file various documents including MOA & AOA with Registrar of Companies electronically</li>
+  <li>Payment of Requisite fee to Ministry of Corporate Affairs and also Stamp Duty</li>
+  <li>Scrutiny of documents at Registrar of Companies {ROC}</li>
+  <li>Receipt of Certificate of Registration / Incorporation from ROC</li>
+		</ul>
+		</div>	
+		
+		
+  
+ <div class="col-lg-12">
+ <h3>Conversion of OPC into public or private company</h3>
+
+	<ol>
+	 
+<li>Where the paid up share capital of an One Person Company exceeds fifty lakh rupees or its average annual turnover during the relevant period exceeds two crore rupees, it shall cease to be entitled to continue as a One Person Company.</li>
+	
+	
+<li>Such One Person Company shall be required to convert itself, within six months of the date on which its paid up share capital is increased beyond fifty lakh rupees or the last day of the relevant period during which its average annual turnover exceeds two crore rupees as the case may be, into either a private company with minimum of two members and two directors or a public company with at least seven members and three directors in accordance with the provisions of section 18 of the Act.</li>
+	
+	
+<li>The One Person Company shall alter its memorandum and articles by passing a resolution in accordance with sub- section (3) of section 122 of the Act to give effect to the conversion and to make necessary changes incidental thereto.</li>
+	
+	
+<li>The One Person Company shall within a period of sixty days from the date of enhancement of above ceiling limit, give a notice to the Registrar in Form INC-5 informing that it has ceased to be a One Person Company and that it is now required to convert itself into a private company or a public company by virtue of its paid up share capital or average annual turnover, having exceeded the threshold limit. It may be noted that "relevant period" means the period of immediately preceding three consecutive financial years</li>
+	
+	
+<li>If One Person Company or any officer of the One Person Company contravenes the provisions of these rules, One Person Company or any officer of the One Person Company shall be punishable with fine which may extend to ten thousand rupees and with a further fine which may extend to one thousand rupees for every day after the first during which such contravention continues.</li>
+	
+	
+<li>A One Person company can get itself converted into a Private or Public company after increasing the minimum number of members and directors to two or minimum of seven members and two or three directors as the case may be, and by maintaining the minimum paid-up capital as per requirements of the Act for such class of company and by making due compliance of section 18 of the Act for conversion.</li>
+
+	 </ol> 
+	 
+	
+	 
+ </div>
+
+	  
+<div class="col-lg-12">	 
+	<h3>Following is the list of the Annual compliances of one person Company</h3>
+	<ol>
+<li>As per section 88 of the companies act, 2013 every OPC need to maintain the statutory registers and minutes.</li>
+<li>Under section 139 of the companies act, it is said that it is mandatory to appoint the auditor and statutory audit should be done by any practicing chartered accountant who shall check or verify all the significant books of account and then issue an audit report. And it is also provided that the provision relating to the rotation of the auditor does not apply to One Person Company.</li>
+<li>The OPC need to conduct at least two board meeting during every financial year. And the gap between 2 meetings should not be less than 90 day .the provision of the quorum of the meeting of board of directors shall not apply to One Person Company provided that there is only one director on its board.</li>
+<li>Every OPC need to file the financial statement in the form AOC-4 which shall include the balance sheet, statement of profit and loss account and the director report. And it should get filled within 180 days from the end of the financial year.</li>
+<li>Every OPC need to file the form MGT-7 which is related to annual return and it should be filled within 180 days from the end of the financial year.</li>
+<li>Income tax return is also need to be file by the One Person Company.</li>
+
+	</ol>
+	
+	<p><strong>NOTE:</strong> Non-Compliance will lead to levy of hefty penalties and fine to the One Person Company or the directors/officers as may be prescribed.</p> 
+</div>	  
+	  
+    
+<div class="col-lg-12">	 
+	<h3>List of the documents required for registration.<br>For OPC</h3>
+
+ 
+<li>Pan Card of the director</li>
+<li>Aadhar Card of the director</li>
+<li>Identity Proof the person who intended to become the member or director and nominee of the OPC. The Identity proof can be one of the following:<br>
+A.	Voter Id or<br>
+B.	Driving license or<br>
+C.	Passport Copy</li>
+	
+<li>4.	Address Proof of Director and Nominee<br>
+	
+A.	Bank Statement or<br>
+B.	Electricity Bill or<br>
+C.	Telephone Bill.</li>
+	
+<p><strong>Note:</strong> (The Copy of Address Proof Should Not Be Older than 2 months)</p>
+	<ol>
+	
+<li>Memorandum of association (MOA)</li>
+<li>Article of Association (AOA)</li>
+<li>Residential proof of the registered office</li>
+<li>Rent Agreement</li>
+<li>Non- Objection Certificate</li>
+<li>Consent letter Of Nominee.</li>
+
+	</ol>
+  
+</div> 	  
+<div class="col-lg-12">	 
+	<h3>Conclusion </h3> 
+	
+	<p>The OPC is the foremost solution for the individual or the start-up entrepreneurs who wants to start their business by forming their own company. As in this the owners have the exclusive authority of the one person company. As incorporating this company will lead to following less compliance, more privileges, and quite number of exemption etc. So if there is any urge to incorporate One Person Company or any doubt regarding the same than please feel free to contact us by email info@ngandassociates.com</p>
+	</div> 
+	  
+	 <div class="col-lg-12">	 
+	<h3>Conclusion </h3> 
+	
+	<p>The OPC is the foremost solution for the individual or the start-up entrepreneurs who wants to start their business by forming their own company. As in this the owners have the exclusive authority of the one person company. As incorporating this company will lead to following less compliance, more privileges, and quite number of exemption etc. So if there is any urge to incorporate One Person Company or any doubt regarding the same than please feel free to contact us by email info@ngandassociates.com</p>
+	</div>  
+	  
+ <div class="col-lg-12">
+	 <h3>FAQS </h3> 
+<p>Q.	1What is a one-person company?<br>
+Ans. One Person Company means a company which has only one person as a member.</p>
+	 
+<p>Q.2.	Who can become the member of the OPC?<br>
+Ans. Only a natural person who is an Indian citizen and resident of India can become the member or nominee of the OPC.</p>
+
+<p>Q.3.	Can a person becomes the member of more than one OPC? <br>
+	  Ans. No, a person cannot become member of more than one OPC.</p>
+
+<p>Q.4.	Can a person acts as a nominee for more than one OPC at the same time? <br>
+	Ans. A person cannot act as a nominee of more than one OPC</p>
+
+<p>Q.5.	How to Change the membership of the OPC?<br>
+Ans. For Changing the membership the company shall file form INC-4 in case of cessation of member of OPC on account of death, incapacity to contract or change in ownership. In the same form, user needs to provide details of the new member of the OPC.</p>
+
+<p>Q.6.	Who is required to verify the annual return of an OPC?<br>
+Ans. Annual Return of an OPC shall be signed by the Company Secretary or where there is no Company Secretary by the director of a company.</p>
+
+<p>Q.7.	what is Form INC-4?<br>
+Ans. Form INC-4 is filed with the Registrar when the nominee of an OPC takes the place of the sole member of an OPC in the event of his death or incapacity to enter into a contract.</p>
+
+<p>Q.8.	Can OPC be Converted into Section 8 Company?<br>
+Ans. OPC cannot be converted into a Section 8 company.</p>
+
+<p>Q.9.	is it mandatory for a member of a OPC to appoint a nominee?<br>
+Ans.Yes, it is mandatory for a member of a OPC to appoint a nominee.</p>
+
+<p>Q.10.	What if a member becomes a member of 2 OPC’s – a situation wherein he becomes a member of one OPC by virtue of being a nominee after death of a member and of a OPC in which he is actually a member?<br>
+Ans. He/she shall withdraw his membership from any one of the OPCs within 180 days.</p>
+
+	  </div>  
+	  
+	  
+ <div class="col-lg-12">
+	<p><strong>For any consultancy in the incorporation of OPC company ||</strong> </p>
+
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong> </p> 
+ 
+	  
+  </div> 
+  </div> 
+  
+  
+	  </div>
+	  </div>
+</section> 
+	  
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+<div class="whatsapp_float">
+    <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+</div>
+<!--End whatsapp button-->
+
+
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</div> 
+
+<script>
+$(document).ready(function(){
+$(".contentdd").slice(0, 1).show();
+$("#loadMore").on("click", function(e){
+e.preventDefault();
+$(".contentdd:hidden").slice(0, 1).slideDown();
+if($(".contentdd:hidden").length == 0) {
+  $("#loadMore").text("No Content").addClass("noContent");
+}
+});
+
+})
+</script>
+</body>
+
+</html>

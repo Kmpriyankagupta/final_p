@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/change-company-name"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon"/>
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Change Company Name</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+  <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+</div></div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar sidebar-left">
+          <div class="widget"> 
+            <ul class="nav service-menu">
+             
+  <li class="active"><h4>Select Conversion Type</h4></li>
+ 
+ 
+  <li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+  <li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+  <li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+  <li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+  <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+  <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+  <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+  <li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+  <li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+  <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li> 
+  
+  <li><h4 style="margin: 14px 0px;">Update Corporate Information</h4></li> 
+   
+  <li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+  <li ><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+  <li></li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+  <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+  <li class="active"><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+  <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+  <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+  <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+              
+  <li><h4 style="margin: 14px 0px;">Close a Business</h4></li>
+   
+  <li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+  <li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+  <li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+  <li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Change of Name of The Company</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+<p>The name of a company forms a crucial part of the business. The name of the Company helps to make or break the identity of a business. Since it is one of the most important elements of branding a business, it leaves a long-lasting impact on the clients and the affiliates of a particular business. Any company can change its name after its incorporation at any time through a hassle – free process.</p>
+
+<p>Therefore, the name of the Company can be changed provided the necessary steps have been followed. In this Article, we will be elaborating on Company Name Change Procedure in India.</p>
+
+</div> 
+
+
+<div class="col-md-12">
+<h4>Benefits of name change</h4>
+<img src="{% static 'images/change-of-company.jpg' %}" alt="change-of-company">
+          </div> 
+          
+<div class="col-md-12" style="margin-top:25px; float: left;">  
+<h4>CHECKLIST AND COMPLIANCES</h4>  
+<p>Section 13(2) of The Companies Act, 2013 </p>   
+<p><strong>Applicable Section</strong></p> 
+<p>Rule 29(2) of The Companies (Incorporation) Rules 2014</p>
+<p><strong>Applicable Rule</strong></p>
+
+<img src="{% static 'images/change-of-company1.jpg' %}" alt="change-of-company">
+
+ </div> 
+          
+          
+<div class="col-lg-12">
+	 
+<ul>
+<li>Issue a notice of not less than 7 days for conducting board meeting for considering the proposal to change the company name.</li>
+<li>Conduct the Board Meeting and pass the necessary board resolution to consider and approve the proposed name.</li>
+<li>File RUN (Reserve Unique Name) application through MCA V3 portal with Board Resolution and NOC from trademark owner (if applicable) as an attachment.</li>
+	
+<li>Once the name is approved, call an EGM, to pass the special resolution to approve the alteration of MOA.</li>
+<li>Within 30 days from passing the special resolution with respect to alteration of memorandum of association, File Form MGT 14 along with the following attachments: -<br>
+ 	<strong>CTC of Special Resolution;</strong><br>
+ 	<strong>Notice of EGM along with Explanatory Statement;</strong><br>
+ 	<strong>Altered MOA & AOA.</strong><br>
+ 	</li>
+<li>After filing of Form MGT 14, File Form INC 24 along with the all-necessary attachments (i.e., Copy of Minutes of EGM; Notice of EGM along with Explanatory Statement; CTC of Special Resolution; Altered MOA & AOA).</li>
+<li>On successful approval of Form INC 24, the registrar will issue a fresh certificate of incorporation with the new name of the company in Form INC 25.</li>
+
+ </ul> 
+ 	
+ <h4>DOCUMENTS REQUIRED</h4>
+ <img src="{% static 'images/change-of-company2.jpg' %}" alt="change-of-company">     
+  	
+  	
+<h4>OTHER RELATED DETAILS</h4>
+<ul>
+<li>As per section 4 (2), the name shall not be identical to an existing registered company. Furthermore, the proposed name must not even resemble the existing registered company.</li>
+<li>Section 4 (3) bars any company from using such expression and words that might create a presumption that the said company is associated or connected with some local authority or the Government or its corporates or any other body. The term Government can be understood to mean Central or State Government.</li>
+<li>The name of the company shall not be undesirable. It must not be in contravention of any laws.</li>
+<li>The name shall not be a similar name. This means that the name shall not be similar to that of an existing company.</li>
+<li>The name shall not include the name of a trademark registered as per the applicable laws.</li>
+<li>The name shall not be inconsistent with section 3 of the Emblems and Names (Prevention and Improper Use) Act, 1950.</li>
+<li>Where a name is likely to deceive by suggesting a connection or association with a company it may be regarded as ‘too similar’.</li>
+</ul>
+  	
+</div>
+
+
+<div class="col-lg-12">
+	<h4>RELATED FAQ’S</h4>
+	
+	
+<p><strong>1.	How many names a company can submit in RUN Form?</strong><br>
+A company can submit two proposed names in order of preference. </p>
+
+<p><strong>2.	Which companies does not file the name change application?</strong><br>
+No company can change its name which has failed:</p>
+
+<ul>
+	<li>To file annual return and financial statements with the Registrar of Companies;</li>
+	<li>To Pay or Repay its mature deposits or debentures or interest thereon.</li>
+</ul>
+ 
+<p>3<strong>.	From which date the new name of the company will become effective?</strong><br>
+The new name shall be effective from the date of issuance of the fresh certificate of incorporation by the registrar of company in Form INC 25.</p>
+
+<p><strong>4.	Under what circumstances can a company change its name?</strong><br>
+<ul>
+	<li>A Company is entitled to change its name in the following circumstances: -</li>
+	<li>Conversion of the company from public to Private;</li>
+	<li>Conversion of the company from private to public;</li>
+	<li>Change of name from ABC Limited to PQR Limited.</li>
+</ul>
+ 
+
+</p>
+
+<p><strong>5.	Under what circumstances name stated in the memorandum shall not</strong> <br>
+<ul>
+	<li>be identical with or resemble too nearly to the name of an existing company registered under this Act or any previous company law; or  be such that its use by the company—</li>
+	<li>will constitute an offence under any law for the time being in force; or is undesirable in the opinion of the Central Government.</li>
+</ul>
+ 	</p>
+ 	
+ 	
+<p><strong>6.	Which documents alter when name change of the company? </strong><br>
+<ul>
+<li>Memorandum of Association(“MOA”)</li>
+<li>Articles of Association (“AOA”)</li>	
+</ul>
+ </p>
+ 
+<p><strong>7.	Does a change of name mean the company becomes like new company?</strong><br>
+No, changing the name of the company doesn’t have the effect of starting a new company. All the old liabilities and obligations remain as it.</p>
+
+<p><strong>8.	Does the company need to obtain a new PAN and TAN after changing its name?</strong><br>
+Company should update its PAN and TAN with the new name of the company.</p>
+
+<p><strong>9.	In which circumstances Central Government Approval is not required?</strong><br>
+No such approval shall be necessary where the only change in the name of the company is the deletion therefrom, or addition thereto, of the word “Private”.</p>
+
+<p><strong>10.	Does Company have to display the old name together with the new name?</strong><br>
+Yes, for a period of 2 years from the name change of the company, old name shall be displayed in all the business letters, billheads, letter papers and in all its notices and other official publications together with the new name.</p>
+
+	
+	
+</div>
+ <div class="col-lg-12">       
+ <p><strong>For any consultancy in the Name Change of the Company || </strong></p> 
+
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p> 
+ 
+            
+          </div>
+ 
+ 
+ 
+
+ </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+
+
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Change of the Company Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Change of the Company Registration in Haryana</a></li> 
+<li><a href="">Change of the Company Registration in Assam</a></li> 
+<li><a href="">Change of the Company Registration in Gujarat</a></li> 
+<li><a href="">Change of the Company Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Change of the Company Registration in Karnataka</a></li> 
+<li><a href="">Change of the Company Registration in Bihar</a></li> 
+<li><a href="">Change of the Company Registration in Rajasthan</a></li> 
+<li><a href="">Change of the Company Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Change of the Company Registration in Sikkim</a></li> 
+<li><a href="">Change of the Company Registration in West Bengal</a></li> 
+<li><a href="">Change of the Company Registration in Mizoram</a></li> 
+<li><a href="">Change of the Company Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Change of the Company Registration in Punjab</a></li> 
+<li><a href="">Change of the Company Registration in Meghalaya</a></li> 
+<li><a href="">Change of the Company Registration in Manipur</a></li> 
+<li><a href="">Change of the Company Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Change of the Company Registration in Nagaland</a></li> 
+<li><a href="">Change of the Company Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Change of the Company Registration in Goa</a></li> 
+<li><a href="">Change of the Company Registration in Tamil Nadu</a></li> 
+<li><a href="">Change of the Company Registration in Telangana</a></li> 
+<li><a href="">Change of the Company Registration in Maharashtra</a></li> 
+<li><a href="">Change of the Company Registration in Andhra Pradesh</a></li> 
+<li><a href="">Change of the Company Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Change of the Company Registration in Uttarakhand</a></li>   
+<li><a href="">Change of the Company Registration in Odisha</a></li> 
+<li><a href="">Change of the Company Registration in Jharkhand</a></li> 
+<li><a href="">Change of the Company Registration in Chandigarh</a></li> 
+<li><a href="">Change of the Company Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Change of the Company Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Change of the Company Registration in Mumbai</a></li> 
+<li><a href="">Change of the Company Registration in Hyderabad</a></li> 
+<li><a href="">Change of the Company Registration in Chennai</a></li> 
+<li><a href="">Change of the Company Registration in Pune</a></li> 
+<li><a href="">Change of the Company Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Change of the Company Registration in Kolkata</a></li> 
+<li><a href="">Change of the Company Registration in Ahmedabad</a></li> 
+<li><a href="">Change of the Company Registration in Delhi</a></li> 
+<li><a href="">Change of the Company Registration in Agra</a></li> 
+<li><a href="">Change of the Company Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Change of the Company Registration in Kochi</a></li> 
+<li><a href="">Change of the Company Registration in Lucknow</a></li> 
+<li><a href="">Change of the Company Registration in Surat</a></li> 
+<li><a href="">Change of the Company Registration in Patna</a></li> 
+<li><a href="">Change of the Company Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Change of the Company Registration in Bhopal</a></li> 
+<li><a href="">Change of the Company Registration in Kanpur</a></li> 
+<li><a href="">Change of the Company Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Change of the Company Registration in Prayagraj</a></li> 
+<li><a href="">Change of the Company Registration in Coimbatore</a></li> 
+<li><a href="">Change of the Company Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Change of the Company Registration in Vadodara</a></li> 
+<li><a href="">Change of the Company Registration in Nagpur</a></li> 
+<li><a href="">Change of the Company Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>    
+	  
+
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+  .whatsapp_float a img {
+         width: 60px;
+         height: 60px;
+         border-radius: 50px
+ }
+ .whatsapp_float {
+         position: fixed;
+         bottom: 50px;
+         right: 20px;
+         z-index: 9;
+ }
+ </style>
+     <div class="whatsapp_float">
+         <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+   
+   
+     </div>
+ <!--End whatsapp button-->
+  
+  
+  
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+   <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+   <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+   <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+ 
+ 
+   
+   <script src="{% static 'plugins/google-map/map.js' %}"></script>
+   <script src="{% static 'js/script.js'%}"></script>
+ 
+   </div> 
+   
+   <script>
+ $(document).ready(function(){
+   $(".contentdd").slice(0, 1).show();
+   $("#loadMore").on("click", function(e){
+     e.preventDefault();
+     $(".contentdd:hidden").slice(0, 1).slideDown();
+     if($(".contentdd:hidden").length == 0) {
+       $("#loadMore").text("No Content").addClass("noContent");
+     }
+   });
+   
+ })
+     </script>
+   </body>
+ 
+   </html>

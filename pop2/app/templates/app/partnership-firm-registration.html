@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/partnership-firm-registration"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="{% url 'ssi-msme-registration' %}">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Partnership Firm Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+    <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+</div></div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar sidebar-left">
+          <div class="widget"> 
+            <ul class="nav service-menu">
+             
+             <li class="active"><h4>Popular Options</h4></li>
+             <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+             <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+             <li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+             <li class="active"><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+             <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+             <li><h4 style="margin: 14px 0px;">Special Business Entities</h4></li>
+             <li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+             <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+             <li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+             <li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></   
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Partnership Firm Registration</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+            <img src="{% static 'images/partnership.jpg' %}" alt="partnership" title="partnership">
+			  </div>
+			 
+            <div class="col-md-12">
+ <p>A partnership firm is a type of business organization formed by two or more individuals who come together to carry out a business venture with the aim of making profits. Partnerships are based on mutual understanding, trust, and cooperation between the partners. They are often preferred for small and medium-sized enterprises, professional practices, and businesses that require close collaboration and shared decision-making.</p>
+ 
+<p>In a partnership firm, the partners pool their financial resources, skills, and expertise to run the business. They share the responsibilities, risks, and rewards of the business based on the terms agreed upon in a partnership agreement. This agreement outlines the rights and obligations of each partner, including the division of profits and losses, capital contributions, decision-making authority, and procedures for dispute resolution.</p>
+
+<p>The Indian Partnership Act, 1932, defines a partnership firm as the relation between two or more persons who have agreed to share the profits of a business carried on by all or any of them acting for all.
+Unlike a company, a partnership firm does not have a separate legal entity. The partners are individually and collectively liable for the debts, obligations, and liabilities of the firm. This means that the personal assets of the partners can be used to settle the firm's debts if it is unable to meet them.</p>
+
+              
+ <h4>FEATURES OF THE PARTNERSHP FIRM</h4>
+<img src="{% static 'images/partnership1.jpg' %}" alt="partnership" title="partnership">
+<p>1. Legal Status: A partnership firm does not have a separate legal identity distinct from its partners. It is not considered a separate legal entity, unlike a company. The partners are individually and collectively liable for the firm's debts, obligations, and liabilities.</p>
+
+<p>2. Liability: Partners in a partnership firm have unlimited liability, which means they are personally liable for the debts and liabilities of the firm. If the partnership firm is unable to meet its obligations, the personal assets of the partners can be used to settle the debts.</p>
+
+<p>3. No.of Partners: A partnership firm can be formed with a minimum of two partners, and the maximum number of partners depends on the laws and regulations of the specific jurisdiction. In India, the maximum number of partners in a partnership firm is generally limited to 20, except for certain professions where higher limits are allowed.</p>
+
+<p>4. Profit Sharing: The partnership agreement specifies the profit-sharing ratios among the partners. The profits generated by the firm are distributed among the partners according to these ratios. However, partners may agree to different profit-sharing arrangements based on their capital contributions, efforts, or other factors.</p>
+
+<p>5. Decision Making: The partnership agreement defines the decision-making process within the firm. Partners may have equal decision-making authority, or specific partners may be entrusted with certain decision-making powers. Unanimous consent or majority voting provisions can also be outlined in the agreement.</p>
+
+<p>6. Association of Person: A partnership firm involves a voluntary association of two or more individuals who come together with a common objective of carrying out a business venture.</p>
+
+			
+			
+<h4>BENEFITS OF PARTNERSHIP FIRM</h4>	
+<img src="{% static 'images/partnership2.jpg' %}" alt="partnership" title="partnership">		
+			
+				
+ <p>1. Easy to Form: Partnership firms are relatively easy and cost-effective to form compared to other business structures, such as companies. The process typically involves drafting a partnership agreement that outlines the terms and conditions of the partnership, including profit-sharing ratios, capital contributions, and decision-making procedures.</p> 
+
+ <p>2. Shared Financial Resource: Partnerships allow for the pooling of financial resources from multiple partners. This shared capital can provide a stronger financial base for the business and enable partners to invest more in growth opportunities, acquisitions, or other strategic initiatives.</p> 
+
+ <p>3. Better Decision: Partnership firms benefit from the collective wisdom and diverse perspectives of multiple partners. Each partner brings their unique knowledge, skills, and experience to the table, which can lead to more comprehensive and well-informed decision-making. Partners can contribute different viewpoints, challenge assumptions, and provide valuable insights that enhance the overall quality of decisions.</p> 
+
+ <p>4. Flexibility in operation: Partnership firms offer flexibility in structuring their management. Partners can define their roles, responsibilities, and areas of expertise based on their individual strengths and interests. This flexibility enables partners to focus on specific aspects of the business where they excel, leading to more efficient and effective operation of the firm.</p> 
+
+ <p>5. Benefit of Specialization: n a partnership firm, partners bring different skills, expertise, and perspectives to the table. This diversity can be leveraged to effectively manage various aspects of the business, such as operations, finance, marketing, and human resources. It allows for a division of responsibilities based on individual strengths, leading to a more efficient and balanced management approach</p> 
+
+ <p>6. Taxation Benefits: Partnership firms in many jurisdictions, including India, are not taxed at the entity level. Instead, profits and losses are passed through to the partners, who are individually taxed on their share of the partnership's income. This can provide certain tax advantages, such as the ability to offset personal losses against partnership profits or take advantage of lower tax brackets for individual partners.</p> 
+  
+<h4>DIFFERENCE BETWEEN PARTNERSHIP AND LIMITED LIABILITY PARTNERSHIP</h4>
+<table class="table table-bordered">
+  <tr>
+    <th>SR.NO</th>
+    <th>PARTICULARS</th>
+    <th>PARTNERSHIP FIRM</th>
+    <th>LIMITED LIABILITY PARTNERSHIP</th>
+  </tr>
+  <tr>
+    <td>1. </td>
+    <td>LIABILITY </td>
+    <td>In a general partnership, the partners have unlimited personal    liability for the debts and obligations of the business. This means that if    the partnership cannot cover its liabilities, the partners' personal assets    may be at risk </td>
+    <td>In an LLP, the partners have limited liability, which means their    personal assets are generally protected from the partnership's debts and    obligations. However, partners may still be personally liable for their own    wrongful acts or negligence. </td>
+  </tr>
+  <tr>
+    <td>2. </td>
+    <td>LEGAL STATUS </td>
+    <td>A general partnership, on the other hand, does not have a separate    legal identity apart from the individual partners. The partners collectively    form the partnership, and they act on its behalf. </td>
+    <td>An LLP is a separate legal entity from its partners. It has its own    legal status, allowing it to enter into contracts, sue, and be sued in its    own name. </td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>FORMATION AND REGISTRATIO</td>
+    <td>In contrast, a general partnership can be formed simply through an oral    or written agreement between the partners, without the need for formal    registration. </td>
+    <td>The process of forming an LLP involves registration    with the appropriate regulatory authority, such as the government agency    responsible for business registrations. This typically requires filing    specific documents, such as a partnership agreement, with the relevant    authority. </td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>MANAGEMENT AND DECISION-MAKING</td>
+    <td>In a general partnership, each partner typically has an equal say in    the management and decision-making process, unless otherwise specified in the    partnership agreement.</td>
+    <td>In an LLP, partners can agree on the division of management    responsibilities and decision-making authority. This flexibility allows for a    more customized management structure.</td>
+  </tr>
+  <tr>
+    <td>5. </td>
+    <td>CONTINUITY AND SUCCESSION:</td>
+    <td>A general partnership is dissolved if one of the partners withdraws or    dies, unless otherwise specified in the partnership agreement. </td>
+    <td>An LLP, on the other hand, can continue its existence irrespective of    changes in the partnership. It offers more continuity and can be transferred    to new partners through share transfers or admission of new partners. </td>
+  </tr>
+</table>   
+           
+<h4>BASIC PROCESS FOR REGISTRATION OF PARTERSHIP</h4> 
+<img src="{% static 'images/partnership3.jpg' %}" alt="partnership" title="partnership">	  
+<h4>KEY DOCUMENTS REQUIRED FOR INCORPORATING THE PARTNERSHIP FIRM IN INDIA</h4>       
+<p>The documents required to be furnished before the ROFs of the partnership firm includes the following:</p>                
+<ol>
+<li>Application form, i.e. Form 1, duly signed by the serving partners.</li>
+<li>A true copy of Partnership Deed enclosing the seal and signature of the concerned authority.</li>
+<li>Specimen of an affidavit authenticating all the information cited in the partnership deed & documents are legitimate.</li>
+<li>Permanent Account Number, i.e. PAN & resident proof of the partners.</li>
+<li>Proof the business place, i.e. lease agreement or rent agreement.</li>
+
+	
+</ol>                     
+<h4>SOME BASIC ANNUAL COMPLIANCE FOR PARTNERSHIP FIRM</h4>                          
+<p>1. Income Tax Filing: Partnership firms are generally required to file an income tax return annually. The firm's profits and losses are passed through to the individual partners, who report their share of income on their personal tax returns.</p>
+
+<p>2. Audit Requirements: Depending on the turnover or annual revenue of the partnership firm, it may be required to undergo a statutory audit. The audit ensures the accuracy and reliability of the financial statements.</p>
+
+<p>3. Annual Financial Statements: Partnership firms need to prepare annual financial statements, including a balance sheet, profit and loss statement, and cash flow statement. These statements provide a snapshot of the firm's financial position and performance.</p>
+
+<p>4. Renewal of Registrations and Licenses: Partnership firms must renew any applicable registrations or licenses, such as business registration, GST (Goods and Services Tax) registration, professional licenses, or other permits, as required by the local authorities.</p>
+
+<p>5. Partnership Agreement Review: It is advisable to review the partnership agreement periodically to ensure it remains relevant and reflects any changes in the firm's structure, partners, profit-sharing ratios, or other terms and conditions.</p>
+
+<p>6. Compliance with Labor Laws: Partnership firms need to comply with labor laws and regulations applicable to the jurisdiction. This includes adhering to minimum wage requirements, employment contracts, employee benefits, and any other labor-related obligations.</p>
+
+<p>7. Compliance with Regulatory Filings: Depending on the nature of the partnership firm's business, there may be specific regulatory filings required. For example, if the firm operates in a regulated industry such as finance, healthcare, or transportation, it may have to file reports or disclosures with the relevant regulatory bodies.</p>
+
+<p>8. Annual General Meeting (AGM): While a partnership firm may not be required to hold an AGM in the same way as a company, it is still beneficial to hold regular meetings among the partners to discuss the firm's performance, strategic decisions, and any other relevant matters.</p>
+
+<h4>FAQ</h4>				
+				
+<p><strong>Q.1. What is a partnership firm?</strong><br>
+Ans:A partnership firm is a form of business organization where two or more individuals (partners) come together to carry out a business venture. They contribute capital, share profits and losses, and jointly manage the business.</p>
+
+<p><strong>Q.2. How many partners are required to form a partnership firm?</strong><br>
+Ans: In most jurisdictions, a minimum of two partners is required to form a partnership firm. However, some countries may have specific laws or regulations that dictate the minimum number of partners.</p>
+
+<p><strong>Q.3. Is a written partnership agreement necessary?</strong><br>
+Ans: While a partnership agreement is not legally required in all jurisdictions, it is highly recommended to have a written partnership agreement. It helps outline the rights, responsibilities, profit-sharing ratios, decision-making process, and other important aspects of the partnership. It helps avoid conflicts and provides clarity in case of disputes.</p>
+
+<p><strong>Q.4. Are partners personally liable for the firm's debts?</strong><br>
+Ans: In a general partnership, partners have unlimited personal liability for the debts and obligations of the firm. This means that if the partnership's assets are insufficient to cover the debts, creditors can go after the partners' personal assets to satisfy the obligations. However, in a limited liability partnership (LLP), partners have limited liability, as explained earlier.</p>
+
+<p><strong>Q.5. How are profits and losses shared in a partnership firm?</strong><br>
+Ans: The distribution of profits and losses in a partnership firm is typically determined by the partnership agreement. Partners can agree on a specific profit-sharing ratio, which may be based on the capital contributed, effort, or any other mutually agreed criteria.</p>
+
+<p><strong>Q.6. Can a partnership firm own property or enter into contracts?</strong><br>
+Ans: Yes, a partnership firm can own property, enter into contracts, and undertake legal obligations in its own name. However, the extent of the firm's authority and decision-making power is usually defined in the partnership agreement.</p>
+
+<p><strong>Q.7.Can a partnership firm be dissolved or terminated?</strong><br>
+Ans: Yes, a partnership firm can be dissolved or terminated by mutual agreement between the partners, expiration of a specified period, completion of the business objective, death or bankruptcy of a partner, or other circumstances outlined in the partnership agreement or relevant laws.</p>
+
+<p><strong>Q.8.How are taxes handled in a partnership firm?</strong><br>
+Ans: Partnership firms are typically taxed as pass-through entities, where the profits and losses of the firm are passed on to the individual partners, who then report them on their personal tax returns. The partnership itself does not pay income tax.</p>
+
+<p><strong>Q.9.Can a partner transfer their ownership or leave the partnership?</strong><br>
+Ans: The transfer of ownership or withdrawal of a partner is subject to the terms outlined in the partnership agreement. It may require the consent of other partners and formal procedures. The partnership agreement should specify the conditions and procedures for such cases.</p>
+
+<p><strong>Q.10.Can a partnership firm be converted into an LLP or a company?</strong><br>
+Ans: In many jurisdictions, there are provisions for converting a partnership firm into an LLP or a company. The specific requirements, procedures, and legal implications may vary based on the local laws and regulations.</p>
+			
+  </div> 
+  
+<div class="col-lg-12">
+<p><strong>For any consultancy in the Formation and compliances of partnership firm ||</strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div>
+  
+ </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+	  
+	 
+ 
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Partnership Firm Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Partnership Firm Registration in Haryana</a></li> 
+<li><a href="">Partnership Firm Registration in Assam</a></li> 
+<li><a href="">Partnership Firm Registration in Gujarat</a></li> 
+<li><a href="">Partnership Firm Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Partnership Firm Registration in Karnataka</a></li> 
+<li><a href="">Partnership Firm Registration in Bihar</a></li> 
+<li><a href="">Partnership Firm Registration in Rajasthan</a></li> 
+<li><a href="">Partnership Firm Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Partnership Firm Registration in Sikkim</a></li> 
+<li><a href="">Partnership Firm Registration in West Bengal</a></li> 
+<li><a href="">Partnership Firm Registration in Mizoram</a></li> 
+<li><a href="">Partnership Firm Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Partnership Firm Registration in Punjab</a></li> 
+<li><a href="">Partnership Firm Registration in Meghalaya</a></li> 
+<li><a href="">Partnership Firm Registration in Manipur</a></li> 
+<li><a href="">Partnership Firm Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Partnership Firm Registration in Nagaland</a></li> 
+<li><a href="">Partnership Firm Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Partnership Firm Registration in Goa</a></li> 
+<li><a href="">Partnership Firm Registration in Tamil Nadu</a></li> 
+<li><a href="">Partnership Firm Registration in Telangana</a></li> 
+<li><a href="">Partnership Firm Registration in Maharashtra</a></li> 
+<li><a href="">Partnership Firm Registration in Andhra Pradesh</a></li> 
+<li><a href="">Partnership Firm Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Partnership Firm Registration in Uttarakhand</a></li>   
+<li><a href="">Partnership Firm Registration in Odisha</a></li> 
+<li><a href="">Partnership Firm Registration in Jharkhand</a></li> 
+<li><a href="">Partnership Firm Registration in Chandigarh</a></li> 
+<li><a href="">Partnership Firm Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Partnership Firm Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Partnership Firm Registration in Mumbai</a></li> 
+<li><a href="">Partnership Firm Registration in Hyderabad</a></li> 
+<li><a href="">Partnership Firm Registration in Chennai</a></li> 
+<li><a href="">Partnership Firm Registration in Pune</a></li> 
+<li><a href="">Partnership Firm Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Partnership Firm Registration in Kolkata</a></li> 
+<li><a href="">Partnership Firm Registration in Ahmedabad</a></li> 
+<li><a href="">Partnership Firm Registration in Delhi</a></li> 
+<li><a href="">Partnership Firm Registration in Agra</a></li> 
+<li><a href="">Partnership Firm Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Partnership Firm Registration in Kochi</a></li> 
+<li><a href="">Partnership Firm Registration in Lucknow</a></li> 
+<li><a href="">Partnership Firm Registration in Surat</a></li> 
+<li><a href="">Partnership Firm Registration in Patna</a></li> 
+<li><a href="">Partnership Firm Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Partnership Firm Registration in Bhopal</a></li> 
+<li><a href="">Partnership Firm Registration in Kanpur</a></li> 
+<li><a href="">Partnership Firm Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Partnership Firm Registration in Prayagraj</a></li> 
+<li><a href="">Partnership Firm Registration in Coimbatore</a></li> 
+<li><a href="">Partnership Firm Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Partnership Firm Registration in Vadodara</a></li> 
+<li><a href="">Partnership Firm Registration in Nagpur</a></li> 
+<li><a href="">Partnership Firm Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+<div class="whatsapp_float">
+    <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+</div>
+<!--End whatsapp button-->
+
+
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</div> 
+
+<script>
+$(document).ready(function(){
+$(".contentdd").slice(0, 1).show();
+$("#loadMore").on("click", function(e){
+e.preventDefault();
+$(".contentdd:hidden").slice(0, 1).slideDown();
+if($(".contentdd:hidden").length == 0) {
+  $("#loadMore").text("No Content").addClass("noContent");
+}
+});
+
+})
+</script>
+</body>
+
+</html>

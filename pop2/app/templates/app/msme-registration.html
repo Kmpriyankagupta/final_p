@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/msme-registration"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content="{{ data.keywords }}">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon"/> 
+
+</head>
+<body>
+  <div class="body-inner">
+
+ 
+<div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div> 
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate" target="_blank">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates" target="_blank">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/" target="_blank">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/" target="_blank">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.youtube.com/@ngandAssociates" target="_blank">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                   <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div>
+</header>
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>MSME Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+    <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+</div></div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xl-3 col-lg-4">
+        <div class="sidebar sidebar-left">
+          <div class="widget"> 
+            <ul class="nav service-menu">
+             
+  <li class="active"><h4>Government Registration</h4></li>
+             
+  <li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+  <li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+  <li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+  <li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+  <li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+  <li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+  <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+  <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+  <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+  <li class="active"><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+  <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+  <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+  <li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+  <li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+
+<li><h4 style="margin: 14px 0px;">Licenses</h4></li> 
+ 	            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">MSME REGISTRATION</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+<p>MSME registration, also known as Micro, Small, and Medium Enterprises registration, is a formal process through which businesses can obtain official recognition as MSMEs under the Micro, Small, and Medium Enterprises Development (MSMED) Act, 2006 in India. The registration offers several benefits and support to enterprises falling within the MSME category.</p>
+
+<p>The MSME sector plays a crucial role in the Indian economy, contributing significantly to employment generation, innovation, and overall economic growth. Recognizing its importance, the government of India has established specific policies and initiatives to promote and support MSMEs.</p>
+
+<p>MSME registration provides businesses with a unique identity and legal status, enabling them to access various incentives, subsidies, and schemes offered by the government. It serves as proof of their existence as a recognized enterprise and can be helpful in accessing financial assistance, credit facilities, and other support from financial institutions and banks.</p>
+
+<p>By obtaining MSME registration, businesses gain access to government tenders, which are reserved exclusively for MSMEs in certain categories. It also facilitates favorable policies related to taxation, compliance, and regulatory matters, reducing the burden on smaller enterprises. Additionally, MSME registration enhances the credibility and competitiveness of businesses, opening up new avenues for growth and collaboration.</p>
+
+
+				
+          <h4>FEATURES OF MSME REGISTRATION</h4>
+          <img src="{% static 'images/msme.jpg' %}"  alt="msme-registration" title="msme-registration" style="width: 100%; height: auto;">
+          
+<ol>
+
+<li>Access to Government Schemes and Incentives: MSME registration enables businesses to avail various government schemes, incentives, and subsidies. These may include financial assistance, grants, tax benefits, reduced interest rates on loans, and reimbursement of expenses for obtaining certifications.</li>
+
+<li>Priority Sector Lending: Banks and financial institutions are mandated to provide a certain percentage of their lending to the priority sector, which includes MSMEs. MSME registration ensures that businesses are eligible for priority sector lending, increasing their chances of obtaining loans and credit facilities.</li>
+
+<li>Reservation in Government Tenders: Certain government tenders are exclusively reserved for MSMEs. By obtaining MSME registration, businesses gain access to these tender opportunities, giving them a chance to secure government contracts and projects.</li>
+
+<li>Credibility and Business Opportunities: MSME registration enhances the credibility and trustworthiness of businesses, especially while dealing with customers, suppliers, and financial institutions. It can lead to increased business opportunities, collaborations, and partnerships.</li>
+
+<li>Collateral-Free Loans: Registered MSMEs can avail collateral-free loans under various government schemes like the Credit Guarantee Fund Scheme. This makes it easier for small and medium enterprises to access credit and finance their operations and expansion plans.</li>
+
+ </ol>
+           
+ </div>
+            
+   <div class="col-lg-12">
+   	<h4>BENEFITS OF MSME REGISTRATION</h4>    
+    <img src="{% static 'images/msme1.jpg' %}" alt="msme-registration" title="msme-registration" style="width: auto; height: auto;">
+    
+    <ol>
+<li>Protection against Delayed Payments: The MSMED Act provides protection to registered MSMEs against delayed payments from buyers. In case of delayed payments, the enterprise is entitled to receive interest on the outstanding amount from the buyer at a specified rate.</li>
+
+<li>Tax Benefits and Exemptions: MSMEs enjoy several tax benefits and exemptions. They may be eligible for reduced rates of taxation, concessions in income tax, exemption from certain direct and indirect taxes, and tax rebates. These benefits help in reducing the overall tax liability of MSMEs, freeing up resources for business growth.</li>
+
+<li>Reservation in Government Tenders: Certain government tenders are exclusively reserved for MSMEs to promote their participation and growth. By obtaining MSME registration, businesses can access these tender opportunities, which can be lucrative in terms of securing government contracts and projects.</li>
+
+<li>Market Access and Export Promotion: Registered MSMEs receive support and guidance in accessing domestic and international markets. They can participate in trade fairs, exhibitions, buyer-seller meets, and export promotion activities facilitated by the government. This helps in expanding their customer base, exploring new markets, and increasing export opportunities.</li>
+
+<li>Reduced Compliance Burden: MSMEs enjoy certain relaxations and exemptions in compliance requirements, such as labor laws, environmental regulations, and other legal obligations. This reduces the compliance burden on small and medium enterprises, allowing them to focus more on their core business activities.</li>
+
+</ol>
+   
+   
+   
+<h4>DOCUMENTS REQUIRED FOR MSME REGISTRATION</h4>
+<p>To register as an MSME (Micro, Small, and Medium Enterprises) in India, certain documents and information are typically required. The specific documents may vary depending on the type of business entity and the registration process followed. Here are the commonly required documents for MSME registration:</p> 
+   
+<ol>
+<li>Aadhaar Card: The Aadhaar card of the business owner or authorized signatory is often required for identity verification and personal details.</li>
+
+<li>PAN Card: The Permanent Account Number (PAN) card of the business owner or authorized signatory is needed for tax-related purposes and identification.</li>
+
+<li>Business Address Proof: Documents such as the electricity bill, rent agreement, or property tax receipt are required to establish the proof of address for the business premises.</li>
+
+<li>Bank Account Details: The bank account details, including the account number and the bank's IFSC (Indian Financial System Code), are needed for verification and communication purposes.</li>
+
+<li>Proof of Entity: Depending on the type of business entity (sole proprietorship, partnership, private limited, etc.), relevant documents such as the partnership deed, certificate of incorporation, memorandum of association, articles of association, or registration certificate must be provided.</li>
+
+<li>Business Registration Certificate: If the business is already registered under any previous scheme, such as Udyog Aadhaar Memorandum (UAM) or Entrepreneurship Memorandum (EM), the registration certificate or acknowledgment should be submitted.</li>
+
+<li>Industrial Classification: The National Industrial Classification (NIC) code that corresponds to the type of business activity should be provided. This code classifies the business based on its primary economic activity.</li>
+
+ </ol>
+ 
+<p>It's important to note that these documents are indicative, and the exact requirements may vary based on the specific registration process or platform chosen for MSME registration. Additionally, it's advisable to check the official government website or consult with relevant authorities for the most up-to-date and accurate information regarding the documents required for MSME registration.</p>
+   
+    
+      
+
+<h4>PROCESS OF MSME REGISTRATION</h4>	   
+<img src="{% static 'images/msme2.jpg' %}" alt="msme-registration" title="msme-registration" style="width: auto; height: auto;">
+<p>The process of MSME registration in India has been streamlined with the introduction of the Udyam Registration portal. Here is a step-by-step guide to the process:</p>
+        
+<ol>
+
+<li>Visit the Udyam Registration Portal: Go to the official website of the Udyam Registration portal, which is the online platform for MSME registration in India.</li>
+
+<li>Aadhaar Verification: Provide the Aadhaar number of the business owner or authorized signatory for verification. Ensure that the Aadhaar card is linked with a valid mobile number.</li>
+
+<li>Personal Details: Enter the personal details of the business owner or authorized signatory, including name, gender, PAN (Permanent Account Number), and social category.</li>
+
+<li>Business Details: Enter the business name and type (proprietorship, partnership, private limited, etc.). Provide the official address of the business, including the district, state, and PIN code.</li>
+
+<li>NIC Code: Select the appropriate National Industrial Classification (NIC) code that corresponds to the primary economic activity of the business. The NIC code determines the industry classification.</li>
+
+<li>Investment and Turnover Details: Based on the investment in plant and machinery or equipment, as well as the turnover criteria, select the appropriate category of the enterprise – micro, small, or medium.</li>
+
+<li>Additional Details: Provide the bank account details, including the account number and IFSC code. If the business was previously registered under any other scheme like Udyog Aadhaar Memorandum (UAM) or Entrepreneurship Memorandum (EM), provide the registration details.</li>
+
+<li>Self-Declaration: Declare the accuracy of the information provided. No supporting documents are required at this stage for self-declaration.</li>
+
+<li>Verification and Submission: Verify the details entered and submit the application. An OTP (One-Time Password) will be sent to the registered mobile number for verification.</li>
+
+<li>Registration Certificate: Upon successful verification, an MSME registration certificate will be issued. The certificate will contain a unique Udyam Registration Number (URN) and other relevant information. The registration certificate can be downloaded from the portal.</li>
+
+</ol>  
+                 
+              
+
+<h4>FAQS</h4>	   
+
+<p><strong>Q.1. What is MSME registration? </strong><br>
+Ans:MSME registration is the process of obtaining official recognition for micro, small, and medium enterprises under the MSMED Act, providing various benefits and support.</p>
+
+<p><strong>Q.2. Who can register as an MSME?</strong><br>
+Ans: Any business falling within the defined investment and turnover criteria can register as an MSME.</p>
+
+<p><strong>Q.3. What are the benefits of MSME registration? </strong><br>
+Ans: Benefits include access to government schemes, subsidies, collateral-free loans, priority sector lending, tax benefits, protection against delayed payments, and reservation in government tenders.</p>
+
+<p><strong>Q.4. Is Aadhaar card mandatory for MSME registration?</strong> <br>
+Ans: Yes, Aadhaar card details of the business owner or authorized signatory are typically required for MSME registration.</p>
+
+<p><strong>Q.5. Can existing businesses register as MSMEs?</strong><br>
+Ans: Yes, both new and existing businesses can register as MSMEs.</p>
+
+<p><strong>Q.6. Is MSME registration mandatory?</strong> 
+Ans: MSME registration is not mandatory, but it is beneficial for availing government incentives and support.</p>
+
+<p><strong>Q.7. What is the Udyam Registration portal?</strong><br> 
+Ans: The Udyam Registration portal is the official online platform for MSME registration in India.</p>
+
+<p><strong>Q.8. How long does MSME registration take? </strong><br>
+Ans: The registration process is typically completed instantly or within a few minutes on the Udyam Registration portal.</p>
+
+<p><strong>Q.9. Can an MSME registration be updated or modified? </strong><br>
+Ans: Yes, certain details in the registration can be updated or modified on the Udyam Registration portal.</p>
+
+<p><strong>Q.10. Is MSME registration valid for a lifetime?</strong><br> 
+Ans: Yes, MSME registration is valid for the lifetime of the enterprise unless there are changes requiring modification or cancellation of the registration.</p>
+
+  
+                           
+                           
+                            
+   </div> 
+              
+                    
+<div class="col-lg-12">
+<p><strong>For any consultancy in the MSME Registration || </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div>
+            
+            
+            
+          </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+	  
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">MSME Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">MSME Registration in Haryana</a></li> 
+<li><a href="">MSME Registration in Assam</a></li> 
+<li><a href="">MSME Registration in Gujarat</a></li> 
+<li><a href="">MSME Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">MSME Registration in Karnataka</a></li> 
+<li><a href="">MSME Registration in Bihar</a></li> 
+<li><a href="">MSME Registration in Rajasthan</a></li> 
+<li><a href="">MSME Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">MSME Registration in Sikkim</a></li> 
+<li><a href="">MSME Registration in West Bengal</a></li> 
+<li><a href="">MSME Registration in Mizoram</a></li> 
+<li><a href="">MSME Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">MSME Registration in Punjab</a></li> 
+<li><a href="">MSME Registration in Meghalaya</a></li> 
+<li><a href="">MSME Registration in Manipur</a></li> 
+<li><a href="">MSME Registration in Arunachal Pradesh</a></li> 
+<li><a href="">MSME Registration in Nagaland</a></li> 
+<li><a href="">MSME Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">MSME Registration in Goa</a></li> 
+<li><a href="">MSME Registration in Tamil Nadu</a></li> 
+<li><a href="">MSME Registration in Telangana</a></li> 
+<li><a href="">MSME Registration in Maharashtra</a></li> 
+<li><a href="">MSME Registration in Andhra Pradesh</a></li> 
+<li><a href="">MSME Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">MSME Registration in Uttarakhand</a></li>   
+<li><a href="">MSME Registration in Odisha</a></li> 
+<li><a href="">MSME Registration in Jharkhand</a></li> 
+<li><a href="">MSME Registration in Chandigarh</a></li> 
+<li><a href="">MSME Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">MSME Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">MSME Registration in Mumbai</a></li> 
+<li><a href="">MSME Registration in Hyderabad</a></li> 
+<li><a href="">MSME Registration in Chennai</a></li> 
+<li><a href="">MSME Registration in Pune</a></li> 
+<li><a href="">MSME Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">MSME Registration in Kolkata</a></li> 
+<li><a href="">MSME Registration in Ahmedabad</a></li> 
+<li><a href="">MSME Registration in Delhi</a></li> 
+<li><a href="">MSME Registration in Agra</a></li> 
+<li><a href="">MSME Registration in Jaipur</a></li>
+ </ul>
+
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">MSME Registration in Kochi</a></li> 
+<li><a href="">MSME Registration in Lucknow</a></li> 
+<li><a href="">MSME Registration in Surat</a></li> 
+<li><a href="">MSME Registration in Patna</a></li> 
+<li><a href="">MSME Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">MSME Registration in Bhopal</a></li> 
+<li><a href="">MSME Registration in Kanpur</a></li> 
+<li><a href="">MSME Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">MSME Registration in Prayagraj</a></li> 
+<li><a href="">MSME Registration in Coimbatore</a></li> 
+<li><a href="">MSME Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">MSME Registration in Vadodara</a></li> 
+<li><a href="">MSME Registration in Nagpur</a></li> 
+<li><a href="">MSME Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+ 
+ 
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+    alt="whatsapp" title="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+    </div>
+<!--End whatsapp button-->
+ 
+ 
+ 
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+  </div> 
+  
+  <script>
+$(document).ready(function(){
+  $(".contentdd").slice(0, 1).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".contentdd:hidden").slice(0, 1).slideDown();
+    if($(".contentdd:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+  
+})
+    </script>
+  </body>
+
+  </html>

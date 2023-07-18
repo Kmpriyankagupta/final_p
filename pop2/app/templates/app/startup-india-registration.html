@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/startup-registration-process-benefits-eligibility-guide"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="{% url 'ssi-msme-registration' %}">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Startup India Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+ <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  <input class="btn btn-primary" type="submit", value="submit">
+</form>
+</div></div> 
+            </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+    <section id="main-container" class="main-container">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-xl-3 col-lg-4">
+            <div class="sidebar sidebar-left">
+              <div class="widget"> 
+                <ul class="nav service-menu">
+                 
+      <li class="active"><h4>Government Registration</h4></li>
+                 
+      <li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+      <li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+      <li class="active"><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+      <li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+      <li><a href="{% url 'ssi-msme-registration' %}">SSI - MSME Registration</a></li>
+      <li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+      <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+      <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+      <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+      <li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+      <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+      <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+      <li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+      <li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+      
+      <li><h4 style="margin: 14px 0px;">Licenses</h4></li> 
+                     
+      <li><a href="{% url 'factory-license' %}">Factory License</a></li>
+      <li><a href="{% url 'trade-license' %}">Trade License</a></li>
+      <li><a href="{% url 'drug-license' %}">Drug License</a></li>
+      <li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+      <li><a href="{% url 'labour-license' %}">Labour License</a></li>
+      <li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+      <li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+      <li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+      <li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">START UP REGISTRATION</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p>A startup is a newly established business venture that aims to introduce innovative products, services, or solutions to the market. Startups are driven by entrepreneurs who seek to create and grow a business from the ground up, often with limited resources and a high degree of uncertainty.</p>
+
+<p>The primary goal of a startup is to achieve rapid growth and scalability within a relatively short period. Startups often target untapped markets, disrupt existing industries, or address unmet needs with their innovative offerings. They operate in dynamic environments and navigate through challenges such as market validation, competition, funding, and regulatory compliance.</p>
+
+<p>One of the defining characteristics of startups is their emphasis on innovation. They strive to introduce new ideas, technologies, or business models that differentiate them from traditional businesses. Startups leverage advancements in technology, changing consumer behavior, or emerging trends to create a competitive advantage and capture market share.</p>
+
+		  
+			  <h4>START-UP INDIA SCHEME</h4>
+              
+              
+              <p>Start-up India Scheme is a flagship initiative of the Government of India, intended to build a strong
+Eco-system for nurturing innovation and Start-ups in the country that will drive sustainable Economic growth and generate large scale employment opportunities. Start-up India Scheme is Implemented through the Department of Industrial Policy & Promotions (DIPP), Government of</p>
+India.
+
+<p>A business will be recognised as a ‘Start-up’ under this scheme only after obtaining a Certificate of
+Registration from Start-up India Hub.</p>
+
+              
+              
+              
+        <h4>FEATURES OF STARTUPS </h4>      
+              
+              
+             <ol>              
+             <li>INNOVATION</li>
+             <li>SCALABILITY</li>
+             <li>ENTREPRENEURIAL  CULTURE</li>
+             <li>FUNDING</li>
+             <li>MARKET DISRUPTIO </li>
+             <li>HIGH-GROWTH POTENTIAL</li>
+             <li>FLEXIBILITY AND AGILITY</li>        
+            </ol> 
+              
+              
+ <p> 1. Innovation: Start-ups often introduce novel ideas, technologies, or business models that differentiate them from traditional businesses. They seek to address unmet needs, solve problems, or create new opportunities through innovative approaches.</p>
+
+ <p>2. Scalability: Start-ups have the potential for rapid growth and scalability. They aim to expand their operations, customer base, and revenue significantly within a relatively short period. This scalability is often driven by leveraging technology, scalability of business models, or the ability to tap into new markets.<br>
+Risk and Uncertainty: Startups operate in an environment of uncertainty and risk. They face challenges such as market validation, competition, funding, and regulatory hurdles. Entrepreneurs and startup teams must be willing to take calculated risks and adapt quickly to changing circumstances.</p>
+
+ <p>3. Entrepreneurial Culture: Start-ups often have a strong entrepreneurial culture characterized by a high degree of creativity, agility, and a willingness to challenge the status quo. They foster a culture of experimentation, learning from failures, and embracing change.</p>
+
+ <p>4. Funding: Start-ups typically require external funding to fuel their growth and development. They may seek investments from venture capitalists, angel investors, crowd funding platforms, or government grants. Funding is crucial for product development, marketing, hiring talent, and scaling operations.</p>
+
+ <p>5. Market Disruption: Start-ups often aim to disrupt or revolutionize traditional industries by offering innovative solutions or challenging established players. They leverage technology, changing consumer behavior, or market inefficiencies to create a competitive advantage and capture market share.</p>
+
+ <p>6. High-Growth Potential: Unlike small businesses that may focus on sustainability and steady growth, startups aim to achieve exponential growth. They target large markets and seek to capture a significant share of those markets through rapid expansion and scaling.</p>
+
+ <p>7. Flexibility and Agility: Start-ups are known for their ability to adapt quickly to market changes, customer feedback, and evolving trends. They have the flexibility to pivot their business models, strategies, or product offerings based on feedback and market demands.</p>
+
+              
+    
+           <h3>BENEFITS OF STARTUPS</h3>
+     
+           <img src="{% static 'images/startup.jpg' %}" alt="startup" title="startup">
+           
+<p>1. Innovation and Disruption: Start-ups are at the forefront of innovation, driving progress and technological advancements. They introduce new ideas, products, and services that disrupt traditional industries, challenging established players and promoting market competition. This innovation spurs economic growth and fosters a culture of continuous improvement.</p>
+
+<p>2. Job Creation: Start-ups are significant contributors to job creation. As they grow and scale, they require a diverse range of talent, leading to the creation of new job opportunities. Startups often provide employment to young professionals, contribute to local economies, and stimulate job market dynamism.</p>
+
+<p>3. Economic Growth and Wealth Creation: Startups can have a significant impact on economic growth and wealth creation. Successful startups generate revenue, pay taxes, and contribute to the overall GDP of a country or region. Additionally, they attract investments, promote entrepreneurship, and inspire the formation of new businesses, creating a ripple effect throughout the economy.</p>
+
+<p>4. Flexibility and Agility: Start-ups are typically nimble and adaptable, able to respond quickly to market changes and customer feedback. This flexibility allows them to pivot their strategies, refine their offerings, and stay ahead of the competition. Their agility enables them to seize emerging opportunities and navigate challenges more efficiently.</p>
+
+<p>5. Technological Advancements: Many start-ups leverage technology as a core aspect of their business models. They drive technological advancements, develop innovative solutions, and push the boundaries of what is possible. These advancements often have wide-ranging societal benefits, improving efficiency, convenience, and quality of life.</p>
+
+<p>6.Social Impact and Sustainability: Startups are increasingly focusing on addressing social and environmental challenges. They develop solutions for renewable energy, healthcare, education, sustainability, and other pressing issues. Socially conscious startups aim to make a positive impact on society and contribute to a more sustainable future.</p>
+
+<h4>ELIGIBILITY CRITERIA FOR START-UP RECOGNITION</h4>     
+<p>1. The Start-up should be incorporated as a private limited company or registered as aPartnership firm or a limited liability partnership. An entity shall be considered as a start-up upto 10 years from the date of its incorporation.</p>
+
+<p>2. Turnover should be less than INR 100 Crores in any of the previous financial years.</p>
+
+<p>3. The Start-up should be working towards innovation/improvement of existing products, services and processes and should have the potential to generate employment/ create wealth. An entity formed by splitting up or reconstruction of an existing business shall not be considered a "Start-up".</p>
+   
+<h4>START-UP INDIA: 80 IAC TAX EXEMPTIONS</h4>
+   
+<p>Post getting recognition a Start-up may apply for Tax exemption under section 80 IAC of the Income Tax Act. Post getting clearance for Tax exemption, the Start-up can avail tax holiday for 3 consecutive financial years out of its first ten years since incorporation.</p>
+
+<h4>Eligibility Criteria for applying for Income Tax exemption (80IAC):</h4>
+
+<p>a. The entity should be a recognized Start-up.</p>
+<p>b. Only Private limited or a Limited Liability Partnership is eligible for Tax exemption under Section 80 IAC.</p>
+<p>c. The Start-up should have been incorporated after 1st April, 2016.</p>
+ 
+<h4>Start-up India: Tax Exemption under Section 56 of the Income Tax Act (Angel Tax)</h4> 
+<p>Eligibility Criteria for Tax Exemption under Section 56 of the Income Tax Act:</p>
+
+<p>a. The entity should be a DPIIT recognized Start-up.</p>
+<p>b. Aggregate amount of paid-up share capital and share premium of the Start-up after the proposed issue of share, if any, does not exceed INR 25 Crore</p>
+ 
+ 
+<h4>GENERAL START UP REGISTRATION PROCESS</h4>
+ 
+<img src="{% static 'images/startup_india.jpg' %}" alt="startup india" title="startup india">
+  
+<p>1. Determine the Business Structure: Choose the legal structure for your startup, such as a sole proprietorship, partnership, limited liability company (LLC), or corporation. Each structure has different implications in terms of liability, taxes, and management.</p>  
+
+<p>2. Choose a Business Name: Select a unique and suitable name for your startup. Ensure it complies with any naming rules and regulations in your jurisdiction. Conduct a thorough search to make sure the name is available and not already in use.</p>  
+
+<p>3. Research Regulatory Requirements: Familiarize yourself with the regulatory requirements specific to your industry and location. Determine what licenses, permits, or certifications may be necessary to legally operate your start-up.</p>  
+
+<p>4. Prepare the Necessary Documents: Gather the required documents for registration. These may include identification documents, proof of address, business plan, partnership agreements (if applicable), and any other documents required by your jurisdiction.</p>  
+
+<p>5. Register with Government Authorities: Register your startup with the relevant government authorities responsible for business registration. This might be a local or national agency, such as the Registrar of Companies or the Small Business Administration. Submit the necessary forms and pay any registration fees.</p>  
+
+<p>6. Obtain Tax Identification Numbers: Register for tax purposes and obtain the necessary tax identification numbers. This may include an Employer Identification Number (EIN) or a value-added tax (VAT) number, depending on your jurisdiction and business activities.</p>  
+
+<p>7. Register for Licenses and Permits: Apply for any required licenses and permits specific to your industry. This can include professional licenses, health permits, zoning permits, or industry-specific certifications. Ensure compliance with all applicable regulations.</p>  
+
+<p>8. Open Business Bank Accounts: Open a separate bank account for your startup to keep personal and business finances separate. This helps with accurate accounting, tax reporting, and financial management.</p>  
+
+<p>9. Consult with Professionals: Consider seeking advice from professionals such as lawyers, accountants, or business consultants who can guide you through the registration process and ensure compliance with legal and regulatory requirements.</p>  
+
+<p>10. Stay Compliant: Once registered, it is important to stay compliant with ongoing obligations, such as filing annual reports, renewing licenses, and meeting tax obligations. Stay updated with any changes in regulations that may affect your startup.</p>  
+
+				
+          <h4>FAQS</h4>
+<p><strong>Q.1. What is a startup? </strong><br>
+Ans: A startup is a newly established business venture focused on growth and innovation.</p>
+
+<p><strong>Q.2. How long does startup registration take?</strong><br>
+Ans: The duration varies, but it can take a few weeks to several months.</p>
+
+<p><strong>Q.3. What is the difference between a startup and a small business? </strong><br>
+Ans: Startups are typically characterized by their focus on innovation, high growth potential, and scalability. They often aim to disrupt industries or introduce new products/services. Small businesses, on the other hand, tend to have a more localized scope, stable growth, and a focus on sustainability.</p>
+
+<p><strong>Q.4. Do I need to register a startup if I'm a sole proprietor?</strong><br>
+Ans: In many jurisdictions, sole proprietors are required to register their business name or operate under their personal name. However, the specific requirements can vary, so it's important to check the regulations in your jurisdiction.</p>
+
+<p><strong>Q.5. Can I register a startup online?</strong> <br>
+Ans: Yes, many jurisdictions offer online registration portals that allow entrepreneurs to register their startups electronically. This simplifies the process and makes it more convenient.</p>
+
+<p><strong>Q.6. Can I start a startup while still employed full-time? </strong><br>
+Ans: It's possible, but ensure you review your employment contract and legal obligations regarding non-competes and conflicts of interest.</p>
+
+<p><strong>Q.7. What are the common challenges faced by startups?</strong><br> 
+Ans: Challenges can include market validation, funding limitations, competition, hiring talent, scaling operations, and adapting to changing market conditions.</p>
+
+<p><strong>Q.8. Can I run a startup without prior entrepreneurial experience?</strong> <br>
+Ans: Yes, many successful entrepreneurs started without prior experience. Surround yourself with mentors, advisors, and a supportive network to enhance your chances of success.</p>
+
+<p><strong>Q.9.  Where can I find funding for my startup? </strong><br>
+Ans: Look for venture capital firms, angel investors, crowd funding platforms, government grants, or startup incubators/accelerators.</p>
+
+<p><strong>Q.10. How can I protect my startup's intellectual property?</strong><br>
+Ans: Consult an IP attorney to explore options like patents, trademarks, copyrights, and trade secrets for protecting your innovations.</p>
+
+			  </div> 
+         
+<div class="col-lg-12">
+<p><strong>For any consultancy in the Start-up registration|| </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div> 
+         
+         
+         
+          </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+	  
+
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Startup India Company Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Startup India Company Registration in Haryana</a></li> 
+<li><a href="">Startup India Company Registration in Assam</a></li> 
+<li><a href="">Startup India Company Registration in Gujarat</a></li> 
+<li><a href="">Startup India Company Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Startup India Company Registration in Karnataka</a></li> 
+<li><a href="">Startup India Company Registration in Bihar</a></li> 
+<li><a href="">Startup India Company Registration in Rajasthan</a></li> 
+<li><a href="">Startup India Company Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Startup India Company Registration in Sikkim</a></li> 
+<li><a href="">Startup India Company Registration in West Bengal</a></li> 
+<li><a href="">Startup India Company Registration in Mizoram</a></li> 
+<li><a href="">Startup India Company Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Startup India Company Registration in Punjab</a></li> 
+<li><a href="">Startup India Company Registration in Meghalaya</a></li> 
+<li><a href="">Startup India Company Registration in Manipur</a></li> 
+<li><a href="">Startup India Company Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Startup India Company Registration in Nagaland</a></li> 
+<li><a href="">Startup India Company Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Startup India Company Registration in Goa</a></li> 
+<li><a href="">Startup India Company Registration in Tamil Nadu</a></li> 
+<li><a href="">Startup India Company Registration in Telangana</a></li> 
+<li><a href="">Startup India Company Registration in Maharashtra</a></li> 
+<li><a href="">Startup India Company Registration in Andhra Pradesh</a></li> 
+<li><a href="">Startup India Company Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Startup India Company Registration in Uttarakhand</a></li>   
+<li><a href="">Startup India Company Registration in Odisha</a></li> 
+<li><a href="">Startup India Company Registration in Jharkhand</a></li> 
+<li><a href="">Startup India Company Registration in Chandigarh</a></li> 
+<li><a href="">Startup India Company Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Startup India Company Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Startup India Company Registration in Mumbai</a></li> 
+<li><a href="">Startup India Company Registration in Hyderabad</a></li> 
+<li><a href="">Startup India Company Registration in Chennai</a></li> 
+<li><a href="">Startup India Company Registration in Pune</a></li> 
+<li><a href="">Startup India Company Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Startup India Company Registration in Kolkata</a></li> 
+<li><a href="">Startup India Company Registration in Ahmedabad</a></li> 
+<li><a href="">Startup India Company Registration in Delhi</a></li> 
+<li><a href="">Startup India Company Registration in Agra</a></li> 
+<li><a href="">Startup India Company Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Startup India Company Registration in Kochi</a></li> 
+<li><a href="">Startup India Company Registration in Lucknow</a></li> 
+<li><a href="">Startup India Company Registration in Surat</a></li> 
+<li><a href="">Startup India Company Registration in Patna</a></li> 
+<li><a href="">Startup India Company Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Startup India Company Registration in Bhopal</a></li> 
+<li><a href="">Startup India Company Registration in Kanpur</a></li> 
+<li><a href="">Startup India Company Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Startup India Company Registration in Prayagraj</a></li> 
+<li><a href="">Startup India Company Registration in Coimbatore</a></li> 
+<li><a href="">Startup India Company Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Startup India Company Registration in Vadodara</a></li> 
+<li><a href="">Startup India Company Registration in Nagpur</a></li> 
+<li><a href="">Startup India Company Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+<div class="whatsapp_float">
+    <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+</div>
+<!--End whatsapp button-->
+
+
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</div> 
+
+<script>
+$(document).ready(function(){
+$(".contentdd").slice(0, 1).show();
+$("#loadMore").on("click", function(e){
+e.preventDefault();
+$(".contentdd:hidden").slice(0, 1).slideDown();
+if($(".contentdd:hidden").length == 0) {
+  $("#loadMore").text("No Content").addClass("noContent");
+}
+});
+
+})
+</script>
+</body>
+
+</html>

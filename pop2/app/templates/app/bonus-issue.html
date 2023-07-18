@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+ <meta charset="utf-8">
+ <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+ <title>{{ data.title }}</title> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/bonus-issue-guide-corporate-actions"/>
+ <meta name="description" content="{{ data.description }}">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+ <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+ <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}"> 
+ <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+ <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+ <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+ <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+ 
+ <link rel="stylesheet" href="{% static 'css/style.css' %}">
+ <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon"/> 
+
+</head>
+<body>
+ <div class="body-inner">
+
+
+
+  <div id="top-bar" class="top-bar">
+       <div class="container">
+         <div class="row">
+             <div class="col-lg-8 col-md-8">
+               <ul class="top-info text-center text-md-left">
+                   <li>
+                   </li>
+               </ul>
+             </div> 
+             <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+               <ul class="list-unstyled">
+                   <li>
+                     <a title="Facebook" href="https://www.facebook.com/ngandassociate" target="_blank">
+                         <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                     </a>
+                     <a title="Twitter" href="https://twitter.com/ng_associates" target="_blank">
+                         <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                     </a>
+                     <a title="Instagram" href="https://www.instagram.com/ngandassociates/" target="_blank">
+                         <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                     </a>
+           <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/" target="_blank">
+                         <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                     </a>
+           <a title="Youtube" href="https://www.youtube.com/@ngandAssociates" target="_blank">
+                         <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                     </a>
+                     
+                   </li>
+               </ul>
+             </div> 
+         </div> 
+       </div> 
+   </div>
+ 
+
+<header id="header" class="header-one">
+ <div class="bg-white">
+   <div class="container">
+     <div class="logo-area">
+         <div class="row align-items-center">
+           <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+               <a class="d-block" href="{% url 'home' %}">
+                 <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+               </a>
+           </div> 
+ 
+           <div class="col-lg-9 header-right">
+               <ul class="top-info-box">
+                <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                 </li>-->
+                
+                 <li>
+                   <div class="info-box">
+                     <div class="info-box-content">
+                         <p class="info-box-title">Call Us</p>
+                         <p class="info-box-subtitle">+917807 40 40 40</p>
+                     </div>
+                   </div>
+                 </li>
+                 <li>
+                   <div class="info-box">
+                     <div class="info-box-content">
+                         <p class="info-box-title">Email Us</p>
+                         <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                     </div>
+                   </div>
+                 </li>
+                
+                 <!--<li class="header-get-a-quote">
+                   <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                 </li>-->
+               </ul> 
+           </div> 
+         </div> 
+ 
+     </div> 
+   </div> 
+ </div>
+
+ <div class="site-navigation">
+   <div class="container">
+       <div class="row">
+         <div class="col-lg-12">
+             <nav class="navbar navbar-expand-lg navbar-dark p-0">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               <div id="navbar-collapse" class="collapse navbar-collapse">
+                   <ul class="nav navbar-nav mr-auto">
+                     <li><a href="{% url 'home' %}">Home</a></li>
+                     
+                     <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-6">
+                 
+ <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+</ul>
+ </div>
+                 <div class="col-sm-6">
+                    <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+</ul>
+                 </div>
+                  
+               </div>
+             </ul>
+         </li>
+                     
+                     
+                     
+           <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+                    <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+                     <li><h4>Copyright</h4></li>
+                               <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+                   </ul>
+                 </div>
+               </div>
+             </ul>
+         </li>          
+                     
+                       
+             
+  <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+
+ <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+<li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+                   </ul>
+                 </div>
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+                    <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+                   </ul>
+                 </div>
+               </div>
+             </ul>
+         </li>
+                           
+                            
+       
+                              
+                                                     
+                                                                                                   
+   <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+                   
+<li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+                   </ul>
+                 </div>			                
+                  <div class="col-sm-4">
+                   <ul class="multi-column-dropdown">
+                   
+<li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+                 
+                   </ul>
+                 </div>
+                 
+                 
+                 
+<div class="col-sm-4">
+<ul class="multi-column-dropdown">				            
+<li><h4>Apply for Tenders</h4></li> 
+</ul>
+ </div>         
+                 
+               </div>
+             </ul>
+         </li>                         
+                     
+                                     
+   <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-12">
+                   <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+                   </ul>
+                 </div>
+                  
+                  
+               </div>
+             </ul>
+         </li>                            
+    
+ <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+             <ul class="dropdown-menu multi-column columns-3">
+               <div class="row">
+                 <div class="col-sm-12">
+                   <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+                   </ul>
+                 </div>
+                  
+                  
+               </div>
+             </ul>
+         </li>
+                     
+                                        
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+<li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                        
+       
+                    
+                   </ul>
+               </div>
+             </nav>
+         </div> 
+       </div> 
+
+         
+
+         
+   </div>
+
+
+ </div> 
+</header>
+
+
+
+
+
+
+<div id="banner-area" class="banner-area" style="background-image:url({% static 'images/banner/banner1.jpg' %})">
+ <div class="banner-text">
+   <div class="container">
+       <div class="row">
+         <div class="col-lg-12">
+             <div class="banner-heading">
+               <h1 class="banner-title">Bonus Issue</h1>
+               <nav aria-label="breadcrumb">
+                   <ol class="breadcrumb justify-content-center">
+                     <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li> 
+                     <li class="breadcrumb-item active" aria-current="page">Bonus Issue</li>
+                   </ol>
+                </nav>
+              </div>
+          </div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+
+        
+
+      <div class="col-xl-12 col-lg-12">
+       
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Bonus Issue</h2>
+
+        
+         
+         
+          <div class="row">
+           <div class="col-md-12">
+			   <img src="{% static 'images/bonus_issue.jpg' %}" alt="Bonus Issue" title="Bonus Issue"></div>
+           
+           <div class="col-md-12">
+               
+ <p>A bonus issue, also referred to as a bonus share or a capitalization issue, is a corporate action taken by a company to issue additional shares to its existing shareholders at no cost. It is a way for companies to reward their shareholders and capitalize on their accumulated profits or reserves.</p>
+ 
+ 
+ <p>When a company declares a bonus issue, it converts a portion of its retained earnings or other reserves into new shares. These new shares are then distributed to the existing shareholders on a pro-rata basis, typically in proportion to their current shareholdings. For example, if a shareholder holds 100 shares and the company declares a 1-for-1 bonus issue, the shareholder will receive an additional 100 shares, effectively doubling their holdings.</p>
+ 
+ <p>The primary purpose of a bonus issue is to increase the number of shares outstanding without diluting the ownership percentage of existing shareholders. While the overall market capitalization of the company remains the same, the number of shares held by each shareholder increases. This can have several potential benefits.</p>
+
+ 
+
+
+ <h4>FEATURES OF BONUS ISSUE</h4>
+ 
+ <img src="{% static 'images/bonus_issue1.jpg' %}" alt="Bonus Issue" title="Bonus Issue">
+ 
+<p><strong>1. No Cost to Shareholders:</strong> One of the key features of a bonus issue is that it is offered to existing shareholders at no cost. Shareholders receive additional shares without having to pay any additional money or surrender their existing shares.</p>
+
+<p><strong>2. Proportional Distribution:</strong> Bonus shares are typically distributed to existing shareholders on a pro-rata basis. The number of bonus shares allocated to each shareholder is proportionate to their existing shareholding. For example, if a company declares a 1-for-1 bonus issue, shareholders receive one additional share for each share they already own.</p>
+
+<p><strong>3. Retained Earnings or Reserves:</strong> Bonus issues are usually funded by a company's accumulated profits or reserves. These can include retained earnings, share premium, capital redemption reserve, or any other available reserves specified by the company's regulations or accounting practices.</p>
+
+<p><strong>4. Potential Price Adjustment:</strong> The announcement of a bonus issue can impact the market price of the company's shares. The market price per share may adjust downward to reflect the increased supply of shares in the market. However, the overall market capitalization of the company remains the same.</p>
+
+<p><strong>5. No Change in Ownership Percentage:</strong> Despite receiving additional shares through a bonus issue, the ownership percentage of each shareholder remains the same. The proportionate ownership stake of a shareholder in the company remains unchanged as the total number of shares increases.</p>
+
+
+<h4>BENEFITS OF BONUS ISSUE</h4>
+<img src="{% static 'images/bonus_issue2.jpg' %}" alt="Bonus Issue" title="Bonus Issue">
+ 
+ <p><strong>1. Rewarding Shareholders:</strong> A bonus issue is a way for companies to reward their existing shareholders. By issuing bonus shares, shareholders receive additional shares without any cost, effectively increasing their ownership stake in the company. This can be seen as a gesture of appreciation and can enhance shareholder loyalty and satisfaction.</p>
+ 
+<p><strong>2. Lower Per Share Price:</strong> The issuance of bonus shares can lead to a decrease in the market price per share. Since the total market capitalization of the company remains the same, the increased number of shares results in a lower price per share. This can make the stock more affordable for new investors and potentially attract a larger investor base.</p>
+
+<p><strong>3. Increased Liquidity:</strong> Bonus issues can enhance the liquidity of a company's stock. By increasing the number of shares available for trading, it can attract a broader range of investors and potentially increase trading activity. This increased liquidity can contribute to a more active and efficient market for the company's shares.</p>
+
+<p><strong>4. Potential Dividend Impact:</strong> Bonus issues can impact future dividend payments. With the increased number of shares held by each shareholder, the company's earnings can be spread across a greater number of shares. If the company's earnings per share remain stable, shareholders may expect higher dividend payments in the future due to their increased ownership stake.</p>
+
+<p><strong>5. Improved Price-to-Earnings Ratio:</strong> A bonus issue can potentially improve a company's price-to-earnings (P/E) ratio. If the bonus issue leads to an increase in the number of shares, while the earnings per share remain stable or increase, the P/E ratio can decrease. A lower P/E ratio may attract investors who consider it an indicator of an undervalued stock.</p>
+
+
+
+
+
+<h4>SOURCES FOR ISSUANCE OF BONUS SHARE</h4>
+<img src="{% static 'images/bonus_issue3.jpg' %}" alt="Bonus Issue" title="Bonus Issue">
+
+<p><strong>NOTE: </strong>No issue of bonus shares shall be made by capitalizing reserves created by the revaluation of Assets.</p>
+
+<h4>CHECKLIST FOR ISSUE OF BONUS SHARE</h4>
+<p><strong>1. Review Articles of Association:</strong> Examine the company's Articles of Association to ensure they allow for the issuance of bonus shares. If necessary, seek shareholder approval to amend the articles.</p>
+
+<p><strong>2. Board Resolution:</strong> Hold a board meeting and pass a resolution to propose the issuance of bonus shares. The resolution should include details such as the number of shares to be issued and the ratio at which they will be distributed.</p>
+
+<p><strong>3. Shareholder Approval:</strong> Convene a general meeting of shareholders and obtain their approval for the bonus share issuance. Follow the legal requirements regarding notice periods and quorum for the meeting.</p>
+
+<p><strong>4. Determine Record Date:</strong> Fix a record date to determine the shareholders eligible for receiving the bonus shares. This date is important as only shareholders on record as of this date will be entitled to the bonus shares.</p>
+
+<p><strong>5. Determine Ratio:</strong> Decide on the ratio at which the bonus shares will be issued. For example, a 1:1 ratio means one bonus share will be issued for every existing share held.</p>
+
+<p><strong>6. Assess Capitalization:</strong> Assess the financial position of the company to determine if it has sufficient reserves or profits to support the issuance of bonus shares. Ensure compliance with any legal requirements related to the capitalization of reserves.</p>
+
+<p><strong>7. Obtain Regulatory Approvals:</strong> If required, seek approvals from regulatory authorities such as the Securities and Exchange Commission or stock exchange where the company is listed.</p>
+
+<p><strong>8. Issue Bonus Shares:</strong> Once all necessary approvals are obtained, prepare the necessary documents, such as a bonus share issuance notice or letter of allotment, and issue the bonus shares to eligible shareholders.</p>
+
+<p><strong>9. Update Shareholder Records:</strong> Maintain accurate records of the issuance, including the names of shareholders receiving bonus shares, the number of shares allotted, and any changes to their shareholding.</p>
+
+<p><strong>10. Stock Exchange Compliance:</strong> Comply with any reporting requirements of the relevant stock exchange regarding the issuance of bonus shares, including timely filing of necessary documents and disclosures.</p>
+
+<p><strong>11. Communicate with Shareholders:</strong> Inform shareholders about the issuance of bonus shares through appropriate means, such as company announcements or notices.</p>
+
+<p><strong>12. Update Share Certificates:</strong> If applicable, issue new share certificates reflecting the bonus shares to shareholders</p>
+
+
+<h4>BASIC PROCEDUE FOR ISSUE OF BONUS SHARE</h4>
+
+<img src="{% static 'images/bonus_issue4.jpg' %}" alt="Bonus Issue" title="Bonus Issue">
+
+ 
+
+<h4>FAQS</h4>   
+          
+<p><strong>Q.1. What is a bonus issue?</strong><br>
+Ans. A bonus issue is when a company distributes additional shares to its existing shareholders without any cost.</p>
+
+<p><strong>Q.2.Why do companies issue bonus shares?</strong> <br>
+Ans. Companies issue bonus shares as a way to reward existing shareholders and increase the liquidity of their shares in the market.</p>
+
+<p><strong>Q.3. Can a company issue partly paid up Bonus Shares?</strong><br>
+Ans. No, Bonus Shares shall always be issued fully paid up.</p>
+
+<p><strong>Q.4. What is the impact of a bonus issue on shareholder value? </strong><br>
+Ans. A bonus issue does not change the overall value of the company or the individual shareholder's stake. It merely increases the number of shares held by each shareholder.</p>
+
+<p><strong>Q.5. How are bonus shares allocated? </strong><br>
+Ans. Bonus shares are typically allocated to existing shareholders in proportion to their current shareholding.</p>
+
+<p><strong>Q.6. Can bonus shares be sold immediately after they are issued?</strong><br>
+Ans. Yes, bonus shares can be sold immediately after they are issued, just like regular shares.</p>
+
+<p><strong>Q.7. Are bonus shares taxable?</strong><br>
+Ans. Generally, bonus shares are not taxable when they are issued. However, any future dividends received on bonus shares may be subject to tax.</p>
+
+<p><strong>Q.8. Do bonus shares affect earnings per share (EPS)? </strong><br>
+Ans. Bonus shares do not impact the earnings per share (EPS) because the company's earnings are distributed over a larger number of shares.</p>
+
+<p><strong>Q.9. Are bonus issues common?</strong><br>
+Ans. Bonus issues are fairly common and are often seen as a way for companies to reward shareholders and enhance their marketability. However, not all companies choose to issue bonus shares.</p>
+
+<p><strong>Q.10. Can company issue Bonus Shares in different ratio to its existing shareholders?</strong><br>
+Ans. No, Company cannot issue bonus shares in different ratio, It shall issue bonus shares to the existing shareholders in proportion to their existing holdings.</p>
+
+    
+  </div>
+<div class="col-lg-12">
+<p><strong>For any consultancy in the Bonus Issue matter || </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+ </div>      
+            
+            
+            
+          </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+	  
+	 
+ 
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Bonus Issue Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Bonus Issue Registration in Haryana</a></li> 
+<li><a href="">Bonus Issue Registration in Assam</a></li> 
+<li><a href="">Bonus Issue Registration in Gujarat</a></li> 
+<li><a href="">Bonus Issue Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Bonus Issue Registration in Karnataka</a></li> 
+<li><a href="">Bonus Issue Registration in Bihar</a></li> 
+<li><a href="">Bonus Issue Registration in Rajasthan</a></li> 
+<li><a href="">Bonus Issue Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Bonus Issue Registration in Sikkim</a></li> 
+<li><a href="">Bonus Issue Registration in West Bengal</a></li> 
+<li><a href="">Bonus Issue Registration in Mizoram</a></li> 
+<li><a href="">Bonus Issue Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Bonus Issue Registration in Punjab</a></li> 
+<li><a href="">Bonus Issue Registration in Meghalaya</a></li> 
+<li><a href="">Bonus Issue Registration in Manipur</a></li> 
+<li><a href="">Bonus Issue Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Bonus Issue Registration in Nagaland</a></li> 
+<li><a href="">Bonus Issue Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Bonus Issue Registration in Goa</a></li> 
+<li><a href="">Bonus Issue Registration in Tamil Nadu</a></li> 
+<li><a href="">Bonus Issue Registration in Telangana</a></li> 
+<li><a href="">Bonus Issue Registration in Maharashtra</a></li> 
+<li><a href="">Bonus Issue Registration in Andhra Pradesh</a></li> 
+<li><a href="">Bonus Issue Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Bonus Issue Registration in Uttarakhand</a></li>   
+<li><a href="">Bonus Issue Registration in Odisha</a></li> 
+<li><a href="">Bonus Issue Registration in Jharkhand</a></li> 
+<li><a href="">Bonus Issue Registration in Chandigarh</a></li> 
+<li><a href="">Bonus Issue Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Bonus Issue Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Bonus Issue Registration in Mumbai</a></li> 
+<li><a href="">Bonus Issue Registration in Hyderabad</a></li> 
+<li><a href="">Bonus Issue Registration in Chennai</a></li> 
+<li><a href="">Bonus Issue Registration in Pune</a></li> 
+<li><a href="">Bonus Issue Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Bonus Issue Registration in Kolkata</a></li> 
+<li><a href="">Bonus Issue Registration in Ahmedabad</a></li> 
+<li><a href="">Bonus Issue Registration in Delhi</a></li> 
+<li><a href="">Bonus Issue Registration in Agra</a></li> 
+<li><a href="">Bonus Issue Registration in Jaipur</a></li>
+ </ul>
+
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Bonus Issue Registration in Kochi</a></li> 
+<li><a href="">Bonus Issue Registration in Lucknow</a></li> 
+<li><a href="">Bonus Issue Registration in Surat</a></li> 
+<li><a href="">Bonus Issue Registration in Patna</a></li> 
+<li><a href="">Bonus Issue Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Bonus Issue Registration in Bhopal</a></li> 
+<li><a href="">Bonus Issue Registration in Kanpur</a></li> 
+<li><a href="">Bonus Issue Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Bonus Issue Registration in Prayagraj</a></li> 
+<li><a href="">Bonus Issue Registration in Coimbatore</a></li> 
+<li><a href="">Bonus Issue Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Bonus Issue Registration in Vadodara</a></li> 
+<li><a href="">Bonus Issue Registration in Nagpur</a></li> 
+<li><a href="">Bonus Issue Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+ 
+ 
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+  .whatsapp_float a img {
+         width: 60px;
+         height: 60px;
+         border-radius: 50px
+ }
+ .whatsapp_float {
+         position: fixed;
+         bottom: 50px;
+         right: 20px;
+         z-index: 9;
+ }
+ </style>
+     <div class="whatsapp_float">
+         <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+   
+   
+     </div>
+ <!--End whatsapp button-->
+  
+  
+  
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+   <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+   <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+   <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+ 
+ 
+   
+   <script src="{% static 'plugins/google-map/map.js' %}"></script>
+   <script src="{% static 'js/script.js'%}"></script>
+ 
+   </div> 
+   
+   <script>
+ $(document).ready(function(){
+   $(".contentdd").slice(0, 1).show();
+   $("#loadMore").on("click", function(e){
+     e.preventDefault();
+     $(".contentdd:hidden").slice(0, 1).slideDown();
+     if($(".contentdd:hidden").length == 0) {
+       $("#loadMore").text("No Content").addClass("noContent");
+     }
+   });
+   
+ })
+     </script>
+   </body>
+
+  </html>

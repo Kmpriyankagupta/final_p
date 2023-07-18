@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/section-8-company-registration-guide"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Section 8 Company Registration</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted Consultant in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek advice from industry experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+ <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+        
+   
+   
+    </div></div> 
+            </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+    <section id="main-container" class="main-container">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-xl-3 col-lg-4">
+            <div class="sidebar sidebar-left">
+              <div class="widget"> 
+                <ul class="nav service-menu">
+                 
+                 <li class="active"><h4>Popular Options</h4></li>
+                 <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+                 <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+                 <li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+                 <li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+                 <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+                 <li><h4 style="margin: 14px 0px;">Special Business Entities</h4></li>
+                 <li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+                 <li class="active"><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+                 <li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+                 <li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>       
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+          <article><h2 class="column-title mrt-0">Non-Profit Organization, Section 8 Company, Registration Process, Obligations, Benefits, Annual Compliances, Requirements, Exemptions, India</h2></article><br>
+          
+
+          <div class="row">
+            <div class="col-md-12">
+              <p>The concept of such companies was introduced in Companies Act 1913 that permitted companies with charitable objects etc. to be registered without the words ‘Limited’ or ‘Private Limited’.. Section 25 of Companies Act, 1956 was then introduced for such companies based on English Companies Act 1948. According to the Companies Act 2013, a Section 8 company is defined as an organization whose objectives are to promote arts, commerce, science, research, education, sports, charity, social welfare, religion, environmental protection, or other similar activities goals. It is a non-profit organization (NPO)</p>
+              
+              
+ 
+				<ul>
+<li>The process of registering a Section 8 Company is same as incorporating an “NGO, Trust, or a Co-operative Society” under the Companies Act 2013.</li>
+<li>An extra necessity must be fulfilled for obtaining a license from the central government under Section 8 of the Companies Act, 2013.</li>
+<li>If the proposed Section 8 Company has been enrolled as a private limited than at least 2 directors are required. But if it is a “public limited Section 8 Company” then a minimum of 3 directors must be there.</li>
+<li>The license, basically, allows them to delete Private/Public Limited from their name. With this permit, the company becomes eligible for the specific exclusions from provisions of law and has concessions in the charge.</li>
+
+
+
+				</ul>
+           
+<p>As per the rules, if NPO fails to comply with the responsibilities stated by the Central Government, it may lead to winding up of the company on order of the Central Government. Moreover, strict legal actions will be taken against all the members of the company.</p>
+           
+<p>•	If a company defaults in complying with the provisions of the Act, then it shall, without prejudice to any other action under the provisions of this section, be punishable with a fine which shall not be less than Rs.10 lakhs and may get extend to even Rs.1 crore. The Directors and all other officers of the company, found in default, shall be punishable with imprisonment for a term which may extend to 3-years, or with a fine of not less than Rs.25, 000 that too may extend to Rs. 25 lakhs, or both. Provided that it is proved that the operations were conducted fraudulently.</p>  
+           
+           
+<h4>Objective Section 8 Company</h4>   
+           
+<p>Primary objective of section 8 company is to work for the welfare of the society in the fields of science, art, sports, education, research, environment protection etc.</p>   
+<p>Such company intends to apply its profit in promoting its objects and prohibiting the payment of any dividend to its members.</p>   
+     
+           
+           
+           
+            </div> 
+            
+            
+            <div class="col-lg-12"><img src="{% static 'images/profit.jpg' %}" alt="profit"></div>
+            
+            
+            <div class="col-lg-12">
+			<h3>OBLIGATIONS</h3>  
+           
+           <ol>
+           
+<li>There should be a clear vision and project plan of the company for the next 3 years</li>
+<li>Directors or promoters of the company cannot withdraw any remuneration in any form.</li>
+<li>The entire profit of the company which is generated must be used towards the furtherance of their cause and meeting the objectives</li> 
+<li>No dividend should be paid to any of their members or directors of the company either directly or indirectly.</li>
+<li>Section 8 Company shall include the words like – Foundation, forum, association,federation, chamber, confederation, Council, electoral trust and like etc.</li>
+<li>In case of revocation, the company may get wind-up. Or it may be simply asked to change its name by adding either “Private Limited or Public Limited”.</li>
+<li>And the assets remaining after clearing debts and liabilities of such a Company shall be transferred to some other Section 8 Company having similar objects.</li>
+<li>Then every officer in default shall be liable for action.</li>
+<li>Any such order shall not be passed unless the company has been given a reasonable opportunity of being heard.</li>
+</ol>
+           
+<h4>Procedure for Incorporation of a Section 8 Company?</h4>    
+           
+				
+<p>To incorporate a Section 8 Company, an application shall be made to the Registrar of Companies in Form no. INC.12, which shall be accompanied, inter alia, by the following documents:<br>
+a.	Prepare DSC and file name approval.<br>
+b.	Minimum two directors and two members are required to incorporate it.<br>
+c.	Draft Memorandum of Association (MOA) and Articles of association (AOA) of the Company in prescribed format (Form no. INC – 13) where the photographs of subscribers are affixed<br>
+d.	A Declaration is to be attached in Form no. INC-14 (on the stamp paper, duly notarized) by an Advocate, a Chartered Accountant, Cost Accountant or Company Secretary in practice, that the draft memorandum and articles of association have been drawn up in conformity with the provisions of section 8 and rules made there under and all the requirements under section 8 have been complied with.<br>
+e.	 An estimate of the future annual income and expenditure of the company for next three years, specifying the sources of the income and the objects of the expenditure. <br>
+f.	 A declaration (in Form no. INC-15) on stamp paper duly notarized by each of the persons making the application and <br>
+g.	 Form no. INC-9 from each subscribers and first directors, on appropriate stamp paper of the State and duly notarized.
+</p>    
+
+                          
+           </div>
+            
+            
+<div class="col-lg-12">
+<p><strong>The Central government has also brought out certain exemptions to Section 8 </strong></p> 
+          
+ <h4>Companies under Section 462 of Companies Act 2013.</h4>
+           	
+<p><strong>1.	Notice :</strong> Section 8 Company can hold a meeting with minimum 14 days notice as against 21 days notice.</p> 
+
+<p><strong>2.	Minutes:</strong> Section 118 (Minutes) does not apply as a whole except that minutes may be recorded within 30 days of the conclusion of the meeting in case of companies where the articles of association provide for confirmation of minutes by circulation.</p> 
+
+<p><strong>3.	Independent director :</strong> Section 8 Companies are exempted from the requirement of appointment of independent director and all the consequential provisions relating to Independent directors under section 149(1) of the Companies Act.</p> 
+
+<p><strong>4.	Company Secretary:</strong> Appointing a Company secretary is not mandatory for section 8 companies Incentives</p> 
+
+<p><strong>5.	No. of Directors:</strong> Directors of the company can obtain positions in more than 20 companies.</p> 
+
+<p><strong>6.	No minimum capital :</strong> There is no minimum share capital requirement in section 8 company incorporation.</p> 
+
+<p><strong>7.	Tax Benefit:</strong> The income of section 8 company is completely tax free if the company has obtained 80G and 12A registration.</p> 
+
+<p><strong>8.	Caro:</strong> Requirements of Companies Auditor’s Report Order or CARO do not apply to this type of company.</p> 
+
+<p><strong>9.	Financial Statements:</strong> copy of audited financial statements shall be sent to various recipients not less than 14 days before the date of meeting to stakeholders</p> 
+
+            </div>
+            
+<div class="col-lg-12">
+	<h4>Annual Compliances for Section 8 companies as per the Companies Act 2013</h4>
+	
+	<ul>
+<li>Conduction of minimum of two board meetings in a year.</li>
+<li>Maintenance of Books of Accounts</li>
+<li>Preparation of Financial Statements</li>
+<li>Mandatory Audit</li>
+<li>Income tax return filing</li>
+<li>Filing of financial statements in form AOC 4</li>
+<li>An annual return is to be filed every year with other e- filing forms like MGT 7.</li>
+<li>Additional compliances to fulfil the registration like 12AA, 80G etc</li>
+
+	</ul>
+	
+	
+	
+</div>         
+            
+   <div class="col-lg-12">
+   	<h4>DOCUMENTS REQUIRED</h4>
+   	<p><strong>For Directors/Shareholders</strong></p>
+   	<ul>
+<li>Copy of PAN Card</li>
+<li>Aadhaar Card</li>
+<li>Address Proof (Bank Statement, Electricity Bill, Telephone Bill)</li>
+<li>2 Passport Sized Photographs</li>
+ 	</ul>
+<h4>For Registered Office</h4>
+<ul>
+<li>Ownership Proof (House Tax etc.)</li>
+<li>Utility Bill (Electricity Bill, Gas Bill)</li>
+<li>Address Proof (Bank Statement, Electricity Bill, Telephone Bill)</li>
+
+</ul>
+ 	
+   </div>  
+          
+   <div class="col-lg-12">
+   	<h4>Important Points</h4>
+   	<p><strong>Minimum Requirement:</strong></p>
+   	<ul>
+<li>A Section 8 Company gets incorporated by the MCA.</li>
+<li>All requirements of the Companies Act 2013, such as the minimum number of Directors and Shareholders, etc. must be met with</li>
+ </ul>
+  	<p><strong>Charitable Object</strong></p>
+   	<ul>
+<li>Section 8 Companies can be established for non-profit objectives only. Any profit earned or income received by this Company is not to be distributed among its members.</li>
+<li>This implies that the income will either be reinvested in the business or utilized for the progress of its main objects, i.e. charitable purpose.</li>
+
+   	</ul>
+<p><strong>Management Team</strong></p>
+<ul>
+	<li>Unlike other Trusts which are governed by the Trustees as per a Trust Deed, the operations of Section 8 Companies are managed by the Board of the Directors as per their “MoA and AoA”.</li>
+</ul>
+   	
+   </div>  
+   
+          
+                        
+   <div class="col-lg-12">
+   <p><strong>Companies Act, 2013</strong>  <br>
+A “Section 8 Company” must follow the provisions prescribed under the Companies Act, 2013, such as “Maintaining Book of Accounts, Audits, Return Filing, Board Meetings, etc”.</p>
+
+ <p><strong>MoA&AoA</strong> <br>
+A Section 8 Company shall not make any changes to the provisions of it’s “MoA&AoA” without seeking approval from the Central Government first.</p>
+
+ <p><strong>Voting Rights</strong> <br>
+The voting rights of the shareholders of a Section 8 Company are based on the number of shares held by them. Similar to that of any other company.</p>
+
+ <p><strong>Income tax</strong> <br>
+The Company has to follow the provisions of the Income Tax Act.</p>
+
+ <p><strong>GST Registration</strong> <br>
+If Section 8 Company comes under the purview of the GST Act, it must get registered with GST.</p>
+
+ <p><strong>Conversion</strong> <br>
+It may not convert itself to any other kind of company structure without complying with conditions, as applicable.</p>
+
+   	
+   	
+   </div>  
+          
+   <div class="col-lg-12">
+   	<h4>Donations/Funding of Section 8 Company</h4>
+   	<p>Section 8 Company is not allowed to raise capitals by way of deposits but they can accept donations from the general public. Below are some of the ways by which it can raise funding:</p>
+   	
+   	<ul>
+<li>Foreign Donations: Foreign donations are allowed only when FCRA (Foreign Contribution Regulation Act, 1976) registration has been taken. FCRA license can only be applied after 3-years from the date of registration. However, if some really urgent foreign donations are necessary, then you may apply for prior permission from the commissioner.</li>
+
+<li>Equity Funding: A “Section 8 Company” can also raise funds by issuing new equity shares at a higher value.</li>
+
+<li>Domestic donations: There is no limitation to domestic donations. But to avoid money laundering cases, a proper system must be laid down to keep them in check.</li>
+
+   	</ul>
+   	
+   	
+   </div>  
+   
+                 
+   <div class="col-lg-12">
+   	<h4>Conclusion</h4>
+   	<p>If the operations of the Company are found to be conducted fraudulently or in violation of the objects of the Company or unfavorable to public interest then, also, the license can be revoked.</p>
+   	<p>The objective of the section 8 company cannot be altered without prior permission of the Central Government of India.</p>
+   	
+   </div>  
+   
+                 
+   <div class="col-lg-12">
+   	<h4>FAQ</h4>
+   	
+<p><strong>What is a Section 8 company?</strong><br>
+It is a type of not-for-profit company set up for the promotion of art, science, commerce, charity, sports, education, research, or any other useful activity. These companies are typically formed to benefit a specific community or purpose and are excluded from the provisions of the Companies Act, 2013 that generally apply to other companies.</p>
+
+<p><strong>2.	Can Section 8 company make profit?</strong>
+Yes, Section 8 companies can make a profit. Section 8 companies are businesses that receive subsidies from the government to provide services to low-income people. They can also use different ways to gain incomes such as - Investment, Donations, Funding, etc.</p>
+
+<p><strong>3.	How long it will take to incorporate a Company? </strong><br>
+The time taken for registration will depend on the submission of relevant documents by the client and the speed of Government Approvals. To ensure speedy registration, please choose a unique name for your Company and ensure you have all the required documents prior to starting the registration process.</p>
+
+ <p><strong>4.  What is difference between NGO and Section 8 company?</strong><br>
+A Non-Governmental Organization (NGO) is an organization that is independently established and operated, usually with a charitable, educational, religious, or social purpose. NGOs are usually non-profit and do not have a profit motive.<br>
+ 
+A Section 8 Company is a non-profit organization formed to promote commerce, art, science, sports, education, research, social welfare, religion, charity, protection of environment or any other such object. Section 8 companies are allowed to generate profit but they must use their profits for the purpose of achieving their goals and not for the benefit of its members.</p>
+
+<p><strong>5.How long is the registration of the Company valid? </strong><br>
+Once a Company is incorporated, it will be active and in existence as long as the annual compliances are met with regularly. In case, annual compliances are not complied with, the Company will become a Dormant Company and may be struck off from the register after a period of time. A struck-off Company can be revived for a period of up to 20 years.</p>
+
+<p><strong>6. Can Section 8 company make profit?</strong><br>
+Yes, Section 8 companies can make a profit. Section 8 companies are businesses that receive subsidies from the government to provide services to low-income people. They can also use different ways to gain incomes such as - Investment, Donations, Funding, etc.</p>
+
+<p><strong>7. Do I have to be present in-person to incorporate a Section 8 Company?</strong> <br>
+No, you will not have to be present at our office or appear at any office for the registration of a Section 8 Company. All the documents can be scanned and sent through email to our office. Some documents will also have to be couriered to our office.</p>
+
+<p><strong>8. What are the documents required for registration? </strong><br>
+Identity proof and address proof are mandatory for all the proposed Directors of the Section 8 Company. PAN Card is mandatory for Indian Nationals. In addition, the landlord of the registered office premises must provide a No Objection Certificate for having the registered office in his/her premises and must submit his/her identity proof and address proof.</p>
+
+ <p><strong>9. What is a Digital Signature Certificate? </strong><br>
+A Digital Signature establishes the identity of the sender or signee electronically while filing documents through the Internet. The Ministry of Corporate Affairs (MCA) mandates that the Directors sign some of the application documents using their Digital Signature. Hence, a Digital Signature is required for all Directors of a proposed Section 8 Company</p>
+
+<p><strong>10.  What is the Director Identification Number? </strong><br>
+Director Identification Number is a unique identification number assigned to all existing and proposed Directors of a Company. It is mandatory for all present or proposed Directors to have a Director Identification Number. Director Identification Number never expires and a person can have only one Director Identification Number.</p>
+
+<p><strong>11. Can NRIs /Foreign Nationals be a Director in a Section 8 Company?</strong> <br>
+Yes, a NRI or Foreign National can be a Director in a Section 8 Company after obtaining Director Identification Number. However, at least one Director on the Board of Directors must be a Resident India.</p>
+
+<p><strong>12.  Is an office required for starting a Section 8 Company ?</strong><br>
+An address in India where the registered office of the Company will be situated is required. The premises can be commercial/industrial/residential where communication from the MCA will be received.</p>
+
+   </div>         
+            
+<div class="col-lg-12">       
+ <p><strong>For any consultancy in the incorporation of Section 8 company || </strong></p> 
+
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p> 
+ 
+            
+          </div> 
+          </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+
+
+
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Section 8 Company Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Section 8 Company Registration in Haryana</a></li> 
+<li><a href="">Section 8 Company Registration in Assam</a></li> 
+<li><a href="">Section 8 Company Registration in Gujarat</a></li> 
+<li><a href="">Section 8 Company Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Section 8 Company Registration in Karnataka</a></li> 
+<li><a href="">Section 8 Company Registration in Bihar</a></li> 
+<li><a href="">Section 8 Company Registration in Rajasthan</a></li> 
+<li><a href="">Section 8 Company Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Section 8 Company Registration in Sikkim</a></li> 
+<li><a href="">Section 8 Company Registration in West Bengal</a></li> 
+<li><a href="">Section 8 Company Registration in Mizoram</a></li> 
+<li><a href="">Section 8 Company Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Section 8 Company Registration in Punjab</a></li> 
+<li><a href="">Section 8 Company Registration in Meghalaya</a></li> 
+<li><a href="">Section 8 Company Registration in Manipur</a></li> 
+<li><a href="">Section 8 Company Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Section 8 Company Registration in Nagaland</a></li> 
+<li><a href="">Section 8 Company Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Section 8 Company Registration in Goa</a></li> 
+<li><a href="">Section 8 Company Registration in Tamil Nadu</a></li> 
+<li><a href="">Section 8 Company Registration in Telangana</a></li> 
+<li><a href="">Section 8 Company Registration in Maharashtra</a></li> 
+<li><a href="">Section 8 Company Registration in Andhra Pradesh</a></li> 
+<li><a href="">Section 8 Company Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Section 8 Company Registration in Uttarakhand</a></li>   
+<li><a href="">Section 8 Company Registration in Odisha</a></li> 
+<li><a href="">Section 8 Company Registration in Jharkhand</a></li> 
+<li><a href="">Section 8 Company Registration in Chandigarh</a></li> 
+<li><a href="">Section 8 Company Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Section 8 Company Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Section 8 Company Registration in Mumbai</a></li> 
+<li><a href="">Section 8 Company Registration in Hyderabad</a></li> 
+<li><a href="">Section 8 Company Registration in Chennai</a></li> 
+<li><a href="">Section 8 Company Registration in Pune</a></li> 
+<li><a href="">Section 8 Company Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Section 8 Company Registration in Kolkata</a></li> 
+<li><a href="">Section 8 Company Registration in Ahmedabad</a></li> 
+<li><a href="">Section 8 Company Registration in Delhi</a></li> 
+<li><a href="">Section 8 Company Registration in Agra</a></li> 
+<li><a href="">Section 8 Company Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Section 8 Company Registration in Kochi</a></li> 
+<li><a href="">Section 8 Company Registration in Lucknow</a></li> 
+<li><a href="">Section 8 Company Registration in Surat</a></li> 
+<li><a href="">Section 8 Company Registration in Patna</a></li> 
+<li><a href="">Section 8 Company Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Section 8 Company Registration in Bhopal</a></li> 
+<li><a href="">Section 8 Company Registration in Kanpur</a></li> 
+<li><a href="">Section 8 Company Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Section 8 Company Registration in Prayagraj</a></li> 
+<li><a href="">Section 8 Company Registration in Coimbatore</a></li> 
+<li><a href="">Section 8 Company Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Section 8 Company Registration in Vadodara</a></li> 
+<li><a href="">Section 8 Company Registration in Nagpur</a></li> 
+<li><a href="">Section 8 Company Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>    
+
+
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+    <div class="whatsapp_float">
+        <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+    </div>
+<!--End whatsapp button-->
+ 
+ 
+ 
+  <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+  <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+  <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+  <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+  <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+  
+  <script src="{% static 'plugins/google-map/map.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+
+  </div> 
+  
+  <script>
+$(document).ready(function(){
+  $(".contentdd").slice(0, 1).show();
+  $("#loadMore").on("click", function(e){
+    e.preventDefault();
+    $(".contentdd:hidden").slice(0, 1).slideDown();
+    if($(".contentdd:hidden").length == 0) {
+      $("#loadMore").text("No Content").addClass("noContent");
+    }
+  });
+  
+})
+    </script>
+  </body>
+
+  </html>

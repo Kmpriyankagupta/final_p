@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/conversion-of-private-company-into-public-company"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon"/>
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area" style="background-image:url({% static 'images/banner/banner1.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Conversion of Private Company into Public Company</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li> 
+                      <li class="breadcrumb-item active" aria-current="page">Conversion of Private Company into Public Company</li>
+                    </ol>
+                </nav>
+              </div>
+          </div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+ 
+
+      <div class="col-xl-12 col-lg-12">
+        <div class="content-inner-page">
+         <h2 class="column-title mrt-0">Conversion of Private Company into Public Company</h2> 
+ <p>Are you planning to convert your private company into a public company or are you confused about how to do it? Well, this is a big decision. So it needs planning and a clear understanding about how to do it smoothly.</p>
+
+<p>Private limited firms have a lot to offer on their own, but eventually every private limited company wants to go public to increase scalability. Here, let us start understanding the process by reading below the following contents.</p>
+  
+
+    <div class="row">
+     <div class="col-md-12">
+  <h3>INTRODUCTION</h3>
+ <p>A company having a minimum paid-up share capital and restricts the right to transfer shares, and limits the number of its members to 200 by its articles of association is a private company under Section 2(62) of the Companies Act, 2013.</p>
+ 
+<p>A company which is not a private company is a public company under Section 2(71) of the Companies Act, 2013.</p>
+
+<p>Therefore, in simple words a Private Company is a closely held Company which puts a restriction on transfer of shares through its Articles of Association (AOA). The Companies Act, 2013, prohibits the invitation to the public to subscribe for shares in a Private Company. On the other hand, Public Company does not have any such restrictions regarding an invitation to the public for the subscription of shares or transferability of shares. Both companies have their benefits and limitations. The applicants sometimes desire to change their class of Company. The procedure followed for the Conversion of Private Company to Public Company will be discussed here.</p>
+
+      </div> 
+
+   
+   <div class="col-md-12">
+   	<img src="{% static 'images/benifit.jpg' %}">
+   	
+   </div> 
+   
+  <div class="col-md-12">
+   	<h3>PROCESS of conversion of private company into public company</h3>
+   	<p><strong>Convene a Board Meeting and Extra ordinary general meeting</strong></p>
+   	<p>The Agenda of the meetings are - Approval for Conversion of Company, Alteration of MOA and AOA, Fix date, time and place of EGM</p>
+   </div> 
+   
+<div class="col-md-12">
+   	<h3>File Form MGT-14</h3>
+   	<p><strong>Attest the following documents with self-attested signature of the authorised signatory </strong></p>
+   	<p>1. Certified True Copy (CTC) of board meeting resolution</p>
+<p>2. Notice of EGM with Explanatory statement</p>
+<p>3. Certified True Copy (CTC) of EGM Resolution</p>
+<p>4. Altered MOA & AOA</p>
+   </div> 
+   
+<div class="col-md-12">
+   	<h3>Convene a Board Meeting</h3>
+   	<p>The Agenda being Board Resolution for authorisation to convert the company and affidavit to execute it.</p>
+   </div> 
+   
+<div class="col-md-12">
+   	<h3>Newspaper Advertisement</h3>
+   	<p>The newspaper advertisement is to be done in Form INC-25A</p>
+   </div> 
+   
+<div class="col-md-12">
+   	<h3>Circulation of Notice</h3>
+   	<p>The notice must be served to the debenture holders, creditors, ROC and RD.</p>
+   </div>
+   
+<div class="col-md-12">
+   	<h3>Form RD-1 to be filed with the following attachments:</h3>
+   	<ul>
+<li>Signed Copy of Application</li>
+<li>Draft copy of altered MOA & AOA</li>
+<li>Copy of Minutes of EGM</li>
+<li>Copy of Signed ADVERTISEMENTS</li>
+<li>Declaration by director- about the limit on members i.e.; 200, no non-compliances.</li>
+<li>List of creditors and debenture holders.</li>
+<li>Affidavit by Director about true and fair list of creditors and debenture holders.</li>
+<li>Proof of Serving the Notice to all Creditors, Debenture holders, Registrar and other Regulatory Bodies.</li>
+<li>Power of Attorney or Memorandum of Appearance</li>
+   		
+   	</ul>
+   </div>
+   
+<div class="col-md-12">
+   	<h4>File form INC-28 along with copy of RD order</h4> 
+   	<h4>File form INC-27 along with copy of RD order</h4> 
+   
+   </div>
+   
+   
+<div class="col-md-12">
+   	<h3>COMPLIANCES TO FOLLOW DURING THE PROCESS OF CONVERSION</h3>   
+   <ul>
+<li>As per Section 3(1) of the Companies Act, 2013, the number of members of the Company is 7 before the Conversion of the Company.</li>
+<li>Again the number of directors is to be increased to 3 as per Section 149(1) of the Companies Act, 2013.</li>
+<li>The Company should pay all the matured deposits as per Rule 29(1) of Companies</li>
+<li>(Incorporation) Rules, 2014.</li>
+<li>The members of the Company should approve the Conversion of the Private Company to a Public Company.</li>
+<li>Name clause in the Memorandum of Association (MOA) be modified to exclude the word Private.</li>
+<li>The Company should file all the annual returns or financial statements due for filing with the Registrar of Companies (ROC).</li>
+<li>An application must adapt the Permanent Account Number (PAN) of the Company.</li>
+<li>Be responsible for the information to the Central government, where the Company has its registration.</li>
+
+<li>There should be an amendment to the Article of Association (AOA) so that they no longer include the restrictions and limitations of a Private Limited Company.</li>
+<li>The Central Government should also approve the Conversion</li>
+   	
+   </ul>
+   </div>
+   
+   
+   <div class="col-md-12">
+   	<h3>DOCUMENTS REQUIRED DURING THE CONVERSION</h3>  
+   	
+   	<ol>
+<li>Property Papers Copy (if Owned Property)</li>
+<li>Electricity Bill/ Water Bill (if Business Place)</li>
+<li>Digital Signature Certificate (DSC) of all Directors</li>
+<li>Directors Identification Number of all Directors</li>
+<li>Permanent Account Number (PAN) Card of all Directors</li>
+<li>Passport size Photographs of all Directors</li>
+<li>Aadhar Card Copy</li>
+<li>Rent Agreement Copy (if Rented Property)</li>
+<li>Electricity Bill/ Water Bill (if Business Place)</li>
+ </ol>
+   	
+   	
+   </div> 
+   
+   <div class="col-md-12">
+   	<h3>OTHER RELATED DETAILS TIMELINES</h3> 
+   	<table class="table table-bordered">
+   		<tbody>
+   		<tr>
+   			<th>Forms</th>
+   			<td>Number of Days</td>
+   			</tr>
+   			
+   				<tr>
+   			<th>File MGT-14</th>
+   			<td>within 30 days</td>
+   			</tr>
+   			
+   			<tr>
+   			<th>Time gap between Newspaper Advertisement and Form RD-1</th>
+   			<td>atleast 21 days</td>
+   			</tr>
+   			
+   			
+   			<tr>
+   			<th>Time gap between the Notice and RD-1 form filing</th>
+   			<td>atleast 21 days</td>
+   			</tr>
+   			
+   			<tr>
+   			<th>File form RD-1</th>
+   			<td>within 60 days from the date of passing of Special Resolution</td>
+   			</tr>
+   			
+   	      <tr>
+   			<th>INC-28</th>
+   			<td>within 15 days from RD order</td>
+   			</tr>
+   			
+         <tr>
+   			<th>INC-27 </th>
+   			<td>within 30 days from RD order</td>
+   			</tr>
+   			
+   			
+   		</tbody>
+   		 
+   		
+   	</table>
+   	 <p><strong>Post Conversion Steps:</strong></p>
+   	   
+   	  <ul>
+<li>Use the copy of altered Memorandum and Articles of the Company</li>
+<li> Make all requisite changes in the signboards, Letter heads, Books Rubber Stamps, Bill Books, Common Seal, visiting cards and other documents and items</li>
+<li>Make the changes in PAN, TAN, GST Portal, Bank Accounts</li>
+<li>Intimate the changes to Banks, Income Tax Department, PF Department, ESI Department and all other departments</li>
+   	  	
+   	  </ul> 
+   	   
+   	   
+   </div> 
+   
+   
+   <div class="col-md-12">
+   <h3>FREQUENTLY ASKED QUESTION (FAQ’s)</h3>
+   <p><strong>Q. Is it necessary to have 3 Directors for a Public Limited Company?</strong><br>
+Ans.Yes, the law requires that every company must have at least 3 directors in the case of
+Public limited companies.</p>
+
+<p><strong>Q. Who is eligible to become a member of a public company?</strong><br>
+Ans. The subscriber to the memorandum of the company who shall be deemed to have agreed
+(i)To become member of the company, and on its registration, shall be entered as member in its
+Register of members; (ii) Every other person who agrees in writing to become a member of the
+Company and whose name is entered in the register of members of the company.</p>
+
+<p><strong>Q. Is there any minimum timeline for a private limited company to be incorporated to get
+Converted itself into a public limited company?</strong><br>
+Ans. There is no minimum time limit mentioned as such in the Act and therefore, if management
+intends, they can convert their private Company into a public one at any point of time.</p>
+
+<p><strong>Q. Which law governs the process of conversion of a private limited company to a public
+limited Company?</strong><br>
+Ans. Conversion of Private Limited to Public Limited Company can be done by altering the
+Memorandum of Association (MOA) and Article of Association (AOA) of the company. This
+Procedure of conversion is governed by the Companies Act, 2013.</p>
+
+<p><strong>Q. Is there a requirement of physically being present during the process of conversion?</strong><br>
+Ans. No, conversion of one company to another is an online process. You just need to follow
+the process.</p>
+
+<p><strong>Q. When can a company start running its business affair after the conversion from
+private to public?</strong><br>
+Ans. A Public Company can start running its business affairs after receiving COI (Certification of
+Incorporation) from the Registrar of Companies (ROC).</p>
+
+<p><strong>Q. What is the minimum capital requirement for a public company?</strong><br>
+Ans. As per Companies (Amendment) Act, 2015, the requirement to have Rs 1,00,000 as
+Minimum paid-up capital for public limited companies has been removed.</p>
+   
+   </div> 
+   
+   
+  </div>  
+  </div> 
+</section> 
+    
+	
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+  .whatsapp_float a img {
+         width: 60px;
+         height: 60px;
+         border-radius: 50px
+ }
+ .whatsapp_float {
+         position: fixed;
+         bottom: 50px;
+         right: 20px;
+         z-index: 9;
+ }
+ </style>
+     <div class="whatsapp_float">
+         <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp" width="50px" class="whatsapp_float_btn"/></a>
+   
+   
+     </div>
+ <!--End whatsapp button-->
+  
+  
+  
+   <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+   <script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+   <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+   <script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+   <script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+   <script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+ 
+ 
+   
+   <script src="{% static 'plugins/google-map/map.js' %}"></script>
+   <script src="{% static 'js/script.js'%}"></script>
+ 
+   </div> 
+   
+   <script>
+ $(document).ready(function(){
+   $(".contentdd").slice(0, 1).show();
+   $("#loadMore").on("click", function(e){
+     e.preventDefault();
+     $(".contentdd:hidden").slice(0, 1).slideDown();
+     if($(".contentdd:hidden").length == 0) {
+       $("#loadMore").text("No Content").addClass("noContent");
+     }
+   });
+   
+ })
+     </script>
+   </body>
+ 
+   </html>

@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/procedure-for-nidhi-company-registration"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area" style="background-image:url({% static 'images/banner/banner1.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">Procedure For Nidhi Company Registration</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li> 
+                      <li class="breadcrumb-item active" aria-current="page">Procedure For Nidhi Company Registration</li>
+                    </ol>
+                </nav>
+              </div>
+          </div> 
+        </div> 
+    </div> 
+  </div> 
+</div> 
+
+<section id="main-container" class="main-container">
+  <div class="container">
+    <div class="row">
+  
+    <div class="row">
+      <div class="col-12"> 
+        <h3 class="section-sub-title" style="margin: 15px 0px;">Procedure For Nidhi Company Registration</h3>
+        
+<p>Nidhi company means a company which is governed by section 406 of the Companies Act, 2013 read with the Nidhi Rules, 2014, being the law in force for the regulation of Nidhi companies.</p>
+<p>Nidhi Company in India is incorporated with the sole object or purpose of inculcating the habit of thrift and savings among its members.</p>    
+    </div> 
+    </div> 
+            
+ 
+<div class="row">
+     <div class="col-md-12 mm"> 
+ 
+ <h4>Pre-requisites for incorporation of Nidhi Company:-</h4>
+ <ol>
+<li>IT SHOULD BE A PUBLIC COMPANY</li>
+<li>MINIMUM PAID UP EQUITY SHOULD BE RS.5,00,000.</li>
+<li>THEY CAN NOT ISSUE PREFERENCE SHARES.</li>
+<li>THEY CAN NOT COME WITH ANY OBJECT OTHER THAN SAVING.</li>
+<li>THE WORD “NIDHI LIMITED” MUST BE ADDED WITH THEIR NAME WHEREVER AFFIX.</li>
+<li>THEY CAN ONLY ALLOWED TO TAKE DEPOSITS FROM ITS OWN MEMBERS AND LEND THE LOANS TO ONLY THEIR OWN MEMBERS.</li>
+<li>FUNDS OF NIDHI COMPANY IS ONLY USED FOR THEIR MEMBERS AND THEIR BENEFITS.</li>
+<li>NIDHI COMPANY IS A CLASS OF NON BANKING FINANCIAL COMPANY WHICH IS EMPOWERED BY THE RESERVE BANK OF INDIA AND THEIR REGULATIONS.</li>
+<li>THERE SHOULD BE MINIMUM 7 MEMBERS AT THE TIME OF INCOPORATION OF NIDHI COMPANY.</li>
+<li>THERE SHOULD BE MINIMUM 3 DIRECTORS AT THE TIME OF INCORPORATION OF NIDHI COMPANY.</li>
+<li>NOT ADMIT A BODY CORPORATE, TRUST OR MINOR AS A MEMBER.</li>
+ </ol>
+  
+ 
+<h4>AFTER INCORPORATION OF NIDHI COMPANY.THERE IS A NEED OF DOING SOME IMPORTANT COMPLIANCE WITH IN A TIME PERIOD THAT IS GIVEN BELOW:-</h4>
+
+<ol>
+<li>WITH IN A PERIOD OF ONE YEAR FROM THE DATE OF INCORPORATION OF NIDHI COMPANY ,THE COMPANY HAS TO ENSURE THAT IT HAS NOT LESS THAN 200 MEMBERS.</li>
+<li>THEY HAVE TO MAINTAINED THEIR OWN NET OWNED FUND I.E. PAID UP SHARE CAPITAL AND FREE RESERVE OF AN AMOUNT OF 10 LAKH RUPEES AFTER DEDUCTING ACCUMULATED LOSSES AND INTANGIBLE ASSETS WHICH ARE APPEARING IN THE LAST AUDITED BALANCE SHEET OF THE COMPANY.</li>
+<li>THEY HAVE TO ENSURE THAT THEY HAVE UNENCUMBERED TERM DEPOSITS OF NOT LESS THAN 10 % OF THE OUTSTANDING DEPOSITS AS SPECIFIED IN THE RULE NO.14 OF THE NIDHI RULES 2014.</li>
+<li>THEY HAVE ALSO TO ENSURE THAT THE RATIO OF NET OWNED FUNDS DEPOSITS OF NOT MORE THAN 1:20.</li>
+
+
+<ol>
+
+      </div> 
+
+   <div class="col-lg-12">
+   <h5>SPECIAL NOTE:-THE AMOUNT WHICH REPRESENT THE PROCEEDS OF ISSUE OF PREFERENCE SHARES SHALL NOT BE INCLUDED WHEN WE CALCULATE NET OWNED FUNDS.</h5>
+   </div>
+   
+   <div class="col-lg-12">
+   <h4>ELIGIBILTY OF BECOMING DIRECTOR OF NIDHI COMPANY: -</h4>
+   
+   
+ <ol>
+<li>SHALL BE A MEMBER OF NIDHI COMPANY</li>
+<li>HOLDING VALING DIN</li>
+
+
+ </ol>
+ </div>
+   
+   
+   <div class="col-lg-12">
+   <h4>TENURE OF DIRECTOR:-</h4>
+   <p>HOLD OFFICE FOR A TERM UPTO 10 CONSECUTIVE YEARS ON THE BOARD OF NIDHI COMPANY AND ALSO ELIGIBLE FOR REAPPOINTMENT ONLY AFTER EXPIRATION OF 2 YEARS OF CEASING TO BE A DIRECTOR.</p>
+<p>IN CASE TENURE IS EXTENDED BY THE CENTRAL GOVERNMENT SO THE TERMINATION ALSO TAKE PLACE ON THE EXPIRY OF SUCH EXTENDED TENURE.</p>
+
+
+<h4>A SIMPLIFIED PROCESS OF INCORPORATION OF NIDHI COMPANY IS GIVEN AS FOLLOWS:-</h4>
+
+
+   <ol>
+<li>YOU CAN TAKE THE APPROVAL OF NAME FOR YOUR NIDHI COMPANY BY FILING THE “RUN” (RESERVE UNIQUIE NAME) WEB SERVICE BY MCA :- THE NAME OF NIDHI COMPANY SHOULD HAVE LAST WORDS AS “NIDHI LIMITED”.NO NEED OF DIGITAL SIGNATURE AT THE TIME OF TAKING APPROVAL OF NAME FOR NIDHI COMPANY.</li>
+<li>THE INDIVIDUALS WHICH ARE PROPOSED TO BECOME DIRECTOR IN THE NIDHI COMPANY HAVE TO APPLY FOR DIGITAL SIGNATURE FOR FURTHER PROCESS OF INCOPORATION AND AFTER INCORPORATION PROCESS OF COMPANY THROUGH ANY REGISTERED DSC AGENCY.</li>
+<li>AFTER THE NAME APPROVAL OR IN CASE YOU WANT TO APPLY THE NAME WITH THE FORM SPICE + ..YOU CAN APPLY NOW.</li>
+
+
+   </ol>
+   
+   </div> 
+   
+   <div class="col-lg-12">
+   <h4>ATTACHMENT OF THE FORM IS: -</h4>
+   <ol>
+<li>MEMORANDUM OF ASSOCIATION OF COMPANY</li>
+<li>ARTICLE OF ASSOCIATION OF COMPANY</li>
+<li>AGILE FORM</li>
+<li>ID PROOF OF DIRECTORS </li>
+<li>ADDRESS PROOF OF DIRECTORS.</li>
+<li>PAN CARD OF SUBSCRIBERS</li>
+<li>ADDRESS PROOF OF REGISTERED OFFICE OF COMPANY IN THE FORM OF RENT AGREEMENT OR REGISTRY OR ELECTRICITY OR ANY OTHER UTILITY BILL WITH NO OBJECTION CERTIFICATE FROM OWNER.</li>
+<li>CONSENT AND DECLARATION FROM DIRECTORS IN FORM DIR-2.</li>
+<li>AFFIDAVIT IN THE FORM SELF DECLARATION IN FORM INC-9</li>
+
+ </ol>
+   
+ </div>
+   
+<div class="col-lg-12 mm">
+  
+  <h4>CHECKLIST OF DOCUMENTS WHICH ARE REQUIRED FOR NIDHI COMPANY: -</h4> 
+<ol>
+<li>ADDRESSPROOF OF COMPANY (RENT AGREEMENT/REGISTRY, ELECTRICITY BILL/OTHER UTILITYBILL)</li>
+<li>PAN CARD, PHOTOGRAPH,ADHAR CARD ,BANK STATEMENT OF THE PROPOSED DIRECTOR</li>
+<li>NO OBECTION CERTIFICATE FROM THE OWNER OF THE ADDRESS OF REGISTERED OFFICE SO AFTER THE INCORPORATION NO PROBLEM ARISE TO THE COMPANY.</li>
+<li>CONSENT AND DECLARATION FROM ALL THE PROPOSED DIRECTORS </li>
+
+</ol>
+
+
+<p><strong>RESTRICTIONS ON NIDHI COMPANY BY THE GOVERNMENT THAT THEY ARE NOT ELIGIBLE TO ENTER IN SOME TRANSACTIONS :-</strong></p>
+<ol>
+<li>HIRE PURCHASE OR ACQUISITION OF SECURITIES ISSUED BY THE CORPORATE BODY,BUSINESS OF LEASING FINANCE,INSURANCE,CHIT FUND.</li>
+<li>NOT ACCEPT THE DEPOSITS FROM OTHER THAN ITS OWN MEMBERS,BODY CORPORATE</li>
+<li>NOT IN BUSINESS OF BORROWING AND LENDING IN ITS OWN NAME TO OTHER THAN THEIR OWN MEMBERS.</li>
+<li>PLEDGE ANY OF ASSETS LODGED BY ITS OWN MEMBERS AS SECURITY.</li>
+<li>PAY ANY BROKERAGE OR INCENTIVES FOR MOBILIZING DEPOSITS FROM MEMBERS.</li>
+
+</ol>
+
+<p><strong>THERE ARE SOME PRESCRIBED FORM FOR THE COMPLIANCES OF NIDHI COMPANY THAT ARE GIVEN BELOW:-</strong></p>
+<ol>
+<li><strong>FORM NDH-1 :- </strong>EVERY NIDHI COMPANY WITHIN 90 DAYS FROM THE CLOSE OF ITS FIRST FINANCIAL YEAR AFTER ITS INCORPORATION OR OTHER YEAR AS PER APPLICABLITY HAVE TO FILE A RETURN OF STATUTORY COMPLIANCE WHICH IS CERTIFIED BY A PRACTICING PROFESSIONAL (CS/CA/CWA)  ALONG WITH FEES WHICH IS PRESCRIBED IN THE COMPANIES (REGISTRATION OFFICES & FEES) RULES,2014</li>
+<li><strong>FORM NDH-2 :- </strong>ANY NIDHI COMPANY FOR WHICH IT IS NOT POSSIBLE TO COMPLY THE MINIMUM 200 MEMBERS REQUIREMENT WITHIN A ONE YEAR FROM THE DATE OF INCORPORATION.SO THEY CAN APPLY FOR THE EXTENSION OF TIME PERIOD FOR COMPLY THIS REQUIREMENT TO THE REGIONAL DIRECTOR  WITHIN 30 DAYS FROM THE CLOSING OF FIRST FINANCIAL YEAR  ALONG WITH FEES IN FORM NDH-2 ……AFTER CONSIDERING THE REQUEST OF EXTENSION OF TIME ON REASONABLE GROUND THE RD MAY CONSIDER AND PASS ORDER WITHIN 30 DAYS OF RECEIPT OF APPLICATION  FOR EXTENSION OF TIME PERIOD FOR THIS COMPLIANCE UPTO 1 YEAR FROM THE DATE OF RECEIPT OF APPLICATION.IN CASE NIDHI COMPANY NOT APPLY FOR THIS EXTENSION SO THEY ARE NOT ELIGIBLE FOR ACCEPTING DEPOSIT AND THEY ALSO HAVE TO BEAR HUGE PENALTY.</li>
+<li><strong>FORM NDH-3:- </strong>AS PER RUL2 21 OF THE NIDHI RULES 2014,EVERY NIDHI COMPANY SHOULD FILE THEIR HALF YEARLY RETURN IN FORM NO.NDH-3 ALONG WITH FEES WITHIN 30 DAYS FROM THE CONCLUSION OF EACH HALF YEAR  WITH CERTIFICATION BY A PRACTICING PROFESSIONAL (CA/CS/CWA).</li>
+<li><strong>FORM NDH-4:- </strong>FOR TAKING THE STATUS OF NIDHI COMPANY THIS FORM IS USED BY THE PUBLIC COMPANY.</li>
+
+</ol>
+
+<p><strong>DIVIDEND COMPLIANCE :-</strong></p>
+	<ol>
+<li>GOVERNED BY THE PROVISIONS OF THE NIDHI RULES,2014.</li>
+<li>THEY SHALL NOT DECLARE DIVIDEND EXCEEDING THE RATE OF 25% OR SUCH HIGHER AMOUNT AS MAY BE SPECIFICALLY APPROVED BY THE RD FOR THE REASONS TO BE RECORDED IN WRITING AND SUBJECT TO SUCH CONDITIONS:-</li>
+<li>AN EQUAL AMOUNT TRANSFERRED TO GENERAL RESERVES.</li>
+<li>NOT DOING ANY DEFAULT IN REPAYMENT OF MATURED DEPOSITS AND INTEREST.</li>
+<li>COMPLIED ALL NIDHI RULES ,2014.</li>
+
+</ol>
+
+<p><strong>GENERAL POINTS OF NIDHI COMPANY:-</strong> </p>
+<ol>
+<li>NIDHI COMPANY HAVE TO GIVE LOCKER FACILITIES TO THE MEMBERS ON RENT BUT THE RENTAL INCOME DOES NOT EXCEEDED 20 % OF GROSS INCOME OF THE NIDHI AT ANY POINT OF TIME DURING A FINANCIAL YEAR.</li>
+<li>THEY CAN NOT ACQUIRE IN OTHER COMPANY UNLESS SPECIAL RESOLUTION IS PASSED AND OBTAINED PREVIOUS APPROVAL OF THE RD HAVING JURISDICTION OVER SUCH NIDHI COMPANY.</li>
+<li>ADVERTISENT FOR TAKING DEPOSIT IS PROHIBITED BUT PRIVATE CIRCULATION TO MEMBERS NOT CONSIDER AS ADVERTISEMENT FOR SOLICITING DEPOSIT .</li>
+<li>EVERY NIDHI COMPANY SHALL ISSUE FULLY PAID UP EQUITY SHARES OF THE NOMINAL VALUE OF NOT LESS THAN 10 RUPEES EACH.</li>
+<li>NO SERVICE CHARGE SHALL BE LEVIED FOR THE ISSUE OF SHARES.</li>
+<li>MINIMUM 10  EQUITY SHARES OR SHARES EQUIVALENT TO 100 RUPEES TO EACH DEPOSIT HOLDER.</li>
+<li>NOT ELIGIBLE FOR OPEN A  CURRENT BANK ACCOUNT WITH ITS MEMBERS.</li>
+<li>NIDHI NOT ELIGIBLE FOR OPEN A BRANCH OR ANY THING OUTSIDE THE STATE ,WHERE REGISTERED OFFICE IS SITUATED.</li>
+<li>THEY CAN ELIGIBLE FOR OPEN UPTO 3 BRANCHES WITHIN THE DISTRICT SUBJECT TO CERTAIN CONDITION</li>
+<li>ONLY ELIGIBLE FOR PROVIDING LOAN TO ITS MEMBER SUBJECT TO SOME CONDITIONS.</li>
+<li>THERE IS NO NEED TO TAKE RBI APPROVAL LETTER FOR INCOPRORATION BECAUSE RBI EXEMPT NIDHI COMPANIES FROM THEIR COMPLIANCES</li>
+
+</ol>
+ 	
+<p><strong>THERE ARE SEVERAL ADVANTAGES OF NIDHI COMPANY :-</strong></p>
+<ol>
+<li>EASY TO GET FUND OR BORROW CAPITAL OR LEND MONEY</li>
+<li>EASY TO INCORPORATE OR OPERATION OF COMPANY</li>
+<li>NO EXTERNAL MEMBER INTERVENTION</li>
+<li>RELAXATION IN ANNUAL COMPLIANCES</li>
+<li>EASY TO TRANSFER OWNERSHIP</li>
+<li>INVESTMENT IS SECURED</li>
+<li>LESS INTERVENTION OF GOVERNMENT AND RBI</li>
+
+</ol>
+
+<h4>FAQs ON NIDHI COMPANIES</h4> 
+
+<p>Q.1: Will the deposits made with the Nidhi Company safe and secured?<br>
+Yes, such deposits are safe and secure since the Ministry of Corporate Affairs and Reserve Bank of India has framed certain rules and regulations, to ensure protection and security of Deposits.</p>
+
+<p>Q.2: How does the funds procured by the Nidhi Company utilized?<br>
+The Nidhi Company utilize their funds by lending the same to their shareholders as per Nidhi Rules. Such loans are in the form of small loan for business and financing purpose.</p>
+
+<p>Q.3: Who can become the shareholder/member of Nidhi Company?<br>
+Any person, above the age of 18 years, as per age proof is eligible to become the member of the Nidhi Companies.</p>
+
+<p>Q.4: Can a Minor be a Member of Nidhi Company?<br>
+A minor shall not be admitted as a member of Nidhi, provided the said deposits has been accepted in the name of a minor, and the same is made by the legal heir or the guardian of the said minor.</p>
+
+<p>Q.5: Whether Nidhi can engage itself in business other than mentioned above like (Chit Fund, Hire Purchase, Insurance, investing etc)?<br>
+Nidhi are not expected to engage themselves in the business of Chit Fund, hire purchase, insurance or in any other business including investments in shares or debentures.</p>
+
+<p>Q.6: Whether Nidhi Company can issue Preference Share?<br>
+Nidhi shall not issue preference shares.</p>
+
+<p>Q.7: What is requirement of minimum number of Members in Nidhi Company?<br>
+Every Nidhi shall, within a period of one year from the commencement of these rules, ensure that it has not less than two hundred members;</p>
+
+<p>Q.8: Whether a person can be director of NIDHI Company without holding any share capital?<br>
+The Director shall be a member of Nidhi. Therefore, it is mandatory for director of Nidhi Company to hold shares.</p>
+
+<p>Q.9:  What Provisions Are Applicable To Nidhi Companies?<br>
+ Following provisions are applicable to Nidhi Companies.</p>
+
+As they are incorporated into the nature of Public Company so rules and regulations of Companies Act, 2013 are applicable.<br>
+RBI provisions related to Interest rate payable on deposit are applicable to Nidhi Companies. But the core provisions of RBI are not applicable to Nidhi Companies as RBI has exempted the Nidhi Companies from the same.</p>
+
+<p>Q.10: What is the minimum capital needed to form a Nidhi Company?<br>
+The minimum capital required to form a Nidhi Company is Rs. 5 lakhs. Further, within 1 year of Incorporation the Net Owned Fund shall be increased to Rs. 10 lakhs.</p>
+
+<p>Q.11: I am the only director and shareholder; can I form a Nidhi Company alone?<br>
+No, there should be at least 3 directors and 7 shareholders for incorporation of Nidhi Company.</p>
+
+<p>Q.12: Can a salaried person or a person in employment become director of a Nidhi Company?<br>
+Yes, a salaried person or person in employment can become director of a private limited, LLP, or OPC. However, one needs to check the employment agreement if that allows for such provisions. In a lot of cases, the employers are quite comfortable with the fact that their employee is a director in another company. However, if there’s a restriction in becoming a director of a company, one can hold shares in a company and become a shareholder alternatively.</p>
+
+<p>Q 13: Can a person under employment or a government servant or a professional carrying on his practice be a member/shareholder in a Nidhi Company?<br>
+Yes, a person under employment or a government servant, or a professional carrying on his practice can be a member/shareholder in a Nidhi Company. However, one needs to check if there’s any restriction from governing body, authority or ministry. </p>
+
+
+<h4>Nidhi Rules, 2014.</h4>
+
+<p>Q.14: Do I need to be physically present during this process?<br>
+No, Nidhi company registration is a completely online process. All the required documents are filed electronically, so you would not need to be physically present at all. You would just need to send us scanned copies of all the required documents & forms.</p>
+
+<p>Q.15: What are the restrictions on Nidhi Company?<br>
+They are not permitted to begin the matter of chit funds, Insurance, Hire Purchase Finance, Leasing Finance and obtaining of shares gave by organizations.
+Nidhi Company can't give protections, for example, preference shares, debentures and so on. They are denied from opening any present record with its individuals.
+It can't go into organization for doing lending and getting business. It isn't permitted to secure some other organization.</p>
+
+
+<p><strong>For any consultancy in the incorporation of Nidhi company || </strong></p>
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p>
+
+
+    </div> 
+   
+    </div> 
+   
+  
+   
+ 
+  
+ 
+  
+  
+
+  
+   
+  </div>  
+  </div> 
+</section> 
+    
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+ .whatsapp_float a img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px
+}
+.whatsapp_float {
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        z-index: 9;
+}
+</style>
+<div class="whatsapp_float">
+    <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+</div>
+<!--End whatsapp button-->
+
+
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</div> 
+
+<script>
+$(document).ready(function(){
+$(".contentdd").slice(0, 1).show();
+$("#loadMore").on("click", function(e){
+e.preventDefault();
+$(".contentdd:hidden").slice(0, 1).slideDown();
+if($(".contentdd:hidden").length == 0) {
+  $("#loadMore").text("No Content").addClass("noContent");
+}
+});
+
+})
+</script>
+</body>
+
+</html>

@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+ 
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline';">
+
+
+  <title>{{ data.title }}</title> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/register-an-indian-subsidiary"/>
+  <meta name="description" content="{{ data.description }}">
+  <meta name="keywords" content=" {{ data.keywords }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
+  <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}"> 
+  <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+	
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link href="{% static 'images/favicon.ico' %}" rel="shortcut icon">
+
+</head>
+<body>
+  <div class="body-inner">
+
+    <div id="top-bar" class="top-bar">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-md-8">
+                <ul class="top-info text-center text-md-left">
+                    <li>
+                    </li>
+                </ul>
+              </div>
+              <!--/ Top info end -->
+  
+              <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+                <ul class="list-unstyled">
+                    <li>
+                      <a title="Facebook" href="https://www.facebook.com/ngandassociate">
+                          <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                      </a>
+                      <a title="Twitter" href="https://twitter.com/ng_associates">
+                          <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                      </a>
+                      <a title="Instagram" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                      </a>
+					  <a title="Linked in" href="https://www.linkedin.com/company/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-linkedin"></i></span>
+                      </a>
+					  <a title="Youtube" href="https://www.instagram.com/ngandassociates/">
+                          <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                      </a>
+                      
+                    </li>
+                </ul>
+              </div> 
+          </div> 
+        </div> 
+    </div>
+  
+
+<header id="header" class="header-one">
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="{% url 'home' %}">
+                  <img loading="lazy" src="{% static 'images/logo.png' %}" alt="NG-Associates">
+                </a>
+            </div> 
+  
+            <div class="col-lg-9 header-right">
+                <ul class="top-info-box">
+                 <!--<li class="header-get-a-quote">
+                     <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">TALK TO EXPERTS</a>
+                  </li>-->
+                 
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Call Us</p>
+                          <p class="info-box-subtitle">+917807 40 40 40</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title">Email Us</p>
+                          <p class="info-box-subtitle"> info@ngandassociates.com</p>
+                      </div>
+                    </div>
+                  </li>
+                 
+                  <!--<li class="header-get-a-quote">
+                    <a class="btn btn-primary" href="https://bit.ly/3tVkkqn" target="_blank">Get A Quote</a>
+                  </li>-->
+                </ul> 
+            </div> 
+          </div> 
+  
+      </div> 
+    </div> 
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      
+                      <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Start a Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-6">
+			            
+  <ul class="multi-column-dropdown">
+<li><h4>Popular Options</h4></li>
+<li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+<li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+ </ul>
+	</div>
+			            <div class="col-sm-6">
+				             <ul class="multi-column-dropdown">
+<li><h4>Special Business Entities</h4></li>
+<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+ </ul>
+			            </div>
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                      
+                      
+            <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Intellectual Property<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+<li><h4>Trademark</h4></li>
+<li><a href="{% url 'trademark-registration-protection' %}">Trademark Registration</a></li> 
+<li><a href="{% url 'trademark-objection-reply' %}">Trademark Objection Reply</a></li> 
+<li><a href="{% url 'trademark-opposition' %}">Trademark Opposition</a></li>
+<li><a href="{% url 'trademark-asignment' %}">Trademark Asignment</a></li>
+<li><a href="{% url 'trademark-renewal' %}">Trademark Renewal</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Patent</h4></li>
+<li><a href="{% url 'patent-search' %}">Patent Search</a></li>
+<li><a href="{% url 'provisional-patent' %}">Provisional Patent</a></li>
+<li><a href="{% url 'permanent-patent' %}">Permanent Patent</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					            <li><h4>Copyright</h4></li>
+                                <li><a href="{% url 'copyright-registration' %}">Copyright Registration</a></li>
+<li><a href="{% url 'design-registration' %}">Design Registration</a></li> 
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>          
+                      
+                        
+              
+   <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Changes in Business<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ 
+  <li><h4>Select Conversion Type</h4></li>
+<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
+<li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
+<li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
+<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
+<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+ <li><h4>Update Corporate Information</h4></li>
+<li><a href="{% url 'add-or-remove-a-director-company' %}">Add or Remove a Director (Company)</a></li>
+<li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
+<li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
+<li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
+<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
+<li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
+<li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
+				            </ul>
+			            </div>
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+					           <li><h4>Close a Business</h4></li>
+<li><a href="{% url 'close-a-private-limited-company' %}">Close a Private Limited Company</a></li>
+<li><a href="{% url 'close-a-limited-liability-partnership' %}">Close a Limited Liability Partnership</a></li>
+<li><a href="{% url 'close-a-one-person-company' %}">Close a One Person Company</a></li>
+<li><a href="{% url 'dissolve-a-parnership-farm' %}">Dissolve a Parnership Farm</a></li>
+				            </ul>
+			            </div>
+		            </div>
+	            </ul>
+	        </li>
+                            
+                             
+        
+                               
+                                                      
+                                                                                                    
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Registration and Licenses<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Government Registration</h4></li>		            
+<li><a href="{% url 'gst-registration' %}">GST Registration</a></li>
+<li><a href="{% url 'import-export-license-india-guide' %}">Import Export Code Registration</a></li>
+<li><a href="{% url 'startup-registration-process-benefits-eligibility-guide' %}">Startup India Registration</a></li>
+<li><a href="{% url 'lut-under-gst' %}">LUT under GST</a></li>
+<li><a href="
+  {% url 'ssi-msme-registration' %}
+        
+   
+   ">SSI - MSME Registration</a></li>
+<li><a href="{% url 'shop-establishment-registration' %}">Shop & Establishment Registration</a></li>
+<li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
+<li><a href="{% url 'pan-application' %}">PAN Application</a></li>
+<li><a href="{% url 'tan-application' %}">TAN Application</a></li>
+<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
+<li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
+<li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
+<li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
+<li><a href="{% url 'nsic-registration' %}">NSIC Registration</a></li>
+				            </ul>
+			            </div>			                
+			             <div class="col-sm-4">
+				            <ul class="multi-column-dropdown">
+				            
+ <li><h4>Licenses</h4></li>		            
+<li><a href="{% url 'factory-license' %}">Factory License</a></li>
+<li><a href="{% url 'trade-license' %}">Trade License</a></li>
+<li><a href="{% url 'drug-license' %}">Drug License</a></li>
+<li><a href="{% url 'liquor-license' %}">Liquor License</a></li>
+<li><a href="{% url 'labour-license' %}">Labour License</a></li>
+<li><a href="{% url 'ayush-license' %}">Ayush License</a></li>
+<li><a href="{% url 'iso-certification' %}">ISO Certification</a></li>
+<li><a href="{% url 'arai-certification' %}">ARAI Certification</a></li>
+<li><a href="{% url 'i-cat-certification' %}">I-CAT Certification</a></li>
+
+			            
+				            </ul>
+			            </div>
+			            
+			            
+			            
+ <div class="col-sm-4">
+ <ul class="multi-column-dropdown">				            
+ <li><h4>Apply for Tenders</h4></li> 
+ </ul>
+  </div>         
+			            
+		            </div>
+	            </ul>
+	        </li>                         
+                      
+                                      
+    <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compliances<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Under Compliances</h4></li>		
+<li><a href="{% url 'dir3-din-kyc-filling' %}">DIR3 DIN KYC Filling</a></li>
+<li><a href="{% url 'roc-return-filling-for-pvt-ltd' %}">ROC Return Filling for Pvt. Ltd.</a></li>
+<li><a href="{% url 'roc-return-filling-for-opc' %}">ROC Return Filling for OPC</a></li>
+<li><a href="{% url 'roc-return-filling-for-llp' %}">ROC Return Filling for LLP</a></li>
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>                            
+     
+  <li class="dropdown">
+	            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tax Return Filings<b class="caret"></b></a>
+	            <ul class="dropdown-menu multi-column columns-3">
+		            <div class="row">
+			            <div class="col-sm-12">
+				            <ul class="multi-column-dropdown">
+<li><h4>Tax Return Filings</h4></li>		
+<li><a href="{% url 'personal-or-individual-income-tax-filing' %}">Personal or Individual Income Tax Filing</a></li>
+<li><a href="{% url 'business-income-tax-filing' %}">Business Income tax Filing</a></li>
+<li><a href="{% url 'company-income-tax-filing' %}">Company Income tax Filing</a></li>
+<li><a href="{% url 'tds-filing' %}">TDS Filing</a></li>
+<li><a href="{% url 'gst-return-filing' %}">GST Return Filing</a></li>
+
+				            </ul>
+			            </div>
+			             
+			             
+		            </div>
+	            </ul>
+	        </li>
+                      
+                                         
+<li><a href="{% url 'video' %}">Videos</a></li>                                                       
+ <li><a href="{% url 'contact' %}"> Contact</a></li>                                                                                
+                                         
+        
+                     
+                    </ul>
+                </div>
+              </nav>
+          </div> 
+        </div> 
+
+          
+
+          
+    </div>
+ 
+
+  </div> 
+</header> 
+
+ 
+ 
+ 
+ 
+ 
+<div id="banner-area" class="banner-area1" style="background-image:url({% static 'images/inner_bg.jpg' %})">
+  <div class="banner-text">
+    <div class="container">
+        <div class="row">
+         <div class="col-lg-12">
+         	<h1>Register an Indian Subsidiary</h1>
+         	
+         </div>
+         
+          <div class="col-lg-6"><p>Connect with an experienced and trusted lawyer in minutes. No need to wait weeks for appointments and no outrageous fees involved. Seek legal advice from industry legal experts.</p></div> 
+          <div class="col-lg-6"><div class="tplf"> 
+    
+    
+ <form action="{% url 'save-data' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Name*" name="name" required></div>
+		<div class="col-lg-6"><input type="text" class="form-control" id="" placeholder="Email*" name="email" required></div>
+        <div class="col-lg-6"> <input type="" class="form-control" id="inputPassword" placeholder="Mobile Number*" name="mobilenumber" required></div>
+        
+        
+
+ <div class="col-lg-6"> <input type="" class="form-control" id="" placeholder="Type Service Required*", name="typeservicerequired" required></div>
+   
+    </div>
+    
+        
+   
+    <p>Get easy updates through <img src="{% static 'images/whatsapp.png' %}" alt="whatsapp"> Whatsapp and <img src="{% static 'images/telegram.png' %}" alt="telegram"> Telegram <label class="switch">
+   
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label></p>
+  
+    
+        
+   
+   
+    <input class="btn btn-primary" type="submit", value="submit">
+</form>
+        
+   
+   
+    </div></div> 
+            </div> 
+        </div> 
+      </div> 
+    </div> 
+    
+    <section id="main-container" class="main-container">
+      <div class="container">
+        <div class="row">
+    
+          <div class="col-xl-3 col-lg-4">
+            <div class="sidebar sidebar-left">
+              <div class="widget"> 
+                <ul class="nav service-menu">
+                 
+                 <li class="active"><h4>Popular Options</h4></li>
+    <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
+    <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
+    <li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
+    <li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+    <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
+    <li><h4 style="margin: 14px 0px;">Special Business Entities</h4></li>
+    <li class="active"><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+    <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
+    <li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
+    <li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>   
+             
+            </ul>
+          </div> 
+
+          
+
+        </div> 
+      </div> 
+
+      <div class="col-xl-8 col-lg-8">
+        <div class="content-inner-page">
+
+          <h2 class="column-title mrt-0">Indian Subsidiary</h2>
+
+          <div class="row">
+            <div class="col-md-12">
+<p>The establishment of Indian subsidiaries has gained significant popularity due to several factors driving global companies' interest. India's economic potential, favourable business environment, skilled workforce, and cost efficiency are key reasons behind the current craze. Global companies seek to leverage India's talent pool, market potential, and cost efficiencies by establishing subsidiaries, enabling them to tap into this lucrative market. Indian subsidiaries contribute to the country's economic growth, foster innovation, and provide global companies with a competitive edge in the Indian business landscape.</p>
+
+
+</div> 
+
+
+<div class="col-md-12">
+<h4>FEATURES OF ESOP</h4>
+
+<p>An Indian subsidiary refers to a legally independent company that is registered and incorporated in India, and is controlled by a foreign parent company. In this context, the foreign parent company holds a majority stake or complete ownership of the Indian subsidiary. The subsidiary operates as a distinct legal entity under Indian laws and regulations, while benefiting from the financial, operational, and managerial support provided by the parent company.</p>
+
+<p>According to the Companies Act 2013, a subsidiary company is defined as a company in which a foreign parent company holds a minimum of 50% of the total share capital. The parent company exercises control over the subsidiary, and it is essential for the subsidiary to comply with the laws of the country in which it is established or plans to establish itself. Therefore, if a subsidiary company is formed in India, it is crucial for the company to adhere to the laws and regulations enforced in India.</p>
+
+<p>It is important to note that a subsidiary company of a foreign parent company is considered a distinct legal entity, and it is obligated to operate in accordance with the laws of the country where it is located. To register an Indian subsidiary company, business professionals can choose to establish it as a private limited company or a public limited company. By abiding by the regulations and norms of the host country, the subsidiary company ensures compliance and maintains its legal standing within the jurisdiction.</p>
+
+
+ 
+          </div> 
+          
+<div class="col-md-12" style="margin-top:25px; float: left;">
+<h4>BENEFITS </h4>
+ <p>Indian subsidiaries enjoy a host of benefits, Let’s understand some of them:</p>  
+   
+<p><strong>●	Foreign Direct Investment: </strong><br>
+Indian government has approved 100% involvement of FDI in case of fast growing business industries.</p>
+
+<p><strong>●	Limited Liability Protection:</strong><br>
+Limited liability trait protects the Director or member of the company in the time of any loss or financial distress borne by the company. Personal assets of Directors and members will not be at risk due to the loss suffered by the company.</p>
+
+<p><strong>●	Continuity through Perpetual Succession:</strong><br>
+Any adverse situation such as Insolvency, change, death, transfer of member/s etc will not have any effect on the existence of the company. The company can continue to exist and grow.</p>
+
+<p><strong>●	Financially Recognised:</strong><br>
+An Indian Subsidiary can borrow funds from the country’s financial institutions as if they were an Indian company.</p>
+
+<p><strong>●	Legally Recognised:</strong><br>
+Like any legal entity, it can initiate and defend lawsuits in the country.</p>
+
+<p><strong>●	Acquire Properties in India:</strong><br>
+It has the authority to buy properties in India.</p>
+ 
+   
+<h4>PROCESS TO INCORPORATE INDIAN SUBSIDIARY</h4>
+   
+<p><strong>●	Market Research:</strong> Conduct thorough market research to understand the potential for your business in India. Identify the market demand, competition, and legal/regulatory requirements specific to your industry.</p> 
+
+<p><strong>●	Choose a Business Structure:</strong> Decide on the type of legal entity you want to establish for your subsidiary. The most common options in India are Private Limited Company, Public Limited Company, and Limited Liability Partnership (LLP).</p> 
+
+<p><strong>●	Reserve a Company Name:</strong> Select a unique name for your subsidiary and apply for name reservation with the Registrar of Companies (RoC) in the state where you intend to incorporate. This can be done online through the Ministry of Corporate Affairs (MCA) portal.</p> 
+
+<p><strong>●	Obtain Director Identification Number (DIN):</strong> All proposed directors of the subsidiary must obtain a DIN by filing an online application with the MCA. This unique identification number is required for company registration.</p> 
+
+<p><strong>●	Obtain Digital Signature Certificate (DSC):</strong> Apply for a DSC for all directors, as it will be needed for digitally signing the incorporation documents. DSCs can be obtained from government-approved certifying authorities.</p> 
+
+<p><strong>●	Prepare Incorporation Documents:</strong> Draft the Memorandum of Association (MoA) and Articles of Association (AoA) for your subsidiary. These documents outline the company's objectives, internal regulations, and management structure. Prepare other required documents like the declaration of compliance, address proof, and identity proof of directors.</p> 
+
+<p><strong>●	File Incorporation Documents:</strong> Submit the incorporation documents along with the requisite fees to the RoC. This can be done through the MCA portal. The documents will undergo verification, and if everything is in order, the RoC will issue a Certificate of Incorporation.</p> 
+
+<p><strong>●	Obtain Permanent Account Number (PAN) and Tax Registration:</strong> After receiving the Certificate of Incorporation, apply for a PAN from the Income Tax Department. Simultaneously, register for Goods and Services Tax (GST) if your business activities require it.</p> 
+
+<p><strong>●	Open Bank Accounts:</strong> Open a bank account in India for your subsidiary. Provide the necessary documents, including the Certificate of Incorporation, PAN, and identity/address proof of directors.</p> 
+
+<p><strong>●	Compliance and Post-Incorporation:</strong> Fulfill all statutory compliance requirements, such as obtaining the Employer Identification Number (ESI) and Employee Provident Fund (EPF) registration if you plan to hire employees. Maintain proper accounting records, comply with tax regulations, and file annual returns with the RoC.</p> 
+ 
+    
+<h4>DOCUMENTS REQUIRED</h4>
+    
+<p>Following documents are required to set-up an Indian subsidiary:</p>
+<p>●	For identification and address verification of proposed directors:  The proposed directors of the subsidiary company are required to submit copies of their passports as identification proof, along with address verification documents such as an electricity bill.</p>
+
+<p><strong>●	Memorandum of Association (MOA) and Articles of Association (AOA):</strong> The MOA and AOA are crucial legal documents that outline the objectives and internal regulations of the company. These documents need to be completed and filed with the Registrar of Companies (ROC), accompanied by the prescribed fees and necessary documentation.</p>
+
+<p><strong>●	Certificate of Incorporation of the Parent Company:</strong> Foreign companies must provide a certificate of incorporation issued by the relevant jurisdiction where the parent company is registered.</p>
+
+<p><strong>●	Board Resolution of the Parent Company:</strong> A board resolution from the parent company is necessary, approving the incorporation of the subsidiary company in India and nominating the proposed directors.</p>
+
+<p><strong>●	Power of Attorney:</strong> As part of the registration process, the foreign parent company should furnish a power of attorney granting authority to one of the proposed directors or a designated representative to act on behalf of the company.</p>
+
+<p><strong>●	Compliance Certificate:</strong> Foreign companies must provide a compliance certificate obtained from the jurisdiction of the parent company, attesting that the company complies with local laws and regulations.</p>
+
+<p><strong>●	Capital Commitment Letter:</strong> The foreign parent company must submit a letter committing to infuse the required capital into the subsidiary company.</p>
+
+<p><strong>●	PAN and TAN:</strong> The subsidiary company needs to obtain Permanent Account Number (PAN) and Tax Deduction and Collection Account Number (TAN) from the Income Tax Department.</p>
+
+<p><strong>●	GST Registration:</strong> If the subsidiary company engages in the sale of goods or provision of services, it is mandatory to register for the Goods and Services Tax (GST).</p>
+   
+    
+<h4>OTHER RELATED INFORMATIONS</h4>
+<p>Indian subsidiaries may have a role in compliance with FCRA regulations if they engage in activities that fall within the scope of FCRA and receive foreign contributions. This includes the requirement to register under FCRA and fulfill reporting obligations. One important form in the FCRA compliance process is Form FC-1, which is used for the registration of associations or NGOs under FCRA. Here's an overview of the role of Indian subsidiaries and the process of filling Form FC-1:</p>
+
+<p><strong>Determining Eligibility:</strong> Indian subsidiaries must first determine if they fall within the definition of an association or NGO as per FCRA. If their activities involve charitable, educational, religious, economic, or cultural purposes and they receive foreign contributions, they are likely to be covered by FCRA.</p>
+
+<p><strong>Registration Requirement:</strong> If an Indian subsidiary is eligible for FCRA registration, it must apply for registration using Form FC-1. This form is used to provide detailed information about the organization, including its objectives, activities, sources of funding, key office-bearers, and other relevant details.</p>
+
+<p><strong>Filling Form FC-1:</strong> The Indian subsidiary should carefully complete all sections of Form FC-1 with accurate and up-to-date information. The form requires details such as the organization's name, address, objectives, activities, bank account information, and information about the office-bearers.</p>
+
+<p><strong>Supporting Documents:</strong> Along with Form FC-1, certain supporting documents are required to be submitted. These may include the organization's memorandum of association, articles of association, audited financial statements, details of key office-bearers, and other relevant documents as specified by FCRA.</p>
+
+<p><strong>Submission and Review:</strong> Once Form FC-1 and the supporting documents are complete, they should be submitted to the designated authority, which is typically the Ministry of Home Affairs (MHA) in India. The MHA will review the application and supporting documents for compliance with FCRA requirements.</p>
+
+<p><strong>Follow-up and Approval:</strong> After submission, the MHA may request additional information or clarification, if necessary. Once the MHA is satisfied with the application, it will grant registration under FCRA to the Indian subsidiary, allowing it to receive foreign contributions.</p>
+
+<p>It is important for Indian subsidiaries to adhere to the FCRA regulations and fill Form FC-1 accurately and completely. Any errors or discrepancies may result in delays or rejection of the registration application.</p>
+
+    
+  
+
+ </div> 
+          
+          
+ 
+	
+ 
+
+
+<div class="col-lg-12">
+	<h4>FREQUENTLY ASKED QUESTION (FAQs)</h4>
+	
+	
+<p><strong>Q. What is the minimum capital requirement to incorporate an Indian subsidiary?</strong><br>
+
+Ans. The minimum capital requirement varies depending on the type of legal entity. For a Private Limited Company, the minimum authorized and paid-up capital is no longer mandatory. It can be registered with any amount of capital as per the company's requirements.</p>
+
+<p><strong>Q. Can a foreign company be the sole shareholder of an Indian subsidiary?</strong><br>
+
+Ans. Yes, a foreign company can be the sole shareholder of an Indian subsidiary. The Companies Act of India allows 100% foreign ownership in most sectors, subject to certain restrictions in specific industries.</p>
+
+<p><strong>Q. What are the tax implications for an Indian subsidiary?</strong><br>
+
+Ans. Indian subsidiaries are subject to various taxes, including corporate income tax, goods and services tax (GST), and other indirect taxes. The corporate tax rate for Indian companies is currently 25%. It is advisable to consult with a tax professional to understand the specific tax obligations based on your business activities.</p>
+
+<p><strong>Q. What are the compliance requirements for an Indian subsidiary?</strong><br>
+
+Ans. Indian subsidiaries must comply with various regulatory and statutory requirements, such as filing annual financial statements, holding board meetings, maintaining proper accounting records, and complying with l
+Labor laws. Compliance requirements may vary depending on the size, industry, and location of the subsidiary.</p>
+
+<p><strong>Q. How long does it take to incorporate an Indian subsidiary?</strong><br>
+
+Ans. The timeline for incorporating an Indian subsidiary can vary depending on several factors, including the availability of necessary documents, government processing time, and any potential complications. On average, it takes approximately 2-4 weeks to complete the incorporation process.</p>
+
+<p><strong>Q. Can I repatriate profits from my Indian subsidiary?</strong><br>
+
+Ans. Yes, profits earned by an Indian subsidiary can be repatriated subject to certain conditions and compliance with foreign exchange regulations. The Reserve Bank of India (RBI) governs foreign exchange controls, and repatriation of profits usually requires necessary documentation and approvals.</p>
+
+<p><strong>Q. Can Indian Company be a 100% subsidiary of the parent company?</strong><br>
+Ans. An Indian subsidiary, the parent company must own at least 50% or more of the subsidiary. When the parent company owns 100% of the subsidiary of parent company is known as a wholly-owned or fully owned subsidiary.</p>
+
+<p><strong>Q. Are there any restrictions on the activities that Indian subsidiaries of foreign companies engage in?</strong><br>
+Ans. No restrictions on the type of activities to be undertaken by subsidiary company in India. It can process most of the operations and manufacturing activity in India. Foreign brand names can be retained by the Indian subsidiary. </p>
+
+<p><strong>Q. What are the benefits of a foreign company establishing a subsidiary in India?</strong><br>
+Ans.Some of the benefits of establishing a subsidiary in India include access to a huge and booming market, lower operating costs, and a favourable regulatory environment for foreign investments.</p>
+
+
+<p><strong>Q. How long does it take a foreign company to establish a subsidiary in India?</strong><br>
+
+Ans. The time required for a foreign company to establish a subsidiary in India depends on a variety of factors, including the kind of subsidiary, the nature of the business, and the efficiency of the registration procedure. In most cases, the incorporation process requires approximately 2-3 months.</p>
+
+ 
+	
+</div>
+
+
+ <div class="col-lg-12">       
+ <p><strong>For any consultancy in the formation of Indian subsidiary || </strong></p> 
+
+<p><strong>Contact 7840071184/ 8505999955/ info@ngandassociates.com</strong></p> 
+ 
+            
+          </div>
+
+
+ 
+ </div> 
+
+           
+
+        </div> 
+      </div> 
+      
+     </div> 
+  </div> 
+</section> 
+
+
+
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Indian Subsidiary Registration in State</h3>
+
+ <div class="row justify-content-between">
+   
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+    
+    
+<li><a href="">Indian Subsidiary Registration in Haryana</a></li> 
+<li><a href="">Indian Subsidiary Registration in Assam</a></li> 
+<li><a href="">Indian Subsidiary Registration in Gujarat</a></li> 
+<li><a href="">Indian Subsidiary Registration in Uttar Pradesh</a></li>
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1"> 
+ <li><a href="">Indian Subsidiary Registration in Karnataka</a></li> 
+<li><a href="">Indian Subsidiary Registration in Bihar</a></li> 
+<li><a href="">Indian Subsidiary Registration in Rajasthan</a></li> 
+<li><a href="">Indian Subsidiary Registration in Kerala</a></li>
+
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+    
+<li><a href="">Indian Subsidiary Registration in Sikkim</a></li> 
+<li><a href="">Indian Subsidiary Registration in West Bengal</a></li> 
+<li><a href="">Indian Subsidiary Registration in Mizoram</a></li> 
+<li><a href="">Indian Subsidiary Registration in Tripura</a></li>
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-1" type="checkbox" class="read-more-check">
+  <label for="read-more-check-1" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Indian Subsidiary Registration in Punjab</a></li> 
+<li><a href="">Indian Subsidiary Registration in Meghalaya</a></li> 
+<li><a href="">Indian Subsidiary Registration in Manipur</a></li> 
+<li><a href="">Indian Subsidiary Registration in Arunachal Pradesh</a></li> 
+<li><a href="">Indian Subsidiary Registration in Nagaland</a></li> 
+<li><a href="">Indian Subsidiary Registration in Himachal Pradesh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Indian Subsidiary Registration in Goa</a></li> 
+<li><a href="">Indian Subsidiary Registration in Tamil Nadu</a></li> 
+<li><a href="">Indian Subsidiary Registration in Telangana</a></li> 
+<li><a href="">Indian Subsidiary Registration in Maharashtra</a></li> 
+<li><a href="">Indian Subsidiary Registration in Andhra Pradesh</a></li> 
+<li><a href="">Indian Subsidiary Registration in Madhya Pradesh</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Indian Subsidiary Registration in Uttarakhand</a></li>   
+<li><a href="">Indian Subsidiary Registration in Odisha</a></li> 
+<li><a href="">Indian Subsidiary Registration in Jharkhand</a></li> 
+<li><a href="">Indian Subsidiary Registration in Chandigarh</a></li> 
+<li><a href="">Indian Subsidiary Registration in Chhattisgarh</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>
+	  
+	  
+<footer class="footer" style="background:#f2f2f2; padding: 50px 0px 110px 0px;">
+ <div class="container">
+	  
+<article class="main">
+
+ <h3 class="widget-title">Indian Subsidiary Registration in City</h3> 
+ <div class="row justify-content-between"> 
+    <div class="col-lg-4">
+    <ul class="list-arrow1"> 
+     <li><a href="">Indian Subsidiary Registration in Mumbai</a></li> 
+<li><a href="">Indian Subsidiary Registration in Hyderabad</a></li> 
+<li><a href="">Indian Subsidiary Registration in Chennai</a></li> 
+<li><a href="">Indian Subsidiary Registration in Pune</a></li> 
+<li><a href="">Indian Subsidiary Registration in Bengaluru</a></li> 
+ 
+
+ </ul>
+ </div>
+    <div class="col-lg-4">
+  <ul class="list-arrow1">  
+<li><a href="">Indian Subsidiary Registration in Kolkata</a></li> 
+<li><a href="">Indian Subsidiary Registration in Ahmedabad</a></li> 
+<li><a href="">Indian Subsidiary Registration in Delhi</a></li> 
+<li><a href="">Indian Subsidiary Registration in Agra</a></li> 
+<li><a href="">Indian Subsidiary Registration in Jaipur</a></li>
+ </ul>
+  </div>  
+    <div class="col-lg-4">
+   <ul class="list-arrow1">
+     <li><a href="">Indian Subsidiary Registration in Kochi</a></li> 
+<li><a href="">Indian Subsidiary Registration in Lucknow</a></li> 
+<li><a href="">Indian Subsidiary Registration in Surat</a></li> 
+<li><a href="">Indian Subsidiary Registration in Patna</a></li> 
+<li><a href="">Indian Subsidiary Registration in Varanasi</a></li> 
+ 
+   </ul>
+   </div>
+   </div>
+ <input id="read-more-check-2" type="checkbox" class="read-more-check">
+  <label for="read-more-check-2" class="read-more-label"></label>
+  
+  <div class="read-more">
+ <div class="row">
+<div class="col-lg-4">
+<ul class="list-arrow1">
+ <li><a href="">Indian Subsidiary Registration in Bhopal</a></li> 
+<li><a href="">Indian Subsidiary Registration in Kanpur</a></li> 
+<li><a href="">Indian Subsidiary Registration in Chandigarh</a></li> 
+ </ul>
+</div>
+
+<div class="col-lg-4">
+<ul class="list-arrow1">
+<li><a href="">Indian Subsidiary Registration in Prayagraj</a></li> 
+<li><a href="">Indian Subsidiary Registration in Coimbatore</a></li> 
+<li><a href="">Indian Subsidiary Registration in Madurai</a></li>
+ </ul>
+</div>
+
+ <div class="col-lg-4"> 
+ <ul class="list-arrow1">
+<li><a href="">Indian Subsidiary Registration in Vadodara</a></li> 
+<li><a href="">Indian Subsidiary Registration in Nagpur</a></li> 
+<li><a href="">Indian Subsidiary Registration in Visakhapatnam</a></li> 
+ </ul>
+</div>
+     
+    
+    </div>
+    </div>
+ 
+    </article>
+	
+	
+	</div>  
+    </footer>    
+	  
+
+<footer id="footer" class="footer bg-overlay">
+    <div class="footer-main">
+      <div class="container"> <h3 class="widget-title">Quick Link</h3>
+        <div class="row justify-content-between">
+        
+          <div class="col-lg-3 col-md-6 footer-widget footer-about">
+            
+            <ul class="list-arrow">
+            
+<li><a href="https://www.icai.org/" target="_blank">ICAI</a></li>
+<li><a href="https://icsi.edu/home/">ICSI</a></li>
+<li><a href="https://icmai.in/icmai/index.php">CMA</a></li> 
+ </ul>
+             
+          </div> 
+
+          <div class="col-lg-3 col-md-6 footer-widget mt-5 mt-md-0">
+             <ul class="list-arrow">
+            
+<li><a href="https://ipindia.gov.in/">IPR</a></li>
+<li><a href="https://www.gst.gov.in/">GST</a></li>
+<li><a href="https://incometaxindia.gov.in/Pages/default.aspx">Income Tax</a></li> 
+ </ul>
+          </div> 
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.dgft.gov.in/CP/">DGFT</a></li>
+    <li><a href="https://fssai.gov.in/">FSSAI</a></li>
+    <li><a href="https://www.mca.gov.in/content/mca/global/en/home.html">MCA</a></li> 
+				
+            </ul>
+          </div> 
+          
+ 
+			
+ <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget"> 
+            <ul class="list-arrow">
+    <li><a href="https://www.nseindia.com/">NSE</a></li>
+    <li><a href="https://www.bseindia.com/">BSE</a></li>
+    <li><a href="https://www.sebi.gov.in/">SEBI</a></li> 
+				
+            </ul>
+          </div> 
+         
+         
+          
+        </div> 
+      </div> 
+    </div> 
+
+    <div class="copyright">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="copyright-info">
+               With Love. <i class="fa fa-heart text-danger" style="margin: 0px 5px;"></i>  by NG-Associates
+            </div>
+          </div>
+
+           
+        </div> 
+
+        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+          <button class="btn btn-primary" title="Back to Top">
+            <i class="fa fa-angle-double-up"></i>
+          </button>
+        </div>
+
+      </div> 
+    </div> 
+  </footer>
+<!--Start whatsapp button-->
+<style>
+  .whatsapp_float {
+         position: fixed;
+         bottom: 50px;
+         right: 20px;
+         z-index: 9;
+ }
+</style>
+<div class="whatsapp_float">
+    <a href="https://wa.me/919819837385" target="_blank"><img src="{% static 'images/whatsapp.jpg' %}" alt="whatsapp"
+   
+     width= "50px" class="whatsapp_float_btn"/></a>
+</div>
+<!--End whatsapp button-->
+
+
+
+<script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script> 
+<script src="{% static 'plugins/bootstrap/bootstrap.min.js' %}"></script> 
+<script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+<script src="{% static 'plugins/slick/slick-animation.min.js' %}"></script> 
+<script src="{% static 'plugins/colorbox/jquery.colorbox.js' %}"></script> 
+<script src="{% static 'plugins/shuffle/shuffle.min.js' %}"></script>
+
+
+
+<script src="{% static 'plugins/google-map/map.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</div> 
+
+<script>
+$(document).ready(function(){
+$(".contentdd").slice(0, 1).show();
+$("#loadMore").on("click", function(e){
+e.preventDefault();
+$(".contentdd:hidden").slice(0, 1).slideDown();
+if($(".contentdd:hidden").length == 0) {
+  $("#loadMore").text("No Content").addClass("noContent");
+}
+});
+
+})
+</script>
+</body>
+
+</html>
