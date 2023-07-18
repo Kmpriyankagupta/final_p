@@ -3,7 +3,7 @@ from .models import MyModel
 from .models import Page 
 def home(request):
     data = Page.objects.get(pagename='index')
-    return render(request, 'app/index3.html', context={'data': data})
+    return render(request, 'app/index.html', context={'data': data})
 def Private_limited(request):
     data = Page.objects.get(pagename='private-limited-company-registration')
     return render(request, 'app/private-limited-company-registration.html', context ={'data':data})
