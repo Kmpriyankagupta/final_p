@@ -83,7 +83,7 @@ urlpatterns = [
     path('incorporation-of-company', views.incorporation, name='incorporation-of-company'),
     path('trademark-blog', views.trademark_blog, name='trademark-blog'),
     path('gst-blog', views.gst_blog, name='gst-blog'),
-    path('right-issue', views.right_issue, name='right-issue'),
+    path('understanding-right-issues-features-benefits-process', views.right_issue, name='understanding-right-issues-features-benefits-process'),
     path('bonus-issue-guide-corporate-actions', views.bonus_issue, name='bonus-issue-guide-corporate-actions'),
     path('msme-registration', views.msme_registraion, name='msme-registration'),
     path('blog', views.blog, name='blog'),
@@ -94,7 +94,7 @@ urlpatterns = [
     path('procedure-incorporation-of-company', views.procedure_incorporation_of, name='procedure-incorporation-of-company'),
     path('public-limited-into-private-limited', views.public_limited_into_private, name='public-limited-into-private-limited'),
     path('employee-stock-ownership-plan', views.employee_stock, name='employee-stock-ownership-plan'),
-    path('secretarial-standard', views.secretarial, name='secretarial-standard'),
+    path('secretarial-standard-1-companies-act-2013', views.secretarial, name='secretarial-standard-1-companies-act-2013'),
     path('pre-incorporation-contracts', views.pre_incorporation, name='pre-incorporation-contracts'),
     path('save-data', views.save_data, name='save-data')
 

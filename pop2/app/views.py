@@ -320,7 +320,7 @@ def gst_blog(request):
     return render(request, 'app/gst-blog.html', context={'data': data})
 
 def right_issue(request):
-    data = Page.objects.get(pagename='right-issue')
+    data = Page.objects.get(pagename='understanding-right-issues-features-benefits-process')
     return render(request, 'app/right-issue.html', context={'data': data})
 
 def bonus_issue(request):
@@ -368,7 +368,7 @@ def public_limited_into_private(request):
     return render(request, 'app/public-limited-into-private-limited.html', context={'data': data})
 
 def secretarial(request):
-    data = Page.objects.get(pagename='secretarial-standard')
+    data = Page.objects.get(pagename='secretarial-standard-1-companies-act-2013')
     return render(request, 'app/secretarial-standard.html', context={'data': data})
 
 def pre_incorporation(request):
