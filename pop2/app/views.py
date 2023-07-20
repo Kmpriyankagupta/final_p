@@ -304,7 +304,7 @@ def video(request):
     return render(request, 'app/video.html', context={'data': data})
 
 def contact(request):
-    data = Page.objects.get(pagename='contact')
+    data = Page.objects.get(pagename='contact-us-ng-associates')
     return render(request, 'app/contact.html', context={'data': data})
 
 def incorporation(request):
