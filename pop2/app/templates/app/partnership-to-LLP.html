@@ -134,18 +134,18 @@
 <li><h4>Popular Options</h4></li>
 <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
 <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
-<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
-<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'one-person-company-registration-process-benefits' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration-process-benefits' %}">Partnership Firm Registration</a></li>
 <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
  </ul>
 	</div>
 			            <div class="col-sm-6">
 				             <ul class="multi-column-dropdown">
 <li><h4>Special Business Entities</h4></li>
-<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'establishing-indian-subsidiary-benefits-process-compliance' %}">Register an Indian Subsidiary</a></li>
 <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
-<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
-<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration-features-benefits-compliance' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration-requirements-compliance' %}">Nidhi Company Registration</a></li>
  </ul>
 			            </div>
 			             
@@ -198,17 +198,17 @@
 				            <ul class="multi-column-dropdown">
  
   <li><h4>Select Conversion Type</h4></li>
-<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
 <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
 <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
 <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
 <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+<li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -218,7 +218,7 @@
 <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
 <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
 <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
 <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
 <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
 <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -263,7 +263,7 @@
 <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
 <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
 <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
 <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
 <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
 <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
@@ -373,7 +373,7 @@
     <div class="container">
         <div class="row">
          <div class="col-lg-12">
-         	<h1>Partnership to LLP</h1>
+         	<h1>Converting Partnership to Limited Liability Partnership (LLP)</h1>
          	
          </div>
          
@@ -426,17 +426,17 @@
   <li class="active"><h4>Select Conversion Type</h4></li>
  
  
-  <li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-  <li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-  <li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-  <li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+  <li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+  <li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+  <li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+  <li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
   <li class="active"><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
   <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
   <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-  <li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-  <li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+  <li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+  <li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
   <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li> 
+<li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li> 
   
   <li><h4 style="margin: 14px 0px;">Update Corporate Information</h4></li> 
    
@@ -444,7 +444,7 @@
   <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
   <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
   <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-  <li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+  <li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
   <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
   <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
   <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -467,7 +467,7 @@
       <div class="col-xl-8 col-lg-8">
         <div class="content-inner-page">
 
-          <h2 class="column-title mrt-0">Conversion from Partnership to LLP</h2>
+          <h2 class="column-title mrt-0">Understanding Partnership and Limited Liability Partnership (LLP)</h2>
 
           <div class="row">
             <div class="col-md-12">
@@ -477,7 +477,7 @@
  
 <p>According to <strong>Section 3</strong> of the <strong>Limited Liability Partnership Act 2008 (LLP Act)</strong>, an LLP is a body corporate, formed and incorporated under the Act. It is a legal entity separate from its partners.LLP is a hybrid between a company and a partnership.</p>  
   
-<h4>BENEFITS </h4>
+<h3>BENEFITS OF CONVERTING TO AN LLP</h3>
            
 <p><strong>Flexibility in Management:</strong> <br>
 LLPs offer flexibility in terms of management structure. While partnerships often have a more informal management setup, an LLP allows partners to define roles, responsibilities, and decision-making processes more formally. This clarity can help streamline operations and reduce conflicts among partners.</p>
@@ -498,7 +498,7 @@ LLPs generally have fewer regulatory and compliance requirements compared to oth
 <p><strong>Access to Funding:</strong><br>
 Converting to an LLP can enhance access to funding options. LLPs are often viewed more favorably by financial institutions, making it easier to secure loans, lines of credit, or investments for business growth and expansion.</p>
       
-<h4>COMPLIANCES REQUIRED</h4>  
+<h3>COMPLIANCE REQUIREMENTS FOR PARTNERSHIP TO LLP CONVERSION</h3>  
 <p>Compliance is an important aspect when converting a partnership into an LLP. </p>       
            
 <p><strong>Legal and Regulatory Requirements:</strong> Understand and comply with the specific legal and regulatory requirements applicable to converting a partnership into an LLP in your jurisdiction. This includes following the procedures outlined by the relevant government authority or registrar.</p> 
@@ -511,7 +511,7 @@ Converting to an LLP can enhance access to funding options. LLPs are often viewe
 
 <p><strong>Fees and Financial Obligations:</strong> Pay the prescribed fees associated with the conversion process. Comply with financial obligations, such as taxes and levies, related to the conversion. Familiarize yourself with any financial reporting or disclosure requirements specific to LLPs in your jurisdiction.</p> 
  
-<h4>PROCESS </h4>      
+<h3>CONVERSION PROCESS FROM PARTNERSHIP TO LLP</h3>      
                   
 <p><strong>Understanding LLP:</strong> Begin by familiarizing yourself with the concept of an LLP and its benefits. LLPs offer limited liability protection to partners, which means they are not personally liable for the debts and obligations of the business.</p>
 
@@ -533,7 +533,7 @@ Converting to an LLP can enhance access to funding options. LLPs are often viewe
 
 <p><strong>Compliance Requirements:</strong> Comply with ongoing regulatory and compliance requirements applicable to LLPs. This includes maintaining statutory registers, filing annual returns, conducting audits, and adhering to tax obligations.</p>
 
-<h4>REQUIRED DURING THE CONVERSION </h4>				
+<h3>DOCUMENTS REQUIRED FOR PARTNERSHIP TO LLP CONVERSION</h3>				
 <p>A list of common documents that are typically needed for the conversion process are:</p>
 
 <p><strong>Application for Conversion:</strong> This is a formal application form provided by the relevant government authority or registrar. It typically requires information about the existing partnership, proposed LLP name, registered office address, partners’ details, and other relevant information.</p>

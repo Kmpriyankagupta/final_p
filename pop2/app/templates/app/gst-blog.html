@@ -10,8 +10,9 @@
   <title>{{ data.title }}</title> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
-  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/gst-blog"/>
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/goods-services-tax-gst-introduction-benefits-registration"/>
   <meta name="description" content="{{ data.description }}">  
+  <meta name="keywords" content=" {{ data.keywords }}">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
   <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
@@ -133,18 +134,18 @@
 <li><h4>Popular Options</h4></li>
 <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
 <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
-<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
-<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'one-person-company-registration-process-benefits' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration-process-benefits' %}">Partnership Firm Registration</a></li>
 <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
  </ul>
 	</div>
 			            <div class="col-sm-6">
 				             <ul class="multi-column-dropdown">
 <li><h4>Special Business Entities</h4></li>
-<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'establishing-indian-subsidiary-benefits-process-compliance' %}">Register an Indian Subsidiary</a></li>
 <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
-<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
-<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration-features-benefits-compliance' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration-requirements-compliance' %}">Nidhi Company Registration</a></li>
  </ul>
 			            </div>
 			             
@@ -197,17 +198,17 @@
 				            <ul class="multi-column-dropdown">
  
   <li><h4>Select Conversion Type</h4></li>
-<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
 <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
 <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
 <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
 <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+<li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -217,7 +218,7 @@
 <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
 <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
 <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
 <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
 <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
 <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -262,7 +263,7 @@
 <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
 <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
 <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
 <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
 <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
 <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
@@ -373,11 +374,11 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">GST</h1>
+                <h1 class="banner-title">Goods and Services Tax, GST in India, GST Benefits, GST Registration</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                       <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li> 
-                      <li class="breadcrumb-item active" aria-current="page">GST</li>
+                      <li class="breadcrumb-item active" aria-current="page">Goods and Services Tax, GST in India, GST Benefits, GST Registration</li>
                     </ol>
                 </nav>
               </div>
@@ -405,7 +406,7 @@
 <p>GST will be levied on supply of goods and services except alcoholic liquor, petroleum crude, natural gas, aviation turbine oil.</p>
 
 
- <p><strong>STRUCTURE OF GST</strong></p>
+ <h3>STRUCTURE OF GST</h3>
  <p>GST is a single tax on the supply of goods and services from manufacturer to the consumer. It is a destination -based consumption tax. GST is a dual model structure. GST is a four- tier structure. It has tax slab rates of 5%, 12%,18%,28%.</p>
  <table class="table table-bordered">
   <tr>
@@ -431,7 +432,7 @@
 </table>
 
 
- <p><strong>Why GST?</strong></p>
+ <h3>Benefits of Goods and Services Tax (GST)</h3>
 
 <p>The Goods and Services tax came into effect in July, 2017. GST will ensure minimum cascading of taxes and lower the costs of the goods and services. It is a one nation one tax. GST reduces the need for small companies to comply with vat, excise etc. It brings accountability and regulates unorganized sectors.</p>
  
@@ -447,13 +448,13 @@
 
  
 
- <p><strong>GST REGISTRATION</strong></p>
+ <h3>GST Registration Process</h3>
  
 <p>GST Registration is a process by which a taxpayer gets himself registered under GST either as compulsion or can Voluntary register under GST. On successful registration a unique registration number is assigned to them known as the Goods and Services Tax Identification Number (GSTIN). This is a 15-digit number assigned by Central Government.</p>
 
 
 
- <p><strong>Documents required for GST registration</strong></p>
+<h3>Documents Required for GST Registration</h3>
  
  <p>• PAN</p>
  <p>• AADHAR CARD</p>

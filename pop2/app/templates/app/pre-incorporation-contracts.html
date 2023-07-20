@@ -10,8 +10,9 @@
   <title>{{ data.title }}</title> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
-  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/pre-incorporation-contracts"/>
-  <meta name="description" content="{{ data.description }}">   
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/promoters-pre-incorporation-contracts-definition-benefits"/>
+  <meta name="description" content="{{ data.description }}"> 
+  <meta name="keywords" content=" {{ data.keywords }}">    
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
   <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}"> 
   <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
@@ -133,18 +134,18 @@
 <li><h4>Popular Options</h4></li>
 <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
 <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
-<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
-<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'one-person-company-registration-process-benefits' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration-process-benefits' %}">Partnership Firm Registration</a></li>
 <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
  </ul>
 	</div>
 			            <div class="col-sm-6">
 				             <ul class="multi-column-dropdown">
 <li><h4>Special Business Entities</h4></li>
-<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'establishing-indian-subsidiary-benefits-process-compliance' %}">Register an Indian Subsidiary</a></li>
 <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
-<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
-<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration-features-benefits-compliance' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration-requirements-compliance' %}">Nidhi Company Registration</a></li>
  </ul>
 			            </div>
 			             
@@ -197,17 +198,17 @@
 				            <ul class="multi-column-dropdown">
  
   <li><h4>Select Conversion Type</h4></li>
-<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
 <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
 <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
 <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
 <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+<li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -217,7 +218,7 @@
 <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
 <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
 <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
 <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
 <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
 <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -262,7 +263,7 @@
 <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
 <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
 <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
 <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
 <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
 <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
@@ -394,7 +395,7 @@
       <div class="col-xl-12 col-lg-12">
         <div class="content-inner-page">
 
-          <h2 class="column-title mrt-0">PROMOTERS CONTRACT-PRE INCORPORATION CONTRACTS</h2>
+          <h2 class="column-title mrt-0">Definition and Role of Promoters in Company Formation</h2>
 
           <div class="row">
             <div class="col-md-12">
@@ -412,7 +413,7 @@ PROVIDED THAT NOTHING IN SUB-CLAUSE (c) SHALL APPLY TO A PERSON WHO IS ACTING ME
 
 
 <div class="col-md-12" style="margin-top: 50px;">
-<h4>BENEFITS OF PRE INCORPORATION CONTRACT:</h4>
+<h3>BENEFITS OF PRE INCORPORATION CONTRACT</h3>
 <p>1.HELPS IN ESTABLISHING BUSINESS RELATIONSHIPS: PRE INCORPORATION CONTRACT HELPS IN PROVIDING AN OPPORTUNITY TO ESTABLISH RELATIONSHIPS WITH STAKEHOLDERS PRIOR TO INCORPORATION OF THE COMPANY. IT HELPS IN CREATING FUTURE FOUNDATION FOR BUSINESS OPERATIONS ONCE THE COMPANY IS INCORPORATED.</p>
 
 <p>2.OBTAINING RESOURCES: PROMOTERS ARE ALLOWED TO SECURE RESOURCES OR SERVICES FOR THE COMPANY BEFORE ITS INCORPORATION.</p>
@@ -428,7 +429,7 @@ PROVIDED THAT NOTHING IN SUB-CLAUSE (c) SHALL APPLY TO A PERSON WHO IS ACTING ME
  </div> 
           
 <div class="col-md-12" style="margin-top:25px; float: left;"> 
-<h4>CHECKLIST FOR PREINCORPORATION CONTRACTS:</h4> 
+<h3>CHECKLIST FOR PREINCORPORATION CONTRACTS</h3> 
 <p>1.IDENTIFICATION OF PARTIES: ALL THE PARTIES TO THE CONTRACT MUST BE IDENTIFIED BE IT PROMOTERS OR INDIVIDUALS ACTING ON THE BEHALF OF THE COMPANY.</p>
 
 <p>2.PURPOSE OF THE CONTRACT : THE PURPOSE AND OBJECTIVES OF THE CONTRACT  MUST BE DESCRIBED ALONG WITH THE AIMS  WHICH ARE TO BE ACHIEVED.</p>
@@ -443,7 +444,7 @@ PROVIDED THAT NOTHING IN SUB-CLAUSE (c) SHALL APPLY TO A PERSON WHO IS ACTING ME
 
 <p>7. LIABILITY CLAUSE: THE LIABILITIES OF EACH PARTY AND THE PROVISIONS FOR INDEMNIFICATION MUST BE SPECIFIED.</p>
 
-<h4>COMPLIANCES FOR PRE INCORPORATION CONTRACTS:</h4>
+<h3>COMPLIANCES FOR PRE INCORPORATION CONTRACTS</h3>
 
 <p>1.LEGALITY: THE PREINCORPORATION CONTRACT MUST BE LEGALLY VALID AND ENFORCEABLE. IT MUST MEET THE REQUIREMENTS OF A VALID CONTRACT, SUCH AS OFFER, ACCEPTANCE, CONSIDERATION, INTENTION TO CREATE LEGAL RELATIONS AND LAWFUL OBJECT.</p>
 
@@ -458,7 +459,7 @@ PROVIDED THAT NOTHING IN SUB-CLAUSE (c) SHALL APPLY TO A PERSON WHO IS ACTING ME
 <p>6.REQUIREMENTS OF REGULATORY FILINGS: THERE MAY BE A NEED TO FILE RELEVANT DOCUMENTS OR AGREEMENTS WITH REGISTRAR OF COMPANIES, DEPENDING UPON THE NATURE OF PREINCORPORATION CONTRACT.</p>
 
 <img src="{% static 'images/pre_incorporation2.jpg' %}" alt="pre_incorporation">
-<h4 style="margin-top:30px;">DOCUMENTS REQUIRED FOR PREINCORPORATION CONTRACTS:</h4>
+<h3 style="margin-top:30px;">DOCUMENTS REQUIRED FOR PREINCORPORATION CONTRACTS:</h3>
 
 <p>1. MEMORANDUM OF ASSOCIATION: THE MOA STATES THE KEY OBJECTIVES, CAPITAL STRUCTURE AND SCOPE OF THE ACTIVITIES OF THE COMPANY.IT MUST BE SIGNED BY THE SUBSCRIBERS OF THE COMPANY WHO WILL BE PARTIES TO THE PREINCORPORATION CONTRACT.</p>
 
@@ -483,7 +484,7 @@ PROVIDED THAT NOTHING IN SUB-CLAUSE (c) SHALL APPLY TO A PERSON WHO IS ACTING ME
 
 
 <div class="col-lg-12">
-	<h4>FREQUENTLY ASKED QUESTIONS RELATED TO PREINCORPORATION CONTRACTS:</h4>
+	<h4>FREQUENTLY ASKED QUESTIONS RELATED TO PREINCORPORATION CONTRACTS</h4>
 	
 	
 <p><strong>1. WHAT IS PRE INCORPORATION CONTRACT?</strong><br>

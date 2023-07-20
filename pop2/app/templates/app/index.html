@@ -121,8 +121,8 @@
                             </li>
                             <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
                             <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
-                            <li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
-                            <li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+                            <li><a href="{% url 'one-person-company-registration-process-benefits' %}">One Person Company Registration</a></li>
+                            <li><a href="{% url 'partnership-firm-registration-process-benefits' %}">Partnership Firm Registration</a></li>
                             <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
                           </ul>
                         </div>
@@ -131,10 +131,10 @@
                             <li>
                               <h4>Special Business Entities</h4>
                             </li>
-                            <li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+                            <li><a href="{% url 'establishing-indian-subsidiary-benefits-process-compliance' %}">Register an Indian Subsidiary</a></li>
                             <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
-                            <li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
-                            <li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+                            <li><a href="{% url 'producer-company-registration-features-benefits-compliance' %}">Producer Company Registration</a></li>
+                            <li><a href="{% url 'nidhi-company-registration-requirements-compliance' %}">Nidhi Company Registration</a></li>
                           </ul>
                         </div>
                       </div>
@@ -185,17 +185,17 @@
                             <li>
                               <h4>Select Conversion Type</h4>
                             </li>
-                            <li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-                            <li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-                            <li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-                            <li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+                            <li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+                            <li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+                            <li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+                            <li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
                             <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
                             <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
                             <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-                            <li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-                            <li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+                            <li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+                            <li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
                             <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-                            <li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+                            <li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li>
                             
                           </ul>
                         </div>
@@ -208,7 +208,7 @@
                             <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
                             <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
                             <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-                            <li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+                            <li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
                             <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
                             <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
                             <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -245,7 +245,7 @@
                             <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
                             <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
                             <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-                            <li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+                            <li><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
                             <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
                             <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
                             <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
@@ -439,7 +439,7 @@
           <div class="ts-service-box d-flex">
             <div class="ts-service-box-img"> <img loading="lazy" src="{% static 'images/icon2.png' %}" alt="service-icon"> </div>
             <div class="ts-service-box-info">
-              <h3 class="service-box-title"><a href="{% url 'proprietorship-to-partnership' %}">INTELLECTUAL PROPERTY RIGHTS</a></h3>
+              <h3 class="service-box-title"><a href="{% url 'sole-proprietorship-to-partnership' %}">INTELLECTUAL PROPERTY RIGHTS</a></h3>
               <p>Intellectual property rights include patents, copyright, industrial design rights, trademarks, plant variety rights, trade dress, geographical indications, and in some jurisdictions trade secrets.</p>
             </div>
           </div>
@@ -578,11 +578,11 @@
                 <div class="owl-item">
                   <div class="col-lg-12">
                     <div class="latest-post">
-                      <div class="latest-post-media"> <a href="{% url 'incorporation-of-company' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news1.jpg' %}" title="" alt="NG-Associates"> </a> </div>
+                      <div class="latest-post-media"> <a href="{% url 'incorporation-public-company-requirements-compliance' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news1.jpg' %}" title="" alt="NG-Associates"> </a> </div>
                       <div class="post-body">
                         <h4 class="post-title"> </h4>
                         <h4>Incorporation of Company</h4>
-                        <a href="{% url 'incorporation-of-company' %}" class="d-inline-block">Incorporation of corporate refers to the legal method by which a company came into existence. It is alegal entity that separates the firm asset from its owners and investors. It is the way in which business is formally organized and brought into existence. </a> </div>
+                        <a href="{% url 'incorporation-public-company-requirements-compliance' %}" class="d-inline-block">Incorporation of corporate refers to the legal method by which a company came into existence. It is alegal entity that separates the firm asset from its owners and investors. It is the way in which business is formally organized and brought into existence. </a> </div>
                     </div>
                   </div>
                 </div>
@@ -591,11 +591,11 @@
                 <div class="owl-item">
                   <div class="col-lg-12">
                     <div class="latest-post">
-                      <div class="latest-post-media"> <a href="{% url 'trademark-blog' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news2.jpg' %}" title="" alt="NG-Associates"> </a> </div>
+                      <div class="latest-post-media"> <a href="{% url 'trademarks-types-registration-uses' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news2.jpg' %}" title="" alt="NG-Associates"> </a> </div>
                       <div class="post-body">
                         <h4 class="post-title"> </h4>
                         <h4>Trademark</h4>
-                        <a href="{% url 'trademark-blog' %}" class="d-inline-block">Trademark is a branch of intellectual property rights which permit people to maintain ownership rights of their innovative products and creative activity. A trademark includes a name, word or sign that differentiate our product from those of others.</a> </div>
+                        <a href="{% url 'trademarks-types-registration-uses' %}" class="d-inline-block">Trademark is a branch of intellectual property rights which permit people to maintain ownership rights of their innovative products and creative activity. A trademark includes a name, word or sign that differentiate our product from those of others.</a> </div>
                     </div>
                   </div>
                 </div>
@@ -604,11 +604,11 @@
                 <div class="owl-item">
                   <div class="col-lg-12">
                     <div class="latest-post">
-                      <div class="latest-post-media"> <a href="{% url 'gst-blog' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news1.jpg' %}" title="" alt="NG-Associates"> </a> </div>
+                      <div class="latest-post-media"> <a href="{% url 'goods-services-tax-gst-introduction-benefits-registration' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/news1.jpg' %}" title="" alt="NG-Associates"> </a> </div>
                       <div class="post-body">
                         <h4 class="post-title"> </h4>
                         <h4>GST</h4>
-                        <a href="{% url 'gst-blog' %}" class="d-inline-block">Registration of any business entity under the GST Law implies obtaining a unique number from the concerned tax authorities for the purpose of collecting tax on behalf of the government and to avail Input tax credit for the taxes on his inward supplies. GST Registration is a process by which a taxpayer gets himself registered under GST.</a> </div>
+                        <a href="{% url 'goods-services-tax-gst-introduction-benefits-registration' %}" class="d-inline-block">Registration of any business entity under the GST Law implies obtaining a unique number from the concerned tax authorities for the purpose of collecting tax on behalf of the government and to avail Input tax credit for the taxes on his inward supplies. GST Registration is a process by which a taxpayer gets himself registered under GST.</a> </div>
                     </div>
                   </div>
                 </div>
@@ -643,11 +643,11 @@
                 <div class="owl-item">
                   <div class="col-lg-12">
                     <div class="latest-post">
-                      <div class="latest-post-media"> <a href="{% url 'employee-stock-ownership-plan' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/employee_stock_ownership_plan.jpg' %}" title="" alt="NG-Associates"> </a> </div>
+                      <div class="latest-post-media"> <a href="{% url 'employee-stock-ownership-plans-benefits-implementation' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/employee_stock_ownership_plan.jpg' %}" title="" alt="NG-Associates"> </a> </div>
                       <div class="post-body">
                         <h4 class="post-title"> </h4>
                         <h4>Employee Stock Ownership Plan</h4>
-                        <a href="{% url 'employee-stock-ownership-plan' %}" class="d-inline-block">ESOP, which stands for Employee Stock Ownership Plan, is a financial arrangement that enables employees to become partial or full owners of the company they work for. Under an ESOP, eligible employees are granted or have the opportunity </a> </div>
+                        <a href="{% url 'employee-stock-ownership-plans-benefits-implementation' %}" class="d-inline-block">ESOP, which stands for Employee Stock Ownership Plan, is a financial arrangement that enables employees to become partial or full owners of the company they work for. Under an ESOP, eligible employees are granted or have the opportunity </a> </div>
                     </div>
                   </div>
                 </div>
@@ -655,11 +655,11 @@
                 <div class="owl-item">
                   <div class="col-lg-12">
                     <div class="latest-post">
-                      <div class="latest-post-media"> <a href="{% url 'pre-incorporation-contracts' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/pre_incorporation.jpg' %}" title="" alt="NG-Associates"> </a> </div>
+                      <div class="latest-post-media"> <a href="{% url 'promoters-pre-incorporation-contracts-definition-benefits' %}" class="latest-post-img"> <img loading="lazy" class="img-fluid" src="{% static 'images/news/pre_incorporation.jpg' %}" title="" alt="NG-Associates"> </a> </div>
                       <div class="post-body">
                         <h4 class="post-title"> </h4>
                         <h4>PRE Incorporation Contracts </h4>
-                        <a href="{% url 'pre-incorporation-contracts' %}" class="d-inline-block">AS PER SECTION 2(69) OF THE COMPANIES ACT 2013, PROMOTER '' MEANS A PERSON- a) WHO HAS BEEN NAMED AS SUCH IN A PROSPECTUS OR IS IDENTIFIED BY THE COMPANY IN THE COMPANY IN THE ANNUAL RETURN REFERRED TO IN SECTION 92;</a> </div>
+                        <a href="{% url 'promoters-pre-incorporation-contracts-definition-benefits' %}" class="d-inline-block">AS PER SECTION 2(69) OF THE COMPANIES ACT 2013, PROMOTER '' MEANS A PERSON- a) WHO HAS BEEN NAMED AS SUCH IN A PROSPECTUS OR IS IDENTIFIED BY THE COMPANY IN THE COMPANY IN THE ANNUAL RETURN REFERRED TO IN SECTION 92;</a> </div>
                     </div>
                   </div>
                 </div>

@@ -10,7 +10,7 @@
   <title>{{ data.title }}</title> 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     
-  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/fssai-application"/>
+  <link rel="canonical" href="https://gpriyanka.pythonanywhere.com/fssai-basic-registration"/>
   <meta name="description" content="{{ data.description }}">
   <meta name="keywords" content=" {{ data.keywords }}">   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
@@ -134,18 +134,18 @@
 <li><h4>Popular Options</h4></li>
 <li><a href="{% url 'private-limited-company-registration' %}">Private Limited Company Registration</a></li>
 <li><a href="{% url 'limited-liability-partnership-registration' %}">Limited Liability Partnership Registration</a></li>
-<li><a href="{% url 'one-person-company-registration' %}">One Person Company Registration</a></li>
-<li><a href="{% url 'partnership-firm-registration' %}">Partnership Firm Registration</a></li>
+<li><a href="{% url 'one-person-company-registration-process-benefits' %}">One Person Company Registration</a></li>
+<li><a href="{% url 'partnership-firm-registration-process-benefits' %}">Partnership Firm Registration</a></li>
 <li><a href="{% url 'sole-proprietorship-firm-registration-process-advantages-compliance' %}">Sole Proprietarship Firm Registration</a></li>
  </ul>
 	</div>
 			            <div class="col-sm-6">
 				             <ul class="multi-column-dropdown">
 <li><h4>Special Business Entities</h4></li>
-<li><a href="{% url 'register-an-indian-subsidiary' %}">Register an Indian Subsidiary</a></li>
+<li><a href="{% url 'establishing-indian-subsidiary-benefits-process-compliance' %}">Register an Indian Subsidiary</a></li>
 <li><a href="{% url 'section-8-company-registration-guide' %}">Section 8 Company Registration</a></li>
-<li><a href="{% url 'producer-company-registration' %}">Producer Company Registration</a></li>
-<li><a href="{% url 'nidhi-company-registration' %}">Nidhi Company Registration</a></li>
+<li><a href="{% url 'producer-company-registration-features-benefits-compliance' %}">Producer Company Registration</a></li>
+<li><a href="{% url 'nidhi-company-registration-requirements-compliance' %}">Nidhi Company Registration</a></li>
  </ul>
 			            </div>
 			             
@@ -198,17 +198,17 @@
 				            <ul class="multi-column-dropdown">
  
   <li><h4>Select Conversion Type</h4></li>
-<li><a href="{% url 'proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
-<li><a href="{% url 'proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
-<li><a href="{% url 'proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
-<li><a href="{% url 'proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
+<li><a href="{% url 'sole-proprietorship-to-partnership' %}">Proprietorship to Partnership</a></li>
+<li><a href="{% url 'sole-proprietorship-to-llp' %}">Proprietorship to LLP</a></li>
+<li><a href="{% url 'sole-proprietorship-to-private-limited-company' %}">Proprietorship to Private Limited Company</a></li>
+<li><a href="{% url 'sole-proprietorship-to-opc' %}">Proprietorship to OPC</a></li>
 <li><a href="{% url 'partnership-to-llp' %}">Partnership to LLP</a></li>
 <li><a href="{% url 'partnership-to-private-limited-company' %}">Partnership to Private Limited Company</a></li>
 <li><a href="{% url 'llp-to-private-limited-company' %}">LLP to Private Limited Company</a></li>
-<li><a href="{% url 'opc-to-private-limited-company' %}">OPC to Private Limited Company</a></li>
-<li><a href="{% url 'private-limited-company-to-llp' %}">Private Limited Company to LLP</a></li>
+<li><a href="{% url 'opc-to-private-limited-company-conversion' %}">OPC to Private Limited Company</a></li>
+<li><a href="{% url 'private-limited-company-to-llp-conversion' %}">Private Limited Company to LLP</a></li>
 <li><a href="{% url 'conversion-private-company-public-company' %}">Private Company to Public Company</a></li>
-<li><a href="{% url 'public-limited-into-private-limited' %}">Public Limited into Private Limited</a></li>
+<li><a href="{% url 'public-limited-to-private-limited-conversion' %}">Public Limited into Private Limited</a></li>
 				            </ul>
 			            </div>
 			            <div class="col-sm-4">
@@ -218,7 +218,7 @@
 <li><a href="{% url 'add-or-remove-a-partner-llp' %}">Add or Remove a Partner (LLP)</a></li>
 <li><a href="{% url 'change-business-activity' %}">Change Business Activity</a></li>
 <li><a href="{% url 'change-registered-office' %}">Change Registered Office</a></li>
-<li><a href="{% url 'change-company-name' %}">Change Company Name</a></li>
+<li><a href="{% url 'company-name-change' %}">Change Company Name</a></li>
 <li><a href="{% url 'change-llp-agreement' %}">Change LLP Agreement</a></li>
 <li><a href="{% url 'change-partnership-deed' %}">Change Partnership Deed</a></li>
 <li><a href="{% url 'increase-authorised-share-capital' %}">Increase Authorised Share Capital</a></li>
@@ -263,7 +263,7 @@
 <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
 <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
 <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-<li><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+<li><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
 <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
 <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
 <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
@@ -373,7 +373,7 @@
     <div class="container">
         <div class="row">
          <div class="col-lg-12">
-         	<h1>FSSAI Application</h1>
+         	<h1>FSSAI Basic Registration</h1>
          	
          </div>
          
@@ -438,7 +438,8 @@
   <li><a href="{% url 'professional-tax-registration' %}">Professional Tax Registration</a></li>
   <li><a href="{% url 'pan-application' %}">PAN Application</a></li>
   <li><a href="{% url 'tan-application' %}">TAN Application</a></li>
-  <li class="active"><a href="{% url 'fssai-application' %}">FSSAI Application</a></li>
+  <li class="active"><a href="{% url 'fssai-basic-registration' %}">FSSAI Application</a></li>
+  <li><a href="{% url 'msme-registration' %}">MSME Registration</a></li>
   <li><a href="{% url 'esi-registration' %}">ESI Registration</a></li>
   <li><a href="{% url 'pf-registration' %}">PF Registration</a></li>
   <li><a href="{% url 'gem-registration' %}">GEM Registration</a></li>
@@ -467,7 +468,7 @@
       <div class="col-xl-8 col-lg-8">
         <div class="content-inner-page">
 
-          <h2 class="column-title mrt-0">FSSAI BASIC REGISTRATION</h2>
+          <h2 class="column-title mrt-0">Understanding FSSAI and its Importance for Food Safety</h2>
 
           <div class="row">
             <div class="col-md-12">
@@ -482,7 +483,7 @@
 <p>Overall, FSSAI Basic Registration plays a crucial role in promoting food safety and consumer protection. It encourages small food businesses to operate in a responsible and regulated manner, ensuring the availability of safe and hygienic food products in the market.</p>
 
 				
-          <h4>FEATURES OF FSSAI BASIC REGISTRATION</h4>
+          <h3>FEATURES OF FSSAI BASIC REGISTRATION</h3>
           <img src="{% static 'images/fssai.jpg' %}" alt="fssai" title="fssai" style="width: 100%; height: auto;">
           
 <ol>
@@ -507,8 +508,8 @@
             </div>
             
    <div class="col-lg-12">
-   	<h4>BENEFITS OF FSSAI BASIC REGISTRATION</h4>    
-    <img src="{% static 'images/fssai1.jpg' %}"" alt="fssai" title="fssai" style="width: auto; height: auto;">
+   	<h3>BENEFITS OF FSSAI BASIC REGISTRATION</h3>    
+    <img src="{% static 'images/fssai1.jpg' %}" alt="fssai" title="fssai" style="width: auto; height: auto;">
     
     <ol>
 <li>Legal Compliance: FSSAI Basic Registration ensures that businesses operating in the food sector comply with the legal requirements set by the Food Safety and Standards Authority of India. It helps businesses avoid penalties and legal issues associated with non-compliance.</li>
@@ -522,7 +523,7 @@
 <li>Competitive Advantage: FSSAI Basic Registration provides a competitive advantage in the market. It demonstrates a commitment to food safety and quality, setting registered businesses apart from their non-registered counterparts. This differentiation can attract more customers and give businesses an edge over the competition.</li>
 </ol>
    
-<h4>DOCUMENTS REQUIRED FOR FSSAI BASIC REGISTRATION</h4>
+<h3>DOCUMENTS REQUIRED FOR FSSAI BASIC REGISTRATION</h3>
 <p>Following are the commonly required documents for FSSAI Basic Registration:</p> 
    
 <ol>
@@ -541,8 +542,8 @@
 <li>Declaration Form: A self-declaration form indicating compliance with the requirements and regulations prescribed by FSSAI.</li>
  </ol> 
 
-<h4>PROCESS FOR FSSAI BASIC REGISTRATION</h4>	   
-<img src="{% static 'images/fssai2.jpg' %}"" alt="fssai" title="fssai" style="width: auto; height: auto;">
+<h3>PROCESS FOR FSSAI BASIC REGISTRATION</h3>	   
+<img src="{% static 'images/fssai2.jpg' %}" alt="fssai" title="fssai" style="width: auto; height: auto;">
 <p>The process for FSSAI Basic Registration involves the following steps:</p>
         
 <ol>

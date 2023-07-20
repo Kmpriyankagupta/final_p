@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import MyModel 
+from .models import UserData
 from .models import Page 
 def home(request):
     data = Page.objects.get(pagename='index')
@@ -15,11 +15,11 @@ def limited_liability(request):
     return render(request, 'app/limited-liability-partnership-registration.html', context={'data': data})
 
 def one_person(request):
-    data = Page.objects.get(pagename='one-person-company-registration')
+    data = Page.objects.get(pagename='one-person-company-registration-process-benefits')
     return render(request, 'app/one-person-company-registration.html', context={'data': data})
 
 def partnership(request):
-    data = Page.objects.get(pagename='partnership-firm-registration')
+    data = Page.objects.get(pagename='partnership-firm-registration-process-benefits')
     return render(request, 'app/partnership-firm-registration.html', context={'data': data})
 
 def sole_proprietarship(request):
@@ -27,7 +27,7 @@ def sole_proprietarship(request):
     return render(request, 'app/sole-proprietarship-firm-registration.html', context={'data': data})
 
 def register_an(request):
-    data = Page.objects.get(pagename='register-an-indian-subsidiary')
+    data = Page.objects.get(pagename='establishing-indian-subsidiary-benefits-process-compliance')
     return render(request, 'app/register-an-indian-subsidiary.html', context={'data': data})
 
 def section_8(request):
@@ -35,11 +35,11 @@ def section_8(request):
     return render(request, 'app/section-8-company-registration.html', context={'data': data})
 
 def producer_company(request):
-    data = Page.objects.get(pagename='producer-company-registration')
+    data = Page.objects.get(pagename='producer-company-registration-features-benefits-compliance')
     return render(request, 'app/producer-company-registration.html', context={'data': data})
 
 def nidhi_company(request):
-    data = Page.objects.get(pagename='nidhi-company-registration')
+    data = Page.objects.get(pagename='nidhi-company-registration-requirements-compliance')
     return render(request, 'app/nidhi-company-registration.html', context={'data': data})
 
 def trademark_registration(request):
@@ -83,15 +83,15 @@ def design_regi(request):
     return render(request, 'app/design-registration.html', context={'data': data})
 
 def proprietorship_to_par(request):
-    data = Page.objects.get(pagename='proprietorship-to-partnership')
+    data = Page.objects.get(pagename='sole-proprietorship-to-partnership')
     return render(request, 'app/proprietorship-to-partnership.html', context={'data': data})
 
 def proprietorship_to_llp(request):
-    data = Page.objects.get(pagename='proprietorship-to-LLP')
+    data = Page.objects.get(pagename='sole-proprietorship-to-llp')
     return render(request, 'app/proprietorship-to-LLP.html', context={'data': data})
 
 def proprietorship_to_pri(request):
-    data = Page.objects.get(pagename='proprietorship-to-private-limited-company')
+    data = Page.objects.get(pagename='sole-proprietorship-to-private-limited-company')
     return render(request, 'app/proprietorship-to-private-limited-company.html', context={'data': data})
 
 def proprietorship_to_opc(request):
@@ -111,11 +111,11 @@ def llp_to_private(request):
     return render(request, 'app/LLP-to-private-limited-company.html', context={'data': data})
 
 def opc_to_private(request):
-    data = Page.objects.get(pagename='OPC-to-private-limited-company')
+    data = Page.objects.get(pagename='opc-to-private-limited-company-conversion')
     return render(request, 'app/OPC-to-private-limited-company.html', context={'data': data})
 
 def private_limited_company_to_llp(request):
-    data = Page.objects.get(pagename='private-limited-company-to-LLP')
+    data = Page.objects.get(pagename='private-limited-company-to-llp-conversion')
     return render(request, 'app/private-limited-company-to-LLP.html', context={'data': data})
 
 def private_company_to_public(request):
@@ -140,7 +140,7 @@ def change_registered(request):
     return render(request, 'app/change-registered-office.html', context={'data': data})
 
 def change_company_name(request):
-    data = Page.objects.get(pagename='change-company-name')
+    data = Page.objects.get(pagename='company-name-change')
     return render(request, 'app/change-company-name.html', context={'data': data})
 
 def change_llp_agr(request):
@@ -208,7 +208,7 @@ def tan_application(request):
     return render(request, 'app/TAN-application.html', context={'data': data})
 
 def fssai_application(request):
-    data = Page.objects.get(pagename='FSSAI-application')
+    data = Page.objects.get(pagename='fssai-basic-registration')
     return render(request, 'app/FSSAI-application.html', context={'data': data})
 
 def esi_registration(request):
@@ -308,15 +308,15 @@ def contact(request):
     return render(request, 'app/contact.html', context={'data': data})
 
 def incorporation(request):
-    data = Page.objects.get(pagename='incorporation-of-company')
+    data = Page.objects.get(pagename='incorporation-public-company-requirements-compliance')
     return render(request, 'app/incorporation-of-company.html', context={'data': data})
 
 def trademark_blog(request):
-    data = Page.objects.get(pagename='trademark_blog')
+    data = Page.objects.get(pagename='trademarks-types-registration-uses')
     return render(request, 'app/trademark-blog.html', context={'data': data})
 
 def gst_blog(request):
-    data = Page.objects.get(pagename='gst-blog')
+    data = Page.objects.get(pagename='goods-services-tax-gst-introduction-benefits-registration')
     return render(request, 'app/gst-blog.html', context={'data': data})
 
 def right_issue(request):
@@ -360,11 +360,11 @@ def procedure_incorporation_of(request):
     return render(request, 'app/procedure-incorporation-of-company.html', context={'data': data})
 
 def employee_stock(request):
-    data = Page.objects.get(pagename='employee-stock-ownership-plan')
+    data = Page.objects.get(pagename='employee-stock-ownership-plans-benefits-implementation')
     return render(request, 'app/employee-stock-ownership-plan.html', context={'data': data})
 
 def public_limited_into_private(request):
-    data = Page.objects.get(pagename='public-limited-into-private-limited')
+    data = Page.objects.get(pagename='public-limited-to-private-limited-conversion')
     return render(request, 'app/public-limited-into-private-limited.html', context={'data': data})
 
 def secretarial(request):
@@ -372,7 +372,7 @@ def secretarial(request):
     return render(request, 'app/secretarial-standard.html', context={'data': data})
 
 def pre_incorporation(request):
-    data = Page.objects.get(pagename='pre-incorporation-contracts')
+    data = Page.objects.get(pagename='promoters-pre-incorporation-contracts-definition-benefits')
     return render(request, 'app/pre-incorporation-contracts.html', context={'data': data})
 
     
@@ -385,12 +385,12 @@ def save_data(request):
         email = request.POST['email']
         mobilenumber = request.POST['mobilenumber']
         typeservicerequired = request.POST['typeservicerequired']
-        if MyModel.objects.filter(name=name).exists():
+        if UserData.objects.filter(name=name).exists():
             
             
             return render(request, 'app/message.html', {'error': 'Username already exists.'})
         else:
-             MyModel.objects.create(name=name, email=email, mobilenumber=mobilenumber, typeservicerequired=typeservicerequired)
+             UserData.objects.create(name=name, email=email, mobilenumber=mobilenumber, typeservicerequired=typeservicerequired)
         
         return redirect('home')  # Redirect to a success page
    

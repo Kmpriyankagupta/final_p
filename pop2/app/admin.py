@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Page, MyModel
+from .models import Page, UserData
 
 admin.site.register(Page)
-admin.site.register(MyModel)
+admin.site.register(UserData)
