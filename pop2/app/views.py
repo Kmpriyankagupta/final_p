@@ -328,15 +328,6 @@ def bonus_issue(request):
     return render(request, 'app/bonus-issue.html', context={'data': data})
 
 
-
-def msme_registraion(request):
-    data = Page.objects.get(pagename='msme-registration')
-    return render(request, 'app/msme-registration.html', context={'data': data})
-
-def blog(request):
-    data = Page.objects.get(pagename='blog')
-    return render(request, 'app/blog.html', context={'data': data})
-
 def conversion_of_pri(request):
     data = Page.objects.get(pagename='conversion-of-private-comapany-into-public-company')
     return render(request, 'app/conversion-of-private-comapany-into-public-company.html', context={'data': data})
