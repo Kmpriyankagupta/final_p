@@ -65,6 +65,28 @@ h5 {
   margin-right: 15px;
 }
 
+ol {
+  counter-reset: item;
+  margin: 0 0 1.5em;
+  padding: 0;
+  > li {
+    counter-increment: item;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    text-indent: -1.2rem;
+    &::before {
+      content: counter(item) '.';
+      display: inline-block;
+      font-weight: bold;
+      padding-right: .5rem;      
+      text-align: right;
+      width: 1.5rem;
+    }
+  }
+}
+
+
 /* Global styles
 ================================================== */
 html {
@@ -701,8 +723,8 @@ ul.top-info li p.info-text {
 }
 
 .header-one ul.navbar-nav > li {
-padding-left: 14px;
-padding-right: 14px;
+padding-left: 11px;
+padding-right: 11px;
 }
 
 @media (max-width: 991px) {
@@ -3161,7 +3183,7 @@ label {
 .post {
   border-bottom: 1px solid #dadada;
   padding: 0 0 30px;
-  margin: 0 0 45px;
+  margin: 0 0 45px; float: left;
 }
 
 .post.last {

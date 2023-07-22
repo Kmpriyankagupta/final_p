@@ -94,6 +94,7 @@ urlpatterns = [
     path('employee-stock-ownership-plans-benefits-implementation', views.employee_stock, name='employee-stock-ownership-plans-benefits-implementation'),
     path('secretarial-standard-1-companies-act-2013', views.secretarial, name='secretarial-standard-1-companies-act-2013'),
     path('promoters-pre-incorporation-contracts-definition-benefits', views.pre_incorporation, name='promoters-pre-incorporation-contracts-definition-benefits'),
+    path('blogs', views.blogPage, name='blogs'),
     path('save-data', views.save_data, name='save-data')
 
 ]

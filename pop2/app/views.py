@@ -366,6 +366,10 @@ def pre_incorporation(request):
     data = Page.objects.get(pagename='promoters-pre-incorporation-contracts-definition-benefits')
     return render(request, 'app/pre-incorporation-contracts.html', context={'data': data})
 
+def blogPage(request):
+    data = Page.objects.get(pagename='blogs')
+    return render(request, 'app/blogs.html', context={'data': data})
+
     
 
 
