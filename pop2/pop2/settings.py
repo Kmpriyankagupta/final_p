@@ -10,8 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-import os
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,26 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wael2=eu0r_5!mii#2o6_pe@mjmebsykut(3d%+7%=+t63ykc!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-
-
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# if not DEBUG:
-#     SECURE_SSL_REDIRECT = True
-
-ALLOWED_HOSTS = ['ngandassociates.com','www.ngandassociates.com', 'localhost', '127.0.0.1']
-
-CORS_ALLOWED_ORIGINS = ['https://ngandassociates.com','https://www.ngandassociates.com']
-
-CSRF_TRUSTED_ORIGINS = ['https://ngandassociates.com','https://www.ngandassociates.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -63,8 +49,20 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+
+    #'csp.middleware.CSPMiddleware',
 ]
+
+
+# Add more CSP directives as needed
+
+# Set the CSP header to enforce the defined directives
+
+
+
+
+
+
 
 ROOT_URLCONF = 'pop2.urls'
 
@@ -132,13 +130,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-
-STATIC_URL = 'app/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'app/static/')
-
-
-
-
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
